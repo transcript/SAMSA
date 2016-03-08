@@ -1,0 +1,230 @@
+---
+title: "R_organism_script.Rmd"
+author: Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript
+output: html_document
+---
+
+This is a script for processing output files from MG-RAST, converting organism output data into a graph.  This program creates a barplot of activity within a sample grouped by organism, both by relative and by absolute activity.
+
+Necessary packages to include:
+
+```{r packages, results='hide'}
+library(DESeq2)
+library(ggplot2)
+library(gridExtra)
+library(scales)
+library(reshape)
+library(knitr)
+```
+
+Before starting this script, please adjust the following parameters.  The working directory should contain both the experimental sample files (designated by "exp_<filename>") and the control sample files (designated by "control_<filename>").  
+
+Note: all output files should have been simplified using the output_reducer Python script to remove headers and other extraneous information. 
+
+```{r working_directory}
+setwd("~/Desktop/Projects/Lab Stuff/location_of_organism_results/")
+```
+
+Now, we read in the files from the working directory as specified above.  The file should be of a format such as:
+"control_RefSeq_organism_identifier-name.tab.output-simplified".
+Note that if the identifier name or ID of the file is not specified as such, the script will not select the correct section of the file name to use as an ID.
+
+```{r file_listing}
+control_files <- list.files(
+    pattern = "control_*", full.names = T, recursive = FALSE)
+control_names = ""
+for (name in control_files) {
+  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #change the "4" to a different part of the name if not following standard naming conventions as above
+control_names <- control_names[-1]
+control_names_trimmed = ""
+for (name in control_names) {
+  control_names_trimmed <- c(control_names_trimmed, unlist(strsplit(name, split='.', fixed=TRUE))[1])}
+control_names_trimmed <- control_names_trimmed[-1]
+rm (control_names)
+
+exp_files <- list.files(
+    pattern = "experimental_*", full.names = T, recursive = FALSE)
+exp_names = ""
+for (name in exp_files) {
+  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #again, change 4 if non-standard file names are used
+exp_names <- exp_names[-1]
+exp_names_trimmed = ""
+for (name in exp_names) {
+  exp_names_trimmed <- c(exp_names_trimmed, unlist(strsplit(name, split='.', fixed=TRUE))[1])}
+exp_names_trimmed <- exp_names_trimmed[-1]
+rm (exp_names, name)
+```
+
+Next, we will load these files in as two tables, one for the experimental data and one for the control data.
+
+```{r open_tables}
+# loading the control table
+y <- 0
+for (x in control_files) {
+  y <- y + 1
+  if (y == 1) {
+    control_table <- read.table(file = x, header = F, quote = "", sep = "\t")
+    colnames(control_table) = c("DELETE", x, "V3")
+    control_table <- control_table[,c(2,3)]     }
+  if (y > 1) {
+    temp_table <- read.table(file = x, header = F, quote = "", sep = "\t")
+    colnames(temp_table) = c("DELETE", x, "V3")    }
+  if (y > 1) {
+    control_table <- merge(control_table, temp_table[,c(2,3)], by = "V3", all.x = T)  }
+}
+control_table[is.na(control_table)] <- 0
+rownames(control_table) = control_table$V3
+control_table_trimmed <- control_table[,-1]
+
+# loading the experimental table
+y <- 0
+for (x in exp_files) {
+  y <- y + 1
+  if (y == 1) {
+    exp_table <- read.table(file = x, header=F, quote = "", sep = "\t")
+    colnames(exp_table) = c("DELETE", x, "V3")
+    exp_table <- exp_table[,c(2,3)]  }
+  if (y > 1) {
+    temp_table <- read.table(file = x, header = F, quote = "", sep = "\t")
+    colnames(temp_table) = c("DELETE", x, "V3")  }
+  if (y > 1) {
+    exp_table <- merge(exp_table, temp_table[,c(2,3)], by = "V3", all.x = T)  }
+}
+exp_table[is.na(exp_table)] <- 0
+rownames(exp_table) = exp_table$V3
+exp_table_trimmed <- exp_table[,-1]
+```
+
+Now, we simplify the names of the columns of these two tables, using the ID names scrubbed from the filenames above in chunk 3, file_listing.  If this step is failing, please note the proper naming of the files as mentioned above chunk 3.
+
+```{r column_names}
+colnames(control_table_trimmed) = control_names_trimmed
+colnames(exp_table_trimmed) = exp_names_trimmed
+```
+
+******** NOTE ******** 
+If we only want the DESeq analysis, skip to line 198, where we perform the differential analysis.  The following step instead focuses on creating a visual graph.
+******** NOTE ******** 
+
+We next need to use cbind to restructure these tables so that they can be handled by ggplot.
+
+```{r melting_tables}
+control_table_trimmed_m <- melt(cbind(control_table_trimmed, 
+      Genus = rownames(control_table_trimmed)), id.vars = c('Genus'))
+
+exp_table_trimmed_m <- melt(cbind(exp_table_trimmed, 
+      Genus = rownames(exp_table_trimmed)), id.vars = c('Genus'))
+```
+
+This script displays an output of the activity of the top 30 organisms, instead of displaying all 1,000+ organisms within the total sample.  For that reason, the rest of the organism activity is clumped together into an "other" catchall category.
+
+```{r other_catchall}
+control_table_filtered <- control_table_trimmed
+control_table_filtered[,"Total"] <- rowSums(control_table_filtered)
+control_table_filtered <- control_table_filtered[ with (control_table_filtered, order(-Total)), ]
+exp_table_filtered <- exp_table_trimmed
+exp_table_filtered[,"Total"] <- rowSums(exp_table_filtered)
+exp_table_filtered <- exp_table_filtered[ with (exp_table_filtered, order(-Total)), ]
+
+control_table_filtered["Other",] <- colSums(control_table_filtered[30:nrow(control_table_filtered),])
+control_table_filtered <- rbind(control_table_filtered[1:29,], control_table_filtered[nrow(control_table_filtered),])
+exp_table_filtered["Other",] <- colSums(exp_table_filtered[30:nrow(exp_table_filtered),])
+exp_table_filtered <- rbind(exp_table_filtered[1:29,], exp_table_filtered[nrow(exp_table_filtered),])
+control_table_filtered <- control_table_filtered[,-ncol(control_table_filtered)]
+exp_table_filtered <- exp_table_filtered[,-ncol(exp_table_filtered)]
+
+control_table_filtered_m <- melt(cbind(control_table_filtered,
+    Genus = rownames(control_table_filtered)), id.vars = c('Genus'))
+
+exp_table_filtered_m <- melt(cbind(exp_table_filtered, 
+    Genus = rownames(exp_table_filtered)), id.vars = c('Genus'))
+```
+
+Now, we merge the two tables to create one full table that will be displayed on graphs.  Note that the inserted row creates a space on the graph between the control and experimental graphs.
+
+```{r merging_tables}
+temprow <- matrix(c(rep.int(0,length(control_table_trimmed_m))),nrow=1,ncol=length(control_table_trimmed_m))
+newrow <- data.frame(temprow)
+colnames(newrow) <- colnames(control_table_trimmed_m)
+newrow$variable <- "<blank>"
+newrow$Genus <- "Filler"
+
+full_table <- rbind(control_table_trimmed_m, newrow, exp_table_trimmed_m)
+full_table_top30 <- rbind(control_table_filtered_m, newrow, exp_table_filtered_m)
+```
+
+Because normal ggplot colors tend to blend together too much when required to select 30 colors, a custom palette is specified here:
+
+```{r palette}
+CbPalette <- c("#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928", "#8dd3c7",  "#ffffb3",  "#bebada",  "#fb8072",  "#80b1d3",  "#fdb462",  "#b3de69", "#fccde5",  "#d9d9d9",  "#bc80bd",  "#ccebc5",  "#ffed6f", "#e41a1c",  "#377eb8", "#4daf4a",  "#984ea3",  "#ff7f00", "#ffff33",  "#a65628",  "#f781bf", "#999999", "#000000", "#a6cee4", "#1f78b5", "#b2df8b")
+```
+
+Now, we create the graphs!  First, we create a stacked bar by percentage, allowing us to see relative activity composition by sample. 
+
+```{r percentage_plot}
+org_relative_ggplot <- ggplot(full_table_top30, aes(x = variable, y = value, fill = Genus)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_manual(values = CbPalette) +
+  scale_y_continuous(labels = percent_format()) +
+  theme(legend.position = "none") +
+  guides(fill = guide_legend(ncol=10)) +
+  ggtitle("Top 30 gut microorganisms by relative abundance") +
+  xlab("Sample ID") + ylab("Relative activity of total sample")
+```
+
+Next, we create a stacked bar graph by raw counts, showing how total sample counts compare to each other.
+
+```{r absolute_plot}
+org_absolute_ggplot <- ggplot(full_table_top30, aes(x = variable, y = value, fill = Genus)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = CbPalette) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(ncol=10)) +
+  ggtitle("Top 30 gut microorganisms by total abundance") +
+  xlab("Sample ID") + ylab("Total reads per sample")
+```
+
+Finally, we display both of these graphs on a single display!
+
+```{r graph_output}
+grid.arrange(org_relative_ggplot, org_absolute_ggplot, ncol = 1)
+```
+
+******** DESEQ ANALYSIS ******** 
+
+And lastly, we can run DESeq2 to get some statistical data on most significantly different organisms, by expression level, between our experimental and control samples.
+
+```{r DESeq2_analysis}
+library("DESeq2")
+complete_table <- merge(control_table_trimmed, exp_table_trimmed, by=0, all = TRUE)
+complete_table[is.na(complete_table)] <- 1
+rownames(complete_table) <- complete_table$Row.names
+complete_table <- complete_table[,-1]
+
+complete_table_col_names = ""
+i = 0
+while (i < (length(control_files))) {
+  i <- i + 1
+  complete_table_col_names <- append(complete_table_col_names, paste("control", as.character(i), sep = ""))  }
+i = 0
+while (i < length(exp_files)) {
+  i <- i + 1
+  complete_table_col_names <- append(complete_table_col_names, paste("experimental", as.character(i), sep = ""))  }
+complete_table_col_names <- complete_table_col_names[-1]
+completeCondition <- data.frame(condition=factor(c(rep("control", length(control_files)), rep("experimental", length(exp_files)))))
+colnames(complete_table) <- complete_table_col_names
+dds <- DESeqDataSetFromMatrix(complete_table, completeCondition, ~ condition)
+dds <- DESeq(dds)
+res <- results(dds, contrast = c("condition", "experimental", "control"))
+res <-res[order(res$padj,decreasing = TRUE),]
+tail(res, 10)
+plotMA(dds, ylim=c(-2.5,2.5), main="DESeq2 analysis of all organisms")
+plotCounts(dds, gene=which.min(res$padj), intgroup="condition")
+
+org_results <- data.frame(res[order(res$baseMean, decreasing = TRUE),])
+write.table(org_results, file = "DESeq_organism_output.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
+
+write.table(complete_table, file = "organism_complete_table.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
+```
+
+This should now have a file saved of all DESeq comparisons, labeled as DESeq_organism_output.tab, in the working directory.

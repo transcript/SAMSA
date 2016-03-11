@@ -1,27 +1,54 @@
 #!/usr/bin/env python
-import operator
-import sys
-import subprocess
-from subprocess import call
-import os
-
-# Remember this: it lets raw_input do tab completion!
-import readline
-readline.parse_and_bind("tab: complete")
-
+##########################################################################
+#
+# Copyright (C) 2015-2016 Sam Westreich
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##########################################################################
+#
 # MG-RAST_API_downloader.py
-# Created 12/09/2014 by Sam Westreich
-# Purpose: With proper inputs, this should automatically generate the API calls to download MG-RAST sequences for the next steps in the metatranscriptome pipeline.
-# HELP: For more documentation on the MG-RAST API pipeline, read at http://api.metagenomics.anl.gov/api.html 
+# Created 12/09/14, last edited 3/10/16
+# Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/
+#
+##########################################################################
+# 
+# Purpose: With proper inputs, this should automatically generate the API 
+# calls to download MG-RAST sequences for the next steps in the 
+# metatranscriptome pipeline.
+# HELP: For more documentation on the MG-RAST API pipeline, read at 
+# http://api.metagenomics.anl.gov/api.html 
+#
+# USAGE STATEMENT
+# Note: will prompt for missing values (raw input on command line) if not
+# specified with a flag.
+#
+# -Q		Quiet mode (no printing to STDOUT); optional
+# -S		Source (RefSeq, UniProt, KEGG, COG, Subsystems, KO, GenBank, 
+#			etc.); required
+# -D		Data type (Organism, Function, Ontology); optional
+# -A		Authorization key, generated under "Account preferences" at 
+#			metagenomics.anl.gov; required
+# -I		Annotation ID, found on metagenome page; required
+# -O		Output save file name; required
+# -usage	Prints usage documentation and exits.
+#
+##########################################################################
 
-# Usage: Can be run as a stand-alone (will prompt for inputs) or with various inputs specified (for pipeline use)
-#	-Q		Quiet mode (no printing to STDOUT); optional
-# 	-S		Source (RefSeq, UniProt, KEGG, COG, Subsystems, KO, GenBank, etc.); required
-#	-D		Data type (Organism, Function, Ontology); optional
-#	-A		Authorization key, generated under "Account preferences" at metagenomics.anl.gov; required
-#	-I		Annotation ID, found on metagenome page; required
-#	-O		Output save file name; required
-#	-usage	Prints usage documentation and exits.
+# imports
+import sys, os, subprocess
+from subprocess import call
 
 # Option for "quiet" flag
 quiet = False

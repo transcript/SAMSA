@@ -1,8 +1,41 @@
 #!/usr/bin/env Python
-
-# long_tail_threshold_0.9.py
-# Created 2/05/16
-# Purpose: there are a lot of mismatches in the long tail of annotations (below 0.05% of total annotations).  This script will remove these from a trimmed output file.
+##########################################################################
+#
+# Copyright (C) 2015-2016 Sam Westreich
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##########################################################################
+#
+# long_tail_threshold.py
+# Created 2/05/16, last edited 3/10/16
+# Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/
+#
+##########################################################################
+# 
+# Purpose: there are a lot of mismatches in the long tail of annotations 
+# (below 0.05% of total annotations).  This script will remove these from a 
+# trimmed output file.
+#
+# USAGE OPTIONS:
+#
+# -T	Specifies cutoff percentage (0.0001-100) for thresholding, required
+# -I	Input file name, required
+# -O 	Output file name, optional (default is infile.thresholded)
+# -Q	Quiet mode, optional
+#
+##########################################################################
 
 import sys, os
 

@@ -20,7 +20,7 @@
 #
 # Complete subset analysis counter, analysis_counter.py
 # Created 8/28/2014, this version created 3/05/2016
-# Sam Westreich, stwestreich@ucdavis.edu 
+# Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript
 
 # This program takes the output of the annotation algorithm (MG-RAST downloaded
 # results file) and creates a sorted list of all hits. 

@@ -1,42 +1,66 @@
 #!/usr/bin/env Python
-
+##########################################################################
+#
+# Copyright (C) 2015-2016 Sam Westreich
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##########################################################################
+#
 # SAMSA_pre_annotation_pipeline.py
-# Created 9/24/15, last edited x/xx/xx
-# Created by Sam Westreich
-# Contact at swestreich@gmail.com, github.com/transcript/
-
-####################
+# Created 9/24/15, last edited 3/10/16
+# Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/
+#
+##########################################################################
 # 
-# This is a python wrapper script, designed to run all steps of the SAMSA pipeline up to the MG-RAST annotation step.
-# (Why Python?  Because I know it well.)
-# (Why not the entire pipeline?  Because MG-RAST takes several days to perform the annotation step.)
+# This is a python wrapper script, designed to run all steps of the SAMSA 
+# pipeline up to the MG-RAST annotation step.
+# (Why not the entire pipeline?  Because MG-RAST takes several days to 
+# perform the annotation step.)
+#
 # This wrapper performs the following steps:
 #
 # 1. Uses Trimmomatic to clean the raw files and remove any adaptor contamination.
 # 2. If reads are paired-end, uses FLASH to create aligned files.
 # 3. Uploads all cleaned, aligned files to MG-RAST for annotation.
 #
-# After the MG-RAST annotation is complete, use SAMSA_post_annotation_pipeline.py to complete the download and
-# analysis steps for post-annotation processing.
+# After the MG-RAST annotation is complete, refer to the documentation for SAMSA
+# for next steps (downloading annotations, analysis, etc.).
 #
-####################
+##########################################################################
 #
 # USAGE OPTIONS
 #
 # REQUIRED:
-# -Ends (#)			Distinguishes between paired or single end data.  1 = single end, 2 = paired end.
-# -A (string)		Authorization key for MG-RAST.  Found under "Account Preferences" at www.metagenomics.anl.gov/ .
+# -Ends (#)			Distinguishes between paired or single end data.  
+#					1 = single end, 2 = paired end.
+# -A (string)		Authorization key for MG-RAST.  Found under "Account Preferences" 
+#					at www.metagenomics.anl.gov/ .
 # -D (path)			Path to folder containing the raw sequence files to be processed.
 #
 # OPTIONAL:
-# -Q				Activates quiet mode; comments and updates are not printed to STDOUT.
-# -T (path)			Location (path) of 'trimmomatic-0.33.jar', if it isn't located in /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar .
-# -F (path) 		Location (path) of 'flash', if it isn't located in /Applications/FLASH-1.2.11/flash* .
+# -Q				Activates quiet mode; comments and updates are not printed to 
+#					STDOUT.
+# -T (path)			Location (path) of 'trimmomatic-0.33.jar', if it isn't located 
+#					in /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar .
+# -F (path) 		Location (path) of 'flash', if it isn't located in 
+#					/Applications/FLASH-1.2.11/flash* .
+#
+##########################################################################
 
 # Includes
-import sys
-import os
-import subprocess
+import sys, os, subprocess
 
 # Quiet mode
 if "-Q" in sys.argv:
@@ -259,6 +283,5 @@ for UUID in inbox_IDs:
 		print ("Command used: " + seq_stats_command)
 	os.system(seq_stats_command)
 	
-# Unfortunately, it takes some time for the sequence stats to be computed.  So submission's going to have to be a separate step.
-
-		
+# Unfortunately, it takes some time for the sequence stats to be computed.  So submission's going to have to be a separate step, performed via the online portal.  See the documentation for more information.
+print ("For next steps, log in to the MG-RAST online portal.  See Step 3 in the documentation for more information.")

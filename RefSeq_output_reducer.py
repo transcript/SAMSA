@@ -1,10 +1,43 @@
 #!/usr/bin/env Python
-import operator, sys
+##########################################################################
+#
+# Copyright (C) 2015-2016 Sam Westreich
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##########################################################################
+#
+# RefSeq_output_reducer.py
+# Created 3/30/15, last edited 3/10/16
+# Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/
+#
+##########################################################################
+# 
+# FUNCTION
+# This should go through the RefSeq output file (filename.tab.output) and should 
+# take each line and simplify it down to genus counts, not species.
+#
+# USAGE OPTIONS:
+#
+# -I 	Input file, required
+# -O	Output file, optional (default is infile_simplified)
+# -Q	Quiet mode, optional
+#
+##########################################################################
 
-# RefSeq_output_reducer_v1.py
-# Created 3/30, Sam Westreich (swestreich@gmail.com)
-# This should go through the RefSeq output file (filename.tab.output) and should take 
-# each line and simplify it down to genus counts, not species.
+# imports
+import operator, sys
 
 # String search function
 def string_find(usage_term):

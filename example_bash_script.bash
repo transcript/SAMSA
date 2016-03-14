@@ -7,12 +7,12 @@
 # NOTE: NEED TO GO FILL IN AT ALL PLACES LABELED WITH @@@@@@@
 #
 # For this sample pipeline, we have two paired-end sequenced metatranscriptomes:
-#		control_metatranscriptome_forward.fastq
-#		control_metatranscriptome_reverse.fastq
-#		experiment_metatranscriptome_forward.fastq
-#		experiment_metatranscriptome_reverse.fastq
+#		control_reads_R1.fastq
+#		control_reads_R2.fastq
+#		experiment_reads_R1.fastq
+#		experiment_reads_R2.fastq
 #
-# This bash script assumes that all SAMSA pipeline programs are located in ./SAMSA/
+# This bash script assumes that all SAMSA pipeline scripts are located in ./SAMSA/
 # as a directory.
 #
 ####################################################################
@@ -21,14 +21,14 @@
 #		These files need to be cleaned of any adaptor contamination and the 
 #		paired-end files must be merged to create an ExtendedFrags file.
 #
-#		It is recommended that FLASH (http://ccb.jhu.edu/software/FLASH/) and
-#		Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic) be installed.
+#		To complete these steps, FLASH (http://ccb.jhu.edu/software/FLASH/) and
+#		Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic) must be installed.
 
-python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A FJtcW8SSFUtn9GDZztSue8nbn -D ~/Desktop/sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
+python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A FJtcW8SSFUtn9GDZztSue8nbn -D sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
 
 # 		For all of the raw sequence files, the pre-annotation pipeline should clean
 #		the files, removing adaptors, and should merge the paired-end files.  The output
-#		will be labeled as @@@@@@@@@
+#		will be labeled as control_file_.extendedFrags.fastq .
 
 ####################################################################
 # Step 2: Uploading files to MG-RAST
@@ -37,8 +37,8 @@ python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A FJtcW8SSFUtn9GDZztSue8nbn 
 #
 #		If performing the steps manually, use the following command:
 
-python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F control_metatranscriptome.fastq
-python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F experiment_metatranscriptome.fastq
+python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F control_file_.extendedFrags.fastq
+python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F experiment_file_.extendedFrags.fastq
 
 ####################################################################
 # Step 3: MG-RAST submission
@@ -57,11 +57,14 @@ python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F experiment_metatr
 #
 #		You will need to log into MG-RAST (metagenomics.anl.gov) and retrieve the annotation ID
 #		for each file.  You may also need to update your Authorization key, under Preferences.
+#
+#		Replace "@@AuthorizationKey@@" with your Authorization key.
+# 		Replace "@@AnnotationID@@" with each file's annotation ID.
 
-python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A FJtcW8SSFUtn9GDZztSue8nbn -D Organism -I 4577900.3 -O control_organism_annotations.tab
-python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A FJtcW8SSFUtn9GDZztSue8nbn -D Function -I 4577900.3 -O control_function_annotations.tab
-python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A FJtcW8SSFUtn9GDZztSue8nbn -D Organism -I 4577901.3 -O experiment_organism_annotations.tab
-python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A FJtcW8SSFUtn9GDZztSue8nbn -D Function -I 4577901.3 -O experiment_function_annotations.tab
+python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A @@AuthorizationKey@@ -D Organism -I @@AnnotationID@@ -O control_organism_annotations.tab
+python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A @@AuthorizationKey@@ -D Function -I @@AnnotationID@@ -O control_function_annotations.tab
+python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A @@AuthorizationKey@@ -D Organism -I @@AnnotationID@@ -O experiment_organism_annotations.tab
+python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A @@AuthorizationKey@@ -D Function -I @@AnnotationID@@ -O experiment_function_annotations.tab
 
 ####################################################################
 # Step 5: Analyzing annotation files

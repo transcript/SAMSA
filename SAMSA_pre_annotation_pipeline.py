@@ -60,7 +60,7 @@
 ##########################################################################
 
 # Includes
-import sys, os, subprocess
+import sys, os, subprocess, time
 
 # Quiet mode
 if "-Q" in sys.argv:
@@ -82,10 +82,10 @@ def string_find(argv_string, usage_term):
 # Opening statement/disclaimer
 if quiet == False:
 	print ("This is part 1 of the SAMSA pipeline, handling preprocessing and uploading of all chosen files to MG-RAST for annotation.")
-	print ("After annotation is complete on MG-RAST, run SAMSA_post_annotation_pipeline.py to download and analyze all annotations.")
-	print ("NOTE: The generated command will likely run for several minutes.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.")
+	print ("After annotation is complete on MG-RAST, run SAMSA_post_annotation_pipeline.py to download and analyze all annotations.\n")
+	print ("NOTE: The generated command will likely run for several minutes.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.\n")
 	if "-usage" not in sys.argv:
-		print ("To view usage options (and then quit), run with flag '-usage'.")
+		print ("To view usage options (and then quit), run with flag '-usage'.\n")
 
 # Printing usage statement
 if "-usage" in sys.argv:
@@ -172,22 +172,35 @@ files_list1 = files_list.pop()
 
 # Running Trimmomatic on files
 for file in files_list:
-	if "-T" in argv_string:
-		Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
-	else:
-		 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
+	if end_type == "1":
+		if "-T" in argv_string:
+			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
+		else:
+			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
+	elif end_type == "2":
+		if "-T" in argv_string:
+			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-PE:2:30:10 MAXINFO:100:0.2"
+		else:
+			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SPE:2:30:10 MAXINFO:100:0.2"
 
 	# execute
 	if quiet == False:
 		print ("\nTrimmomatic command used: " + Trim_command)
 	os.system(Trim_command)
 
+# getting the list of trimmed files only
+files_list = subprocess.check_output("ls " + files_location, shell = True).split("\n")
+trimmed_files_list = []
+for file in files_list:
+	if "trimmed" in file:
+		trimmed_files_list.append(file)
+
 # Running FLASH on files (only if paired-end)
 if end_type == "2":
 	forward_dic = {}
 	reverse_dic = {}
 	front_halves = []
-	for file in files_list:
+	for file in trimmed_files_list:
 		string_name = str(file).split("R")
 		first_half = str(string_name[0])
 		second_half = str(string_name[1])
@@ -245,16 +258,23 @@ elif end_type == "2":		# paired end files
 		print ("\nFiles to be uploaded to MG-RAST:")
 		for file in files_list:
 			print file
+		print ("\n")
 	
 	# Upload command
 	if quiet == False:
 		for file in files_list:
+			t0 = time.clock()
 			upload_command = "python uploader_MG-RAST.py -A " + string_find(argv_string, "-A") + " -F " + file
-#			os.system(upload_command)
+			print (upload_command)
+			os.system(upload_command + "\n")
+			t1 = time.clock()
+			print ("Time needed: " + str(t1-t0) + " seconds.\n")
 	else:
 		for file in files_list:
 			upload_command = "python uploader_MG-RAST.py -Q -A " + string_find(argv_string, "-A") + " -F " + file
-#			os.system(upload_command)
+			os.system(upload_command)
+
+raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key to continue: ")
 
 # Now, once all files are uploaded, can we refresh the MG-RAST inbox to get sequence statistics computed?
 # NOTES: It looks like I need to:
@@ -263,7 +283,7 @@ elif end_type == "2":		# paired end files
 	# 3. Use each ID to call seq_stats on that file
 if quiet == False:
 	print ("\nRetrieving sequence information from MG-RAST...")
-inbox_info_command = "curl -X GET -H 'auth: " + string_find(argv_string, "-A") + "' 'http://api.metagenomics.anl.gov/1/inbox'"
+inbox_info_command = 'curl -X GET -H "auth: ' + string_find(argv_string, "-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
 print inbox_info_command
 inbox_info = subprocess.check_output(inbox_info_command, shell = True)
 inbox_info_split = inbox_info.split('id":"')

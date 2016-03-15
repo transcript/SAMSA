@@ -3,9 +3,7 @@
 ####################################################################
 #
 # Sample bash pipeline script for using SAMSA
-#
-# NOTE: NEED TO GO FILL IN AT ALL PLACES LABELED WITH @@@@@@@
-#
+##
 # For this sample pipeline, we have two paired-end sequenced metatranscriptomes:
 #		control_reads_R1.fastq
 #		control_reads_R2.fastq

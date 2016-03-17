@@ -26,28 +26,64 @@
 # 
 # USAGE
 # This program trims off the header lines from summary files.
-# Trimmed files are indicated by a "_t" in the name before the suffix.
+# Trimmed files are renamed as "infile_trimmed".
 #
-# Note: ALL files in a directory are trimmed using this program; there's no
-# need to specify the files on the command line.
+# Commands needed:
+# -I	Specifies input file, required
+# -O 	Specifies output file name, will default to input file name + "_trimmed"
+#		if not specified
 #
 ##########################################################################
 
-import sys, glob
+import sys
 
-for file in glob.glob("*.output"):
-	print file
-	line_counter = 0
-	active_file = open (file, "r")
-	output_file = open (file[:-11] + ".tab.trimmed.output", "w")
-	for line in active_file:
-		line_counter += 1
-		if line_counter < 7:
-			continue
-		else:
-			output_file.write (line)
+# String searching function:
+def string_find(usage_term):
+	for idx, elem in enumerate(sys.argv):
+		this_elem = elem
+		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
+		if elem == usage_term:
+			 return next_elem
 
-	active_file.close()
-	output_file.close()
+# usage statement
+if "-usage" in sys.argv:
+	print "USAGE STATEMENT"
+	print "-I\tInput file, necessary"
+	print "-O\tOutput file (default is infile_trimmed)"
+	sys.exit()
+
+if "-I" not in sys.argv:
+	sys.exit("No input file specified")
+if "-O" not in sys.argv:
+	sys.exit("No output file name specified; defaulting to 'infile_trimmed'")
+
+# finding infile name
+try:
+	infile_name = string_find("-I")
+	infile = open (infile_name, "r")
+except IndexError:
+	sys.exit ("Warning: unable to find infile specified in ARGV")
+except IOError:
+	sys.exit ("Warning: unable to open infile")
+	
+print infile_name
+
+if "-O" in sys.argv:
+	output_file_name = string_find("-O")
+	output_file = open (output_file_name, "w")
+else:
+	output_file = open (infile_name + "_trimmed", "w")
+line_counter = 0
+
+# running through infile
+for line in infile:
+	line_counter += 1
+	if line_counter < 7:
+		continue
+	else:
+		output_file.write (line)
+
+infile.close()
+output_file.close()
 
 print "Done!"

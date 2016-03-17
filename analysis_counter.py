@@ -45,8 +45,8 @@ if "-q" not in sys.argv: sys.stderr.write ("For usage options, run \"analysis_co
 # usage statement
 if "-usage" in sys.argv:
 	sys.stderr.write( "usage: analysis_counter.py infile [-o outfile_name] [-q] [-m]\n")
-	sys.stderr.write( "\tinfile:\tlist of annotation matches from blast_parser\n")
-	sys.stderr.write( "\toutfile_name:'toptional specification of outfile name (default is STDOUT)\n")
+	sys.stderr.write( "\tARGV1\tinfile:\tlist of annotation matches from blast_parser\n")
+	sys.stderr.write( "\t-o\toutfile_name:\toptional specification of outfile name (default is STDOUT)\n")
 	sys.stderr.write( "\t-q:\tquiet mode (no messages printed to stderr)\n")
 	sys.stderr.write( "\t-m:\tincludes M5nr MG-RAST internal IDs in output file\n")
 	sys.exit()
@@ -90,8 +90,8 @@ try:
 	RefSeq_org_file_name = sys.argv[1]
 except IndexError:
 	sys.stderr.write( "usage: analysis_counter.py infile [-o outfile_name] [-q]\n")
-	sys.stderr.write( "\tinfile: list of annotation matches from blast_parser\n")
-	sys.stderr.write( "\toutfile_name: optional specification of outfile name (default is infile.output)\n")
+	sys.stderr.write( "\tARGV1\tinfile: list of annotation matches from blast_parser\n")
+	sys.stderr.write( "\t-o\toutfile_name: optional specification of outfile name (default is infile.output)\n")
 	sys.stderr.write( "\t-q: quiet mode (no messages printed to stderr)\n")
 	sys.exit( "WARNING: No infile specified. Terminating script.\n")
 
@@ -122,6 +122,8 @@ if "-o" in sys.argv:
 			sys.exit("ERROR: Output filename not specified. Exiting script.\n")
 	output_name = True
 else:
+	# sending output to default name location
+	output_name == True
 	org_output = open(RefSeq_org_file_name + ".output", "w")
 	if RefSeq_org_file_name.endswith(".gz"):
 		org_output_name = RefSeq_org_file_name[:-3] + ".output"

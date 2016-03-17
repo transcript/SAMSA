@@ -1,0 +1,25 @@
+---
+title: "package_install"
+author: "Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript"
+date: "March 17, 2016"
+output: html_document
+---
+
+This short R script will install all necessary packages for SAMSA R programs to function.  The following packages are needed:
+  DESeq2
+  ggplot2
+  gridExtra
+  scales
+  reshape
+  knitr
+  plyr
+
+```{r}
+install.packages("DESeq2")
+install.packages("ggplot2")
+install.packages("gridExtra")
+install.packages("scales")
+install.packages("reshape")
+install.packages("knitr")
+install.packages("plyr")
+```

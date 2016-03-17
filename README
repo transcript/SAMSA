@@ -31,6 +31,15 @@ Included files:
 
 --------------------------
 
+Dependencies:
+	Trimmomatic, a flexible read­trimming tool for NGS data. Documentation and download		links for Trimmomatic may be found here:  
+		http://www.usadellab.org/cms/?page=trimmomatic .	FLASH, Fast Length Adjustment of SHort reads, a tool for merging paired end reads. 
+		If the sequencing data is not paired end, this tool is not necessary ­ 
+		although paired end data is more accurate. FLASH download and documentation 
+		links may be found here: https://ccb.jhu.edu/software/FLASH/ .
+
+--------------------------
+
 The purpose of the SAMSA pipeline is to handle beginning-to-end metatranscriptome
 analysis.  Starting with a raw sequenced file in fastq format, it performs cleaning
 and removal of adaptor contamination, and then aligns paired-end files (if specified).

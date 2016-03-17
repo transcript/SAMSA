@@ -37,6 +37,9 @@ Dependencies:
 		If the sequencing data is not paired end, this tool is not necessary ­ 
 		although paired end data is more accurate. FLASH download and documentation 
 		links may be found here: https://ccb.jhu.edu/software/FLASH/ .
+	R, preferably RStudio, needed for generating graphs and statistical analysis.
+	Python - This pipeline was designed to run in Python 2.7 or greater, but less than
+		Python 3.0.
 
 --------------------------
 

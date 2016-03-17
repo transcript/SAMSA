@@ -123,7 +123,7 @@ if "-o" in sys.argv:
 	output_name = True
 else:
 	# sending output to default name location
-	output_name == True
+	output_name = True
 	org_output = open(RefSeq_org_file_name + ".output", "w")
 	if RefSeq_org_file_name.endswith(".gz"):
 		org_output_name = RefSeq_org_file_name[:-3] + ".output"

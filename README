@@ -33,15 +33,12 @@ Included files:
 --------------------------
 
 Dependencies:
-	Trimmomatic, a flexible read­trimming tool for NGS data. Documentation and download		links for Trimmomatic may be found here:  
-		http://www.usadellab.org/cms/?page=trimmomatic .	FLASH, Fast Length Adjustment of SHort reads, a tool for merging paired end reads. 
-		If the sequencing data is not paired end, this tool is not necessary ­ 
-		although paired end data is more accurate. FLASH download and documentation 
-		links may be found here: https://ccb.jhu.edu/software/FLASH/ .
-	R, preferably RStudio, needed for generating graphs and statistical analysis.
-	Python - This pipeline was designed to run in Python 2.7 or greater, but less than
-		Python 3.0.
-
+	SAMSA has several dependencies, including the programs FLASH and Trimmomatic, Python 
+	version 2.7, and R, preferably RStudio.  For a complete list of Python includes and
+	R packages, see the documentation.  
+	
+	The documentation also contains links to download Trimmomatic and FLASH.
+	
 --------------------------
 
 The purpose of the SAMSA pipeline is to handle beginning-to-end metatranscriptome

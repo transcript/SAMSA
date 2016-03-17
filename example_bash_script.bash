@@ -21,8 +21,10 @@
 #
 #		To complete these steps, FLASH (http://ccb.jhu.edu/software/FLASH/) and
 #		Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic) must be installed.
+#
+#		Replace "@@AuthorizationKey@@" with your Authorization key.
 
-python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A FJtcW8SSFUtn9GDZztSue8nbn -D sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
+python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A @@AuthorizationKey@@ -D sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
 
 # 		For all of the raw sequence files, the pre-annotation pipeline should clean
 #		the files, removing adaptors, and should merge the paired-end files.  The output
@@ -34,10 +36,11 @@ python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A FJtcW8SSFUtn9GDZztSue8nbn 
 #		If using the SAMSA_pre_annotation_pipeline.py script, the files will automatically
 #		be uploaded to MG-RAST.
 #
-#		If performing the steps manually, use the following command:
+#		If performing the steps manually, use the following command, but be sure to
+#		replace "@@AuthorizationKey@@" with your Authorization key.
 
-python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F control_file_.extendedFrags.fastq
-python SAMSA/upload_MG-RAST.py -A FJtcW8SSFUtn9GDZztSue8nbn -F experiment_file_.extendedFrags.fastq
+python SAMSA/upload_MG-RAST.py -A @@AuthorizationKey@@ -F control_file_.extendedFrags.fastq
+python SAMSA/upload_MG-RAST.py -A @@AuthorizationKey@@ -F experiment_file_.extendedFrags.fastq
 
 ####################################################################
 #

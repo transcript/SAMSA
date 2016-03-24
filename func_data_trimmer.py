@@ -55,7 +55,7 @@ if "-usage" in sys.argv:
 if "-I" not in sys.argv:
 	sys.exit("No input file specified")
 if "-O" not in sys.argv:
-	sys.exit("No output file name specified; defaulting to 'infile_trimmed'")
+	print ("No output file name specified; defaulting to 'infile_trimmed'")
 
 # finding infile name
 try:

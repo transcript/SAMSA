@@ -23,7 +23,7 @@ library(plyr)
 Before starting this script, please adjust the following parameters.  The working directory should contain both the experimental sample files (designated by "exp_<filename>") and the control sample files (designated by "control_<filename>").  
 
 ```{r working_directory}
-setwd("~/Desktop/Projects/Lab Stuff/location_of_functional_summary_files/")
+setwd("~/Desktop/Projects/Lab Stuff/SAMSA_pipeline_v1/public_output_files/public_files_ready_for_R/function/")
 ```
 
 Now, we read in the files from the working directory as specified above.  The file should be of a format such as:
@@ -31,26 +31,29 @@ Now, we read in the files from the working directory as specified above.  The fi
 Note that if the identifier name or ID of the file is not specified as such, the script will not select the correct section of the file name to use as an ID.
 
 ```{r file_listing}
-control_files <- list.files( pattern = "control_*", full.names = T, recursive = FALSE)
+control_files <- list.files(
+    pattern = "control_*", full.names = T, recursive = FALSE)
 control_names = ""
 for (name in control_files) {
-  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[4]) }
+  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #change the "2" to a different part of the name if not following standard naming conventions as above
 control_names <- control_names[-1]
 control_names_trimmed = ""
 for (name in control_names) {
   control_names_trimmed <- c(control_names_trimmed, unlist(strsplit(name, split='.', fixed=TRUE))[1])}
 control_names_trimmed <- control_names_trimmed[-1]
+rm (control_names)
 
-exp_files <- list.files( pattern = "experimental_*", full.names = T, recursive = FALSE)
+exp_files <- list.files(
+    pattern = "experiment_*", full.names = T, recursive = FALSE)
 exp_names = ""
 for (name in exp_files) {
-  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])}
+  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #again, change 2 if non-standard file names are used
 exp_names <- exp_names[-1]
 exp_names_trimmed = ""
 for (name in exp_names) {
   exp_names_trimmed <- c(exp_names_trimmed, unlist(strsplit(name, split='.', fixed=TRUE))[1])}
 exp_names_trimmed <- exp_names_trimmed[-1]
-rm (exp_names, control_names, name)
+rm (exp_names, name)
 ```
 
 Next, we will load these files in as two tables, one for the experimental data and one for the control data.
@@ -73,7 +76,7 @@ for (x in control_files) {
 }
 control_table[is.na(control_table)] <- 0
 rownames(control_table) = control_table$V3
-control_table_trimmed <- control_table[,-1]
+control_table_trimmed <- control_table[,-3, drop = FALSE]
 
 # loading the exp table
 y <- 0
@@ -92,7 +95,7 @@ for (x in exp_files) {
 }
 exp_table[is.na(exp_table)] <- 0
 rownames(exp_table) = exp_table$V3
-exp_table_trimmed <- exp_table[,-1]
+exp_table_trimmed <- exp_table[,-3, drop = FALSE]
 rm(control_table, exp_table, x, y)
 ```
 
@@ -126,18 +129,16 @@ We now want to combine the two tables (experimental and control) into a single t
 ```{r all_table_creation}
 all_table <- control_table_filtered
 all_table[, " "] <- 0
-all_table <- merge(all_table, exp_table_filtered, by = c(0,1), all = TRUE)
+all_table <- merge(all_table, exp_table_filtered, by = c(0,1), all = TRUE) # this step may take a while, depending on total number of annotations
 all_table[is.na(all_table)] <- 0
 rownames(all_table) <- all_table[,2]
 all_table <- all_table[,-2]
 all_table[, "Total"] <- rowSums(all_table[,c(2:length(all_table))])
 all_table <- all_table[ with(all_table, order(-Total)), ]
+names(all_table)[names(all_table) == 'Row.names'] <- 'Function'
 
 # let's save everything up to this point:
 all_table_all <- all_table
-
-# Although up to this point we have included all of the functions found within the sample, this proves very difficult to display on a graph.  Therefore, this next code chunk filters down to only the top 30 protein functions within each sample, grouping all others under an "Other" catchall category.
-all_table["Other",] <- colSums(all_table[30:nrow(all_table),])
 
 # continue here to include only the top 30 most abundant functions.
 all_table <- rbind(all_table[1:29,], all_table[nrow(all_table),])
@@ -177,10 +178,12 @@ relative_ggplot <- ggplot(all_table_m3, aes(x = variable, y = value, fill = Func
   geom_bar(position = "fill", stat = "identity") +
   scale_fill_manual(values = CbPalette) +
   scale_y_continuous(labels = percent_format()) +
-  theme(legend.position = "none") +
+  theme(legend.position = "bottom") +
   guides(fill = guide_legend(ncol=4)) +
   ggtitle("Top 30 protein functions by relative abundance") +
   xlab("Sample ID") + ylab("Relative activity of total sample")
+
+relative_ggplot
 ```
 
 Next, we create a stacked bar graph by raw counts, showing how total sample counts compare to each other.
@@ -193,6 +196,8 @@ absolute_ggplot <- ggplot(all_table_m3, aes(x = variable, y = value, fill = Func
   guides(fill = guide_legend(ncol=5)) +
   ggtitle("Top 30 protein functions by total abundance") +
   xlab("Sample ID") + ylab("Activity reads per sample")
+
+absolute_ggplot
 ```
 
 Finally, we display both of these graphs on a single display!
@@ -206,7 +211,7 @@ grid.arrange(relative_ggplot, absolute_ggplot, ncol = 1)
 Now, let's run some DESeq analysis on the results:
 
 ```{r DESeq_analysis}
-library("DESeq2")
+library(DESeq2)
 complete_table <- merge(control_table_trimmed, exp_table_trimmed, by=c(0,1), all = TRUE)
 complete_table[is.na(complete_table)] <- 1
 rownames(complete_table) <- complete_table$md5

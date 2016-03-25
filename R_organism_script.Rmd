@@ -22,7 +22,7 @@ Before starting this script, please adjust the following parameters.  The workin
 Note: all output files should have been simplified using the output_reducer Python script to remove headers and other extraneous information. 
 
 ```{r working_directory}
-setwd("~/Desktop/Projects/Lab Stuff/location_of_organism_results/")
+setwd("~/Desktop/Projects/Lab Stuff/SAMSA_pipeline_v1/public_output_files/public_files_ready_for_R/organism/")
 ```
 
 Now, we read in the files from the working directory as specified above.  The file should be of a format such as:
@@ -34,7 +34,7 @@ control_files <- list.files(
     pattern = "control_*", full.names = T, recursive = FALSE)
 control_names = ""
 for (name in control_files) {
-  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #change the "4" to a different part of the name if not following standard naming conventions as above
+  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #change the "2" to a different part of the name if not following standard naming conventions as above
 control_names <- control_names[-1]
 control_names_trimmed = ""
 for (name in control_names) {
@@ -43,10 +43,10 @@ control_names_trimmed <- control_names_trimmed[-1]
 rm (control_names)
 
 exp_files <- list.files(
-    pattern = "experimental_*", full.names = T, recursive = FALSE)
+    pattern = "experiment_*", full.names = T, recursive = FALSE)
 exp_names = ""
 for (name in exp_files) {
-  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #again, change 4 if non-standard file names are used
+  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #again, change 2 if non-standard file names are used
 exp_names <- exp_names[-1]
 exp_names_trimmed = ""
 for (name in exp_names) {
@@ -74,7 +74,7 @@ for (x in control_files) {
 }
 control_table[is.na(control_table)] <- 0
 rownames(control_table) = control_table$V3
-control_table_trimmed <- control_table[,-1]
+control_table_trimmed <- control_table[,-2, drop = FALSE]
 
 # loading the experimental table
 y <- 0
@@ -92,7 +92,7 @@ for (x in exp_files) {
 }
 exp_table[is.na(exp_table)] <- 0
 rownames(exp_table) = exp_table$V3
-exp_table_trimmed <- exp_table[,-1]
+exp_table_trimmed <- exp_table[,-2, drop = FALSE]
 ```
 
 Now, we simplify the names of the columns of these two tables, using the ID names scrubbed from the filenames above in chunk 3, file_listing.  If this step is failing, please note the proper naming of the files as mentioned above chunk 3.
@@ -130,8 +130,8 @@ control_table_filtered["Other",] <- colSums(control_table_filtered[30:nrow(contr
 control_table_filtered <- rbind(control_table_filtered[1:29,], control_table_filtered[nrow(control_table_filtered),])
 exp_table_filtered["Other",] <- colSums(exp_table_filtered[30:nrow(exp_table_filtered),])
 exp_table_filtered <- rbind(exp_table_filtered[1:29,], exp_table_filtered[nrow(exp_table_filtered),])
-control_table_filtered <- control_table_filtered[,-ncol(control_table_filtered)]
-exp_table_filtered <- exp_table_filtered[,-ncol(exp_table_filtered)]
+control_table_filtered <- control_table_filtered[,-ncol(control_table_filtered), drop = FALSE]
+exp_table_filtered <- exp_table_filtered[,-ncol(exp_table_filtered), drop = FALSE]
 
 control_table_filtered_m <- melt(cbind(control_table_filtered,
     Genus = rownames(control_table_filtered)), id.vars = c('Genus'))
@@ -166,7 +166,7 @@ org_relative_ggplot <- ggplot(full_table_top30, aes(x = variable, y = value, fil
   geom_bar(position = "fill", stat = "identity") +
   scale_fill_manual(values = CbPalette) +
   scale_y_continuous(labels = percent_format()) +
-  theme(legend.position = "none") +
+  theme(legend.position = "bottom") +
   guides(fill = guide_legend(ncol=10)) +
   ggtitle("Top 30 gut microorganisms by relative abundance") +
   xlab("Sample ID") + ylab("Relative activity of total sample")
@@ -187,7 +187,7 @@ org_absolute_ggplot <- ggplot(full_table_top30, aes(x = variable, y = value, fil
 Finally, we display both of these graphs on a single display!
 
 ```{r graph_output}
-grid.arrange(org_relative_ggplot, org_absolute_ggplot, ncol = 1)
+grid.arrange(org_relative_ggplot, org_absolute_ggplot)
 ```
 
 ******** DESEQ ANALYSIS ******** 
@@ -195,7 +195,7 @@ grid.arrange(org_relative_ggplot, org_absolute_ggplot, ncol = 1)
 And lastly, we can run DESeq2 to get some statistical data on most significantly different organisms, by expression level, between our experimental and control samples.
 
 ```{r DESeq2_analysis}
-library("DESeq2")
+library(DESeq2)
 complete_table <- merge(control_table_trimmed, exp_table_trimmed, by=0, all = TRUE)
 complete_table[is.na(complete_table)] <- 1
 rownames(complete_table) <- complete_table$Row.names
@@ -218,13 +218,11 @@ dds <- DESeq(dds)
 res <- results(dds, contrast = c("condition", "experimental", "control"))
 res <-res[order(res$padj,decreasing = TRUE),]
 tail(res, 10)
-plotMA(dds, ylim=c(-2.5,2.5), main="DESeq2 analysis of all organisms")
-plotCounts(dds, gene=which.min(res$padj), intgroup="condition")
+plotMA(dds, ylim=c(-4.5,4.5), main="DESeq2 analysis of all organisms")
 
 org_results <- data.frame(res[order(res$baseMean, decreasing = TRUE),])
-write.table(org_results, file = "DESeq_organism_output.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
+write.table(org_results, file = "DESeq_public_data_organism_output.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
 
-write.table(complete_table, file = "organism_complete_table.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
 ```
 
 This should now have a file saved of all DESeq comparisons, labeled as DESeq_organism_output.tab, in the working directory.

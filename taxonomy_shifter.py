@@ -142,7 +142,7 @@ for entry in tax_db:
 	
 # Opening output file
 if "-O" in sys.argv:
-	output_file_name = string_find(argv_string, "-O")
+	output_file_name = string_find("-O")
 else:
 	output_file_name = input_file_name + ".shifted"
 

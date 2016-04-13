@@ -215,13 +215,21 @@ completeCondition <- data.frame(condition=factor(c(rep("control", length(control
 colnames(complete_table) <- complete_table_col_names
 dds <- DESeqDataSetFromMatrix(complete_table, completeCondition, ~ condition)
 dds <- DESeq(dds)
-res <- results(dds, contrast = c("condition", "experimental", "control"))
-res <-res[order(res$padj,decreasing = TRUE),]
-tail(res, 10)
-plotMA(dds, ylim=c(-4.5,4.5), main="DESeq2 analysis of all organisms")
 
-org_results <- data.frame(res[order(res$baseMean, decreasing = TRUE),])
-write.table(org_results, file = "DESeq_public_data_organism_output.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
+baseMeanPerLvl <- sapply( levels(dds$condition), function(lvl) rowMeans( counts(dds,normalized=TRUE)[,dds$condition == lvl] ) )
+
+res <- results(dds, contrast = c("condition", "experimental", "control"))
+org_results <- data.frame(res)
+org_results <- merge(org_results, baseMeanPerLvl, by="row.names")
+org_results <- org_results[,c(1,2,8,9,3,4,5,6,7)]
+colnames(org_results)[c(3,4)] <- c("controlMean", "experimentalMean")
+
+plotMA(dds, ylim=c(-2.5,2.5), main="DESeq2 analysis of all organisms")
+plotCounts(dds, gene=which.min(res$padj), intgroup="condition")
+
+sorted_org_results <- org_results[order(-org_results$baseMean),]
+colnames(sorted_org_results)[1] <- "Organism Name"
+write.table(sorted_org_results, file = "DESeq_public_data_organism_output.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = FALSE, col.names = TRUE)
 
 ```
 

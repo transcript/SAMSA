@@ -227,15 +227,21 @@ completeCondition <- data.frame(condition=factor(c(rep("control", length(control
 colnames(complete_table2) <- completeCondition$condition
 dds <- DESeqDataSetFromMatrix(complete_table2, completeCondition, ~ condition)
 dds <- DESeq(dds)
-res <- results(dds, contrast = c("condition", "control", "experimental"))
-temp_func_results <- data.frame(res)
-temp_func_results$Function <- complete_table$Simplified_Function
-func_results <- temp_func_results[order(temp_func_results$padj),]
 
-res <-res[order(res$padj,decreasing = TRUE),]
-plotMA(dds, ylim=c(-5,5), main="DESeq2 comparison of functional annotations")
+baseMeanPerLvl <- sapply( levels(dds$condition), function(lvl) rowMeans( counts(dds,normalized=TRUE)[,dds$condition == lvl] ) )
 
-write.table(func_results, file = "DESeq_functional_output_with_md5s.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = TRUE, col.names = TRUE)
+res <- results(dds, contrast = c("condition", "experimental", "control"))
+func_results <- data.frame(res)
+func_results$Function <- complete_table$Simplified_Function
+func_results <- merge(func_results, baseMeanPerLvl, by="row.names")
+func_results <- func_results[,c(1,2,8,9,3,4,5,6,7)]
+colnames(func_results)[c(3,4)] <- c("controlMean", "experimentalMean")
+
+plotMA(dds, ylim=c(-10,10), main="DESeq2 comparison of functional annotations")
+
+sorted_func_results <- func_results[order(-func_results$baseMean),]
+colnames(sorted_func_results)[1] <- "Function Name"
+write.table(func_results, file = "DESeq_functional_output_with_md5s.tab", append = FALSE, quote = FALSE, sep = "\t", row.names = FALSE, col.names = TRUE)
 ```
 
 The DESeq results file should now be saved with the file name of the last command just above, in a tab-delimited format.

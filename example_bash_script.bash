@@ -92,7 +92,7 @@ python SAMSA/RefSeq_output_reducer.py -I control_organism_summary.tab -O control
 python SAMSA/RefSeq_output_reducer.py -I experiment_organism_summary.tab -O experiment_organism_summary_simplified.tab
 
 python SAMSA/func_data_trimmer.py -I control_function_summary.tab -O control_function_summary_simplified.tab
-python SAMSA/func_data_trimmer.py -I experiment_function summary.tab -O experiment_function_summary_simplified.tab
+python SAMSA/func_data_trimmer.py -I experiment_function_summary.tab -O experiment_function_summary_simplified.tab
 
 ####################################################################
 #

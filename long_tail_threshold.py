@@ -83,14 +83,16 @@ except IndexError:
 
 # threshold percentage
 threshold = string_find("-T")
-	if float(threshold) < 0 or float(threshold) > 100:
-		print "WARNING: Threshold value is not between 0 and 100.  Terminating..."
-		sys.exit()
+if float(threshold) < 0 or float(threshold) > 100:
+	print "WARNING: Threshold value is not between 0 and 100.  Terminating..."
+	sys.exit()
 		
 
 # outfile
 if "-O" in sys.argv:
 	outfile_name = string_find("-O")
+	if quiet == False:
+		print ("Output file name: " + outfile_name)
 else:
 	if quiet == False:
 		print ("Using standard name: " + infile_name + ".thresholded")

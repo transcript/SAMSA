@@ -260,18 +260,24 @@ elif end_type == "2":		# paired end files
 			print file
 		print ("\n")
 	
+	# Find out where uploader_MG-RAST.py is located
+	if "/" in argv_string[0]:
+		path = argv_string[0].split("SAMSA_pre_annotation_pipeline.py")
+	else:
+		path = "./"
+	
 	# Upload command
 	if quiet == False:
 		for file in files_list:
 			t0 = time.clock()
-			upload_command = "python uploader_MG-RAST.py -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python " + path + "uploader_MG-RAST.py -A " + string_find(argv_string, "-A") + " -F " + file
 			print (upload_command)
 			os.system(upload_command + "\n")
 			t1 = time.clock()
 			print ("Time needed: " + str(t1-t0) + " seconds.\n")
 	else:
 		for file in files_list:
-			upload_command = "python uploader_MG-RAST.py -Q -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python " + path + "uploader_MG-RAST.py -Q -A " + string_find(argv_string, "-A") + " -F " + file
 			os.system(upload_command)
 
 raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key to continue: ")

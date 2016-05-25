@@ -24,7 +24,7 @@
 #
 #		Replace "@@AuthorizationKey@@" with your Authorization key.
 
-python SAMSA/SAMSA_pre_annotation_pipeline.py -E 2 -A @@AuthorizationKey@@ -D sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
+python SAMSA/SAMSA_pre_annotation_pipeline.py -Ends 2 -A @@AuthorizationKey@@ -D sample_files/ -F ~/Desktop/Code/FLASH/flash -T ~/Desktop/Code/Trimmomatic/trimmomatic.jar
 
 # 		For all of the raw sequence files, the pre-annotation pipeline should clean
 #		the files, removing adaptors, and should merge the paired-end files.  The output

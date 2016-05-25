@@ -75,11 +75,12 @@ python SAMSA/MG-RAST_API_downloader.py -S RefSeq -A @@AuthorizationKey@@ -D Func
 # Step 5: Analyzing annotation files
 # 		These annotation files must now be aggregated into summaries, using analysis_counter.py.
 #		Note that functional annotations receive the "-m" flag, to preserve M5nr internal IDs.
+#		This script assumes that these files are located in the "sample_output_files/" folder.
 
-python SAMSA/analysis_counter.py control_organism_annotations.tab -o control_organism_summary.tab 
-python SAMSA/analysis_counter.py control_function_annotations.tab -o control_function_summary.tab -m
-python SAMSA/analysis_counter.py experiment_organism_annotations.tab -o experiment_organism_summary.tab
-python SAMSA/analysis_counter.py experiment_function_annotations.tab -o experiment_function_summary.tab -m
+python SAMSA/analysis_counter.py sample_output_files/control_organism_annotations.tab -o sample_output_files/control_organism_summary.tab 
+python SAMSA/analysis_counter.py sample_output_files/control_function_annotations.tab -o sample_output_files/control_function_summary.tab -m
+python SAMSA/analysis_counter.py sample_output_files/experiment_organism_annotations.tab -o sample_output_files/experiment_organism_summary.tab
+python SAMSA/analysis_counter.py sample_output_files/experiment_function_annotations.tab -o sample_output_files/experiment_function_summary.tab -m
 
 ####################################################################
 #
@@ -88,11 +89,11 @@ python SAMSA/analysis_counter.py experiment_function_annotations.tab -o experime
 # 		be scrubbed before the remaining spreadsheet data can be imported into R.  In addition, the
 #		organism and function names are sometimes bulky and need to be reduced.
 
-python SAMSA/RefSeq_output_reducer.py -I control_organism_summary.tab -O control_organism_summary_simplified.tab
-python SAMSA/RefSeq_output_reducer.py -I experiment_organism_summary.tab -O experiment_organism_summary_simplified.tab
+python SAMSA/RefSeq_output_reducer.py -I sample_output_files/control_organism_summary.tab -O sample_output_files/control_organism_summary_simplified.tab
+python SAMSA/RefSeq_output_reducer.py -I sample_output_files/experiment_organism_summary.tab -O sample_output_files/experiment_organism_summary_simplified.tab
 
-python SAMSA/func_data_trimmer.py -I control_function_summary.tab -O control_function_summary_simplified.tab
-python SAMSA/func_data_trimmer.py -I experiment_function_summary.tab -O experiment_function_summary_simplified.tab
+python SAMSA/func_data_trimmer.py -I sample_output_files/control_function_summary.tab -O sample_output_files/control_function_summary_simplified.tab
+python SAMSA/func_data_trimmer.py -I sample_output_files/experiment_function_summary.tab -O sample_output_files/experiment_function_summary_simplified.tab
 
 ####################################################################
 #
@@ -106,8 +107,8 @@ python SAMSA/func_data_trimmer.py -I experiment_function_summary.tab -O experime
 #		By default, the annotations from MG-RAST are returned at the Genus level.  However, if comparisons
 #		at a higher taxonomic order are needed, this can be performed using the taxonomy_shifter.py program:
 
-python SAMSA/taxonomy_shifter.py -F control_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O control_organism_Family_summary.tab 
-python SAMSA/taxonomy_shifter.py -F experiment_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O experiment_organism_Family_summary.tab 
+python SAMSA/taxonomy_shifter.py -F sample_output_files/control_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O sample_output_files/control_organism_Family_summary.tab 
+python SAMSA/taxonomy_shifter.py -F sample_output_files/experiment_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O sample_output_files/experiment_organism_Family_summary.tab 
 
 #		At this point, the Family level files may be loaded into R and the rest of the analysis may proceed 
 #		as normal.

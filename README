@@ -1,7 +1,7 @@
 README for SAMSA pipeline
 --------------------------
 
-SAMSA version 1.0, created winter 2016
+SAMSA version 1.0.0, created winter 2016
 Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/SAMSA
 
 --------------------------
@@ -48,6 +48,9 @@ Dependencies:
 	
 	The documentation also contains links to download Trimmomatic and FLASH.
 	
+	SAMSA links with MG-RAST, and is currently used with version 3.6 - current as of May 
+	2016.
+
 --------------------------
 
 The purpose of the SAMSA pipeline is to handle beginning-to-end metatranscriptome

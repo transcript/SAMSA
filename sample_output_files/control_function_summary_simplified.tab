@@ -1,0 +1,2159 @@
+33.6208	84052	hypothetical protein	001851b94400f29821a9c41f1a243cd7
+9.9632	24908	conserved hypothetical protein	000b1dfab004d1b57a6670954bf75fde
+3.6504	9126	pyruvat	01d9d836607e0f26c2aaf1858f0aa918
+3.4792	8698	3-hydroxybutyryl-coA dehydratase	0164a4689ae62138f6e4a288ff66efb7
+2.5796	6449	peptidyl-prolyl cis-trans isomerase	00b2a0d2a227f630e5d527adf90d6440
+2.1672	5418	elongation factor Tu	007a53314b98399c0c7d2ed71ba417f8
+1.9796	4949	malate dehydrogenase	01ceaaacaa6d1020686ae681d66e8d75
+1.7852	4463	glucose-6-phosphate isomerase	0043d444d685b5ea2472d8d79f49a56f
+1.4228	3557	50S ribosomal protein L17	026618ff98372dbac64e7adca6997740
+1.1776	2944	DNA-directed RNA polymerase subunit beta''	006e0a73c99fe14b40c1055370ddcb42
+1.0664	2666	phosphoenolpyruvate carboxykinase (ATP)	0090f5937fcb233eb9a32273888d6c19
+0.8664	2166	propanediol utilization protein	03127c756713b14a2729d1dfe79a5e84
+0.84	2100	stage V sporulation protein R	01df572e582954028bc07c3366c30fa6
+0.7264	1816	single-stranded DNA-binding protein	02d08612c57d826b4a8b7c5d1dbd7939
+0.706	1765	chaperone protein DnaK	00625258910d996da9a3136d73ab8b1f
+0.666	1665	putative ABC transporter component	0012d5e0689c75c78844e440c87a3385
+0.65	1625	pyruvate phosphate dikinase	00d93364de6e1068ab7be55f7c04d163
+0.5672	1418	ABC transporter related	0058149995229158290c869e46a3e933
+0.534	1335	putative isoprenoid biosynthesis-like protein	01417e3baec43e555ca0c2b5127e227b
+0.5156	1289	DAK2 domain/DegV family protein	00e25a4cf9d031d19b932427ba66aaa2
+0.4948	1237	50S ribosomal protein L22	0047cab2d1f81b1bf46252975efacc8c
+0.456	1140	cell division protein FtsA	00515bf90360941ef2c71df47d48982c
+0.4192	1048	elongation factor G	008d180b1de831277c1a5da149e73c10
+0.3996	999	periplasmic sugar-binding protein	01a78b7ee1f0b4911505be326fb4ed45
+0.3972	993	formate--tetrahydrofolate ligase	006375ca6349a24f3dc197af9172b038
+0.3816	954	30S ribosomal protein S8	0225b24bb2639395512aa0ec0d2c295c
+0.3756	939	uracil permease	0142e590e5a9ea37868c10e36c9f2112
+0.3724	931	extracellular solute-binding protein family 1 protein	0300a5e82b688656f67e01b064a4027f
+0.3504	876	transketolase	0030978abc8d844711782287173536d7
+0.3488	872	F0F1 ATP synthase subunit alpha	00ae45fcd8184043682f5c6e167ca474
+0.3336	834	TPR repeat-containing protein	00afbdf37cf7f6137de063ac5ae92bac
+0.3228	807	glycine reductas	015e19e28bba8319c6d634ceb8df4183
+0.3156	789	glutaconyl-CoA decarboxylase A subunit	0334b1fb666335d68f3adb5d65df8642
+0.2984	746	transcriptional regulato	006eef75f7fc7aaa20723cd7ffd69b72
+0.2768	692	ribosomal protein L3 RplC	028f8a01d8bc86a19589039dfbb568ce
+0.27	675	glyceraldehyde-3-phosphate dehydrogenas	0015fd1addac24907051fd6875b7cbb0
+0.2592	648	heavy-metal transporting P-type ATPase	0189cd17eae59bd55b45c6357a0d9455
+0.2552	638	PTS syste	002045d207d21a37fff1788694415d7d
+0.2476	619	methyl-accepting chemotaxis protein	0151231d79d456b1a7c2139511f24776
+0.2428	607	NADH:ubiquinone oxidoreductas	030d82778601d8936ed21ccb9b301efc
+0.2316	579	DNA-directed RNA polymerase subunit alpha	009ba68cc723033e7a01f135a2ba877a
+0.2268	567	kinas	003d554d68f5121a1c181796c402f260
+0.2208	552	phosphoribosylformylglycinamidine synthase	030bb9fb2756029acde81d33877e1eaf
+0.2024	506	translation elongation factor G	005743197f5394baa5f448c056fdae0b
+0.2004	501	polyphosphate kinase 1	003562e52786e62ee735a3c28839231b
+0.1992	498	30S ribosomal protein S11	00241e815181b508084a3f419dd18da7
+0.194	485	molecular chaperone DnaK	017f410e8cea5c231657fdde3591701d
+0.1872	468	chaperonin GroS	037e7364343d3f185688f79b0024bc41
+0.1852	463	oligopeptide ABC transporte	0024cfe60d18fd55fef169406ccf9d13
+0.1792	448	50S ribosomal protein L6	008f74e7139796fc69e5b5a9dc1ee714
+0.1756	439	ribosome-associated GTPase EngA	002e263b7f9b9cbbffda78ba6f5a8dc5
+0.1748	437	GTP-binding protein YchF	016ed027b0c5ce33137e27f0119ddc66
+0.1748	437	ATP-dependent metalloprotease FtsH	00155ef5764231a4f16e8f2b249f3882
+0.1744	436	translation initiation factor IF-2	003ae878c6a6021de6a66319c291a9dc
+0.1664	416	alpha-galactosidase	009b85d47d1ade4be6ff5950d4d0ed4e
+0.1604	401	putative two-component histidine sensor kinase	008e5090248b68589647654216a32dfb
+0.1596	399	Na+-translocating NADH-quinone reductase subunit C	00aea10674be95e08ab7b0d3fa2fc9a2
+0.1572	393	glycogen/starch/alpha-glucan phosphorylase	0045a49d0a383e05b5763f50398ac1c2
+0.1556	389	EDD domain protei	00f910e503b785e39562c2c998535cf6
+0.1556	389	methionine aminopeptidas	01139c8ca343b31c2539bddbb6094c26
+0.1536	384	NHL repeat-containing protein	00d1580cef806f3143cfec645876a76e
+0.1424	356	L-ribulokinase (putative)	006899e1829461b1e615bcc506958e3a
+0.1412	353	outer membrane efflux protein	012587a6dc7618db4e852af2cb61b5f6
+0.134	335	ATP-dependent protease ATP-binding subunit ClpX	000a0eb3d4b6715f04d7e19a22ffa245
+0.1328	332	efflux ABC transporte	02fd099aaa0f05e9ad671054582c8576
+0.132	330	cytochrome-C peroxidase	035a5cc65dfdbe0ef013556309760503
+0.132	330	hydrolas	00c5bde862cbecf6b9e06caaadfb0975
+0.128	320	protein RecA	0155bcae954596578cf264561ed44530
+0.1268	317	ribosomal protein L16	0143188a148e33428fc9f1e798b94359
+0.1256	314	ferredoxin-NADP(+) reductase subunit alpha	008a06bfde9bea247a9deaef84f1682c
+0.1244	311	methyl-accepting chemotaxis sensory transducer	006758281110b47019df5fd49f143052
+0.124	310	AcrB/AcrD/AcrF family multidrug resistance protein	01c9e66da9ea69a2bf4cd4b15d13be8a
+0.1236	309	phosphate-selective porin O and P superfamily	0238f4e123bb60344e687db39e3317be
+0.122	305	aminotransferase class I and II	0100f4b3455d9973233edc51c783c5af
+0.1212	303	50S ribosomal protein L23	012bd42c0935674d9914da90e6610523
+0.12	300	cobalt import ATP-binding protein CbiO 2	00476daf4143aabe3fb5e4766fff1c7c
+0.1168	292	iron(III)-transport system permease protein SfuB	02c4bd26cbf003f0ff0af06604efd842
+0.116	290	tyrosine--tRNA ligase	00f21369708db0f2425d9ff8c7bd2f1e
+0.1156	289	xylulose kinase	02d348582b8adcedff9077b06dab0371
+0.1152	288	peptidase M16 inactive domain protein	0022f39ec2cae4595e22f9ae5b64f4b8
+0.1148	287	F0F1 ATP synthase subunit beta	0238bcb5628c0782eec2369e200662f9
+0.1128	282	outer membrane vitamin B12 receptor protein	014cbeea65694d210b223c33453ee47b
+0.112	280	xanthine phosphoribosyltransferase	00969f2dfa8cb1be7c47202070eab50e
+0.1096	274	ABC superfamily ATP binding cassette transporte	014c9a02c804b4d0b10e44adc03467a0
+0.106	265	predicted protein	001e0a74a6c020cd54fcb97cf36c3866
+0.1036	259	amidophosphoribosyltransferase	00abaaf854d648eec3756543550f67a5
+0.1028	257	SEC-C motif domain protein	0281876459d110dc7a54b86f9609c12c
+0.1024	256	tyrosine phenol-lyase	003e61101b3a89fbd8b2b9b8c3fcdeef
+0.1016	254	short chain dehydrogenase	016065b18cf4df19503ee7316d8497e9
+0.1008	252	uracil phosphoribosyltransferase	01708f19798e7ca1cc43daf2dc289f30
+0.1	250	1-deoxy-D-xylulose-5-phosphate synthase	00320abc4ad4f678bab8db7a28ed30b5
+0.0988	247	ribonuclease Ph	02edab50b90251c6f1b4eb9f88e43315
+0.0984	246	two-component system sensor histidine kinase	0120ab5be1631154dc8d11f0bb587da7
+0.0964	241	beta-mannosidase	0162e038fcfad6bf46c656b8f5478b86
+0.0924	231	pyridine nucleotide-disulfide oxidoreductase	00e3c902ccec38dcb4e6b4265be4a551
+0.0916	229	Mbl protein	00541503479a0440cd468a8c5f705fce
+0.09	225	dipeptidyl peptidase IV	0187ad3daab0f9f16ad54a0c53f905e4
+0.0892	223	molybdopterin dehydrogenase FAD-binding	000b60b89ac6d431f26d0cfadee6a9af
+0.088	220	HSP90 family protein	02f7b69c4ac0ff390de2c579281181e7
+0.0868	217	50S ribosomal protein L3	00b8cb3d8357886229754b6aae537247
+0.086	215	acetate kinase	005bdb232ed92a16354f659f2db65dd9
+0.0844	211	recombination factor protein RarA	00cd9196397198e2f8e02c60693bc251
+0.0832	208	electron transfer flavoprotein (alpha subunit)	02b7fae996062f88919d3e4b09488051
+0.0828	207	carbamoyl phosphate synthase small subunit	021df2bab279d222b3d55de5bf22cc54
+0.0824	206	putative cytoplasmic protein	027f40bf0f603438590feb4b2b9b750f
+0.0816	204	Beta-galactosidase	003eb471b0fd1fe1a4685a223446f96a
+0.0812	203	threonine dehydratase	00b4011568a9e47e5f0c411786d75d6b
+0.0812	203	preprotein translocas	00d5d455cfa9f175094199767d1a4c68
+0.0792	198	ABC transporte	002ee750b665fbd5442b2184be536cb4
+0.078	195	polysaccharide ABC transporter ATP-binding protein	01baa771ac8d0a4aeabfd34d1b17476d
+0.0776	194	6-phosphofructokinase isozyme 1	001e009a7add6de6d3ec19558b471a8f
+0.0776	194	ribosomal protein L20	0252dad25d02641bedeac966d11180a0
+0.0768	192	heat shock protein Hsp20	02c4520f7e924f5f623289e0da285df2
+0.0768	192	putative aspartate ammonia-lyase	032a481a3fb0df58a305d2340e4d3bd2
+0.0768	192	ATPas	003ac9c42aef6b3af0b4dfbcb69173d4
+0.076	190	magnesium and cobalt transporter CorA	034f792271fdada7aa2149141a3ca12c
+0.0748	187	spermidine synthase	02e04a8b2f0683cf42ed84b1f8828553
+0.0748	187	imidazole glycerol-phosphate dehydratase/histidinol phosphatase	00cc1644ebfffa4b5ce095266068aa48
+0.074	185	Glu/Leu/Phe/Val dehydrogenase	00221719327e25f48bef753fb13cf2ef
+0.0732	183	ribosomal protein L15	023f82e230be0004df0895d62253ec94
+0.0728	182	translation elongation factor Tu	00587fbc763ed2e6d130393421c24e10
+0.0728	182	fumarate hydratase	00d66aa6ae2c926fa70a9fce5ffdaa11
+0.072	180	aspartate kinase	021c45cccffb923dd03fe0d0374fdc8c
+0.072	180	alpha-	0171cac8c5050a42df8af035abfe056c
+0.072	180	ribosome-binding factor A	022e04f5098386cede4c8669329932b2
+0.0716	179	cell cycle protein	012bc0d05eb5104dbb6d2680cf3b893c
+0.0704	176	glucose-1-phosphate adenylyltransferase	01790f0d9cbe4b4ee78a8eae2bcf19d6
+0.07	175	glutaminase A	021a1efd67bf6fa6ad6f095626f9b045
+0.07	175	stage V sporulation protein D	00e5733df126a3ecb2a08dfeaa4ea335
+0.0692	173	RNA-binding protein	033ffacba8869bace001096effc1827e
+0.0684	171	putative 3-oxoacyl-[acyl-carrier-protein] synthase II	01d94064f924fa75b8efc2de1c0d17c8
+0.068	170	transcriptional regulator	00cb0043a46260ad3d13efd2993691f6
+0.0672	168	D-alanyl-D-alanine carboxypeptidase	0168f79ef505140aff94708c5e6290fb
+0.0664	166	P-type ATPase - metal/cation transport	006ae9c987013dc4278114be34dc3fc9
+0.0664	166	V-type ATP synthase subunit A	00c6a3443cc8344bcdeb1f72fde03c46
+0.0656	164	DNA polymerase II	00575acc48f6a847de0637342349f368
+0.0656	164	1-deoxy-D-xylulose 5-phosphate reductoisomerase	00baac3d655b4e7e60eaaecbec2aacd0
+0.0656	164	trypsin domain protein	01d238814a7a52ce874a4a2bb55cc063
+0.0652	163	NADP-specific glutamate dehydrogenase	007e073a3c9f6830b68eb2be2123247b
+0.0648	162	ATP-dependent Clp proteas	00ffb06b5a699c6e9207e8d0119d0fbc
+0.0644	161	dephospho-CoA kinase	0161f90dc31f4df6a56844b171fd4cf8
+0.0644	161	glycyl-tRNA synthetase	0063d124cf18d79c784817c7c02ecbe7
+0.0632	158	ureas	030117c7a1935899da1e7c7a95710b27
+0.0628	157	RpoD family RNA polymerase sigma factor	01b809aa05dd5b9780973e4caea81ab7
+0.062	155	ribosomal protein L20 RplT	019bc3ba17b7eaf3c18667340ee51525
+0.0612	153	ribosomal protein S10	000f484b13547f19d50ac98a5eed3a68
+0.0612	153	thiol:disulfide interchange protein	0325f1417245393dd82ab9d1943f4343
+0.0612	153	ribosomal protein L4/L1 family protein	02046220ea6bb9c7d6c2e330f06dba07
+0.0608	152	TonB-dependent receptor	00452a10e47224a075d5d00b077219dc
+0.0604	151	signal recognition particle-docking protein FtsY	00041978678ba63ab6057840be689d42
+0.0604	151	MiaB-like tRNA modifying enzyme	0007f9d501edb73b9b5d11a5e300f6e4
+0.06	150	Chaperonin Cpn10	0194e9b734cd31061e239b0a80469013
+0.0596	149	HD domain protein	033ca16b092834883040af74be114802
+0.0596	149	putative glycosyltransferase	0195f71d2ccf15bf4750f7336264088a
+0.0588	147	preprotein translocase subunit SecY	0056c0e997f815853c26a087f78434b2
+0.0584	146	phosphoenolpyruvate synthase/pyruvate phosphate dikinase	00e3f67b2431a68a12f01fb2770542a6
+0.0584	146	hypoxanthine phosphoribosyltransferase	001fe92c52fb87b79a1ada3f78308a99
+0.0584	146	ribosomal protein S20	00d6af2726d44546624b053869b66b44
+0.058	145	ribosomal protein S6	0159ff679df088d47ccbfbde6960a26b
+0.0576	144	ABC transporter-like protein	012abb26de872b12f589480806819494
+0.0576	144	6-phospho-beta-glucosidase	0028a657355b21342f9b9a9fca696830
+0.0568	142	serine protease inhibitor	00943b5d8bb01c1fab4735a748c9b1e8
+0.0564	141	pyruvate formate lyase I	01b3dcdf34eed1070fcc6340bd7a2eae
+0.0564	141	shikimate 5-dehydrogenase	0090be12eb9ad232425107a755f12117
+0.056	140	anaerobic ribonucleoside-triphosphate reductase	008c707f6d1f9522db20df9e38573db5
+0.0552	138	30S ribosomal protein S17	01bf646b7888be71a0f6b5862dea37e4
+0.0544	136	peptidoglycan glycosyltransferase	008a0bc4c7032896fed7cfb117450d92
+0.054	135	putative lantibiotic abc transporte	0022403932957ccaa5165f35fa2a2671
+0.054	135	pectinesterase	02c2898e5a30b7e97f733884a071f09c
+0.054	135	acetyl-CoA acetyltransferase	0043fac1da3b2fb364522e1906d172fb
+0.0536	134	monofunctional biosynthetic peptidoglycan transglycosylase	00b8ff99540ab887fcf9df0e248b305b
+0.0528	132	asparaginyl-tRNA synthetase	0045d4470f55dd7904b409e82a36ae64
+0.0528	132	putative methionine synthase	035ab07772c87505f9a4b50f7532907f
+0.0524	131	oligo-	00c9d5965d884d4e0bfc59f3707f69b2
+0.0516	129	acetyl coenzyme A synthetase	00fb899c2680b53d7825974d657065b4
+0.0516	129	adenylosuccinate synthetase	007bdc5553d641369adf1b5ca33e73bc
+0.0512	128	50S ribosomal protein L13	0079b9c9bd177140e51979b59466fd5b
+0.0512	128	chaperonin GroL	005036614e4b1b4c4f17edbec117a956
+0.0512	128	L-fucose isomerase	0219f442eb7ab6c7d7bebaed3e0273e5
+0.0512	128	ATPase	0009303db0ae5783257adbcc8c41e467
+0.0504	126	competence damage-inducible protein A	02761bb353bb4dd5e9cb0c15b6337e9a
+0.05	125	30S ribosomal protein S1	017ee1a9dcf5653b28a824168678a482
+0.0496	124	3-isopropylmalate dehydrogenase	00d8975e2dba32a83c680acb9492516f
+0.0492	123	xylosidase or glucosidase	01d1464f96d75e78c122d9594c48d445
+0.0492	123	stage II sporulation P family protein	005e38f99b7d52135537874714ebc976
+0.0488	122	transporte	020e48940d542896bcfbbd2d52b31b5b
+0.0488	122	flagellar biosynthesis protein FlhA	007d42b5e629e4a6c3d6eb73cd47ceaa
+0.048	120	ABC transporter ATP-binding protein	0006dda22b0015a38096b05a2618c491
+0.048	120	ribonuclease Z	011cfb024d3f35c96d8aa61b024b3743
+0.048	120	cobyrinic acid	0040dc0031ca8af2c72497ae8ab4e639
+0.0472	118	pepdidoglycan bound protein	0250b6bdfc4c0d75e1bc94f9c526b696
+0.0472	118	DNA adenine methylase	01369113a13550fd6f7eeadd910106ed
+0.0464	116	6-phosphofructokinase	003aa4734ad0808043e30b865486f87d
+0.0464	116	undecaprenyldiphospho-muramoylpentapeptide beta-N- acetylglucosaminyltransferase	011dab50ecc51afa7b8bb6279121908e
+0.046	115	fructose-bisphosphate aldolase	000ef4a0d748d29666c0e65f52bc454e
+0.0456	114	endonuclease V related protein	034ab0f9001a5479676494ff78bd88e8
+0.0456	114	trigger factor	012a7cb2fa4a518ca84949e0b58ade0c
+0.0452	113	FUR family transcriptional regulator	0175c0696e9107256d1fbeec15ad0dc1
+0.0444	111	histidine triad (HIT) protein	0135662769a51be9660c13af4eca7445
+0.0432	108	4-deoxy-L-threo-5-hexosulose-uronate ketol-isomerase	02fb7273c16650bfcea7fd56fffc1c1d
+0.0428	107	flagellar protein FlaG protein	010bba6509ebedd7e330c9b5d4a8da16
+0.0428	107	putative fucosyltransferase	00725ca9bde226c8e1e0dee17e92576d
+0.0416	104	FolD bifunctional protein	00e5c5fa342a5494fbc7887b5ad0c1b7
+0.0404	101	sortas	01dfead08cf85bba072c4b0557a4732b
+0.0396	99	elongation factor EF-2	0110e9c27857f368544a7f088c00c0f4
+0.0392	98	glycosyl transferase family protein	00abb460981cb45fd5b0e7f9b78ba796
+0.0392	98	polyribonucleotide nucleotidyltransferase	00d8c9851163f71e74fde2c91cfcead9
+0.0392	98	arginine represso	008c13e074c37d161c5f90ebe6729e69
+0.0392	98	N-acetylmuramoyl-L-alanine amidase CwlD	011543c8d437d2da74f96cb1b1ef701f
+0.0388	97	putative LPS biosynthesis related DNTP-hexose dehydratase-epimerase	01c141d2435848895a4e69ae3fcdcbf1
+0.0388	97	tRNA and rRNA cytosine-C5-methylase	0288db1b97838830c415b2baebc0e821
+0.0384	96	L-threonine 3-dehydrogenase	00d02ca41b5a51305e27eeb1055de937
+0.0384	96	cytidylate kinase	001cfcc30ce32128d3742ced71e56d24
+0.038	95	phosphoglycerate kinase	00c75a1713dbb1a6e366170a3c47611c
+0.038	95	chorismate mutase	01e5182ea52a95677bec9809fdc56281
+0.038	95	anaerobic ribonucleoside triphosphate reductase	0126fd913e836a9736e41320be587285
+0.038	95	CBS domain/MgtE intracellular domain protein	01d854e3786fd14fca43694611356526
+0.0372	93	chaperonin GroEL	00673bfd834170de80f2b45088531235
+0.0368	92	electron transport comple	012821384d054b9e412663910ea60a94
+0.0368	92	chaperone hsp7	011304ba759bc5538c53b087c82f6a9e
+0.0368	92	heat-inducible transcription repressor HrcA	00438478a5810cb3bd0af5d0a3bc2793
+0.0364	91	methionyl-tRNA formyltransferase	00d1cd8436237a52455305c58260bc1c
+0.036	90	excisionase	02597bea8ca519f3a1ddac7a86c1bb19
+0.0356	89	glycosyl transferas	01354f7e88bf7a39e23ef3f0000b6f34
+0.0356	89	ATP synthase F	005150b17de5d7de9d5d6215bb62b423
+0.0352	88	glycerol uptake facilitator	0040498c49c797cd040c0d47a2931cc7
+0.0352	88	transposase	0018a8ba19b11573c3d896592c115685
+0.0348	87	ATP-dependent Clp protease proteolytic subunit	01453bf3328d6a55fae826c7f35b081a
+0.0348	87	deoxyguanosinetriphosphate triphosphohydrolase	0190556a8c50d6b85a6f9ed0d841640f
+0.0344	86	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	001bee728084f1e99e8d38be232a7d36
+0.0344	86	aconitate hydratase domain protein	035bdd6a00ed3ed5c27ed9e88b32f2a6
+0.0344	86	mannose-6-phosphate isomerase	003a9a62337e7a84aba89ddd949403a1
+0.034	85	cell wall protein	003ef8ef5a06e3317a8aec664e08670f
+0.034	85	CoA binding domain protein	0073f0927b1013be8aa9a0c323d73a72
+0.034	85	mannose-1-phosphate guanylyltransferase [GDP]	00d78fc50553dbadddc01bc8d1bb16ed
+0.0336	84	putative nitroreductase family protein	00ea91f3c525f61d65f56f0fabc92877
+0.0336	84	50S ribosomal protein L10	008cfe7834d55a9c0d7ad8caa2e9be55
+0.0336	84	amino acid permease	0028e2e6e84fce9c84b2d55fa8bd8b9d
+0.0336	84	polar amino acid transport system substrate-binding protein	03153bee614377fccca5f631bb836179
+0.0328	82	glutamate synthase	025f4977e329add7124d455172a03f98
+0.0324	81	purine nucleoside phosphorylase II	0244abdccb44efb15c1b8518f0ab4f7a
+0.0324	81	30S ribosomal protein S12	001456573f6aeab3fd69669f5031cf74
+0.032	80	M24/M37 family peptidase putative	009ed672612dc3a8f7112208a62084ab
+0.032	80	glycine cleavage system aminomethyltransferase T	0196ff5c6c758973d8babf003aaa481d
+0.0316	79	glycoside hydrolase family beta-glycosidase	00bad8c3d48f12476b6fbbc6f40e1a2f
+0.0316	79	RNA-binding protein AU-1/Ribonuclease E/G	032b02f146166232b308d96edb338abb
+0.0312	78	carbohydrate-binding family 6 protein	01399c889fd596daaad2a37c7ddfd900
+0.0312	78	Cystathionine gamma-synthase	01620af972e43ceca575b8a25c99bd76
+0.0308	77	putative sulfatase	02cf1ac64a1c694a9a762f0851f6ca81
+0.0304	76	putative C-5 cytosine-specific DNA methylase	0307ce9effadd6b16bd42575ae87e49d
+0.0304	76	OmpA-related protein	0036b1b86eae9b41d2c4df33f5f62a43
+0.0304	76	putative Na+-dependent phosphate transporter	030cda09b976dac6766ff2b4d75fd9cf
+0.03	75	aminopeptidase C	0029e752fbd86480f891e46ace478f76
+0.03	75	cell wall hydrolase/autolysin	031eb9ca341de9637318918491e921d9
+0.0296	74	prephenate dehydrogenase	017b1d8c3a83cb485d84c921d4455df6
+0.0296	74	oxaloacetate decarboxylas	0089848cc1a4dc426f8895bf5d435c61
+0.0296	74	binding-protein-dependent transport systems inner membrane component	000f0c33e7c8574730e56296493536c5
+0.0292	73	S-adenosyl-methyltransferase MraW	006774f29b1ac372cee5b9f161f1694c
+0.0292	73	thiamine biosynthesis protein ThiC	00a8b0094e338f82f011320ec5831d89
+0.0292	73	protein YjgK	016a9d66e730c195a48a4005f736a561
+0.0288	72	ribosomal protein L14	0232fcab3a4cd0a457a4d5e4a750933d
+0.0284	71	site-specific DNA-methyltransferase M.NgoVII	02fb1ad56c054e081234019f1ab4a29a
+0.028	70	cysteinyl-tRNA synthetase	00774cf40893e606213166d53c4dd3a1
+0.028	70	ATPase AAA-2	01195fd1d40dc7c23887887c7013a204
+0.028	70	putative phosphoketolase	003bcf91d109892733c61cf713e842a6
+0.028	70	F5/8 type C domain containing protein	02f84c1fcec4aa2d2e5fd05e550d9e13
+0.0276	69	extracellular solute-binding protei	0025c9d708396613cb564f9aff8bfa56
+0.0272	68	branched chain amino acid transport system II carrier protein	0358b3a6642aaa34c75171c6e1c8348b
+0.0272	68	phosphotransferase system	023bf35fbeeca68476a7cfec6a99fef8
+0.0268	67	amino acid carrier protein	007e199c84956c6ec65fa69e4d29b5e4
+0.0268	67	S-adenosylmethionine synthetase	00bd468985e0129779b7c838250618b1
+0.0264	66	beta-galactosidase	015b23b322f7899e09346c2b1954ecdc
+0.0264	66	3-dehydroquinate synthase	0100fd24dd94a477e35ee4c861f04a4f
+0.0264	66	xylosidase/arabinosidase	000d12c6b5b902d68c8fbc6197a9d968
+0.0264	66	inner-membrane translocator	0064629591d18fd538fa4ea9345798e9
+0.026	65	ribose-phosphate pyrophosphokinase	00ba561bacd2f426ea8b52ae694a0c6c
+0.026	65	DAK2 domain protein	0088082cd5a48d95418d9730c60aff29
+0.026	65	exported xanthan lyase/N-acetylmuramoyl-L-alanine amidase	0123a2415d51ad713d8755c864f2a265
+0.0256	64	arylsulfotransferase	00cb977436f8679cbd71db50c13e9d89
+0.0256	64	putative fructose amino acid-binding lipoprotein	0088f430924562536234567207fd903b
+0.0256	64	histidinol-phosphate aminotransferase HisC	0053281190aa42ab97d5800b847de3ba
+0.0256	64	MotA/TolQ/ExbB proton channel family protein	010ec741168a04415891ff805796c44a
+0.0256	64	putative ferrous ion transport protein B	0210f42804500fa52ffd6a34f0d4edd6
+0.0252	63	DNA gyras	008894d6376f820ffc4350fb3e029238
+0.0252	63	ribosomal protein L13	00d12ec9e52d9092e219a46b4ba4622e
+0.0248	62	transcription-repair coupling factor	0088c91126633ede8c97646474706ee7
+0.0248	62	ABC transporter integral membrane protein	032b7bc0a08abe722fc47529add258c8
+0.0248	62	pseudaminic acid synthase	0126a30ca8fd6bfac9270d8e31d7228a
+0.0248	62	putative acetylglutamate kinase	02ed9e6e0054cc303c3f63172ea624a0
+0.0244	61	glycyl-radical activating family protein	01afd59a6920f87d7e7f50d21dae82ff
+0.0244	61	GTP-binding protein EngA	004161dd44777047af011324a1163854
+0.0244	61	hydrogenase accessory protein HypB	00210df03cec2f1430d20bf48328f295
+0.0244	61	ethanolamine utilization protein EutJ	0241e9e8984517c86d0f5ba42d8397a4
+0.024	60	LacI family transcriptional regulator	000ed9b219675d4b0b66f94d1bb96445
+0.024	60	regulatory protein AsnC	036fdb3384450734b62fb0d13d7324fa
+0.024	60	uracil-DNA glycosylase	0330e7d104cef83fb033674dcd6b070f
+0.024	60	30S ribosomal protein S6	032b443537998c72f9f9e34b016e2206
+0.024	60	bacterial extracellular solute-binding protei	001f291857686f29a6e479d7924f8aef
+0.024	60	cell division protein FtsH	002976e0f0e4c1819edaafa45203c49a
+0.0236	59	elongation factor Ts	001343ceee32c8b0f0f95d38ab4bd7bc
+0.0236	59	flagellar biosynthesis protein FliP	02bde1538777ac30be59ce4a425e9edc
+0.0236	59	glycosy hydrolase family protein	036f146ae50a8bb4c72d3612eb260c47
+0.0236	59	helicase IV	0277463848840b5f512824d56346530c
+0.0236	59	glutathione peroxidase	012581b289a6a9f79dc18c20d58490ce
+0.0236	59	N-acylglucosamine 2-epimerase	007b3ba65ed49d223b8a5fd281336092
+0.0232	58	23S rRNA (uracil-5-)-methyltransferase RumA	036c3a62099325f22328b003278c336d
+0.0232	58	outer membrane protein SusE	007570501c46d0f72885c0811521fcd0
+0.0232	58	serine/threonine-protein kinase PrkC	02065ee66a947f7d0d91190b592b3f24
+0.0232	58	carboxynorspermidine decarboxylase	009d5f22ae547b394be29219224d62e3
+0.0232	58	MATE efflux family protein	00965e4a247c871e31cb46997de19961
+0.0228	57	50S ribosomal protein L16	02c9b5e9d56ca2c64fed874496ab5e36
+0.0228	57	thiamine-phosphate pyrophosphorylase	00065ea212fc84fd83409e86d4bf78a3
+0.0224	56	tryptophan synthas	02221bd61776c1f7c51d6748747d6854
+0.0224	56	DNA ligas	00069ef29137f4dea74f828f26900163
+0.0224	56	DNA-binding response regulato	02ad7dba52c9e1ea328703508eaa7102
+0.0224	56	glycogen branching enzyme	007cdb17af89fd8ec3cf5e8162ead5ca
+0.0224	56	acyl-phosphate glycerol 3-phosphate acyltransferase	03265956cd705f6312ac94ccae515870
+0.0224	56	signal peptidase I	01479f4ed104a257ee6b20c256614a4b
+0.022	55	hemolysin A	0045dad836b3c36cbe7ac15e57ac4425
+0.022	55	asparagine synthetase B	000c925347d3fdca0c764fe2766cb5b1
+0.022	55	Methylenetetrahydrofolate reductase (NAD(P)H)	026d21fdc284e25d83944ab45059443f
+0.0216	54	putative endonuclease/exonuclease/phosphatase family protein	001df00fea9830ca2d64abcadc0d0761
+0.0216	54	choloylglycine hydrolase	0262926815ff2c6b59aecf21d3c778a0
+0.0216	54	sugar ABC transporte	025f58599e72bf3dc7c61569269bdc0a
+0.0212	53	ketol-acid reductoisomerase	00848584767d07edcd2e35107055076e
+0.0212	53	recombinase A	032b0d1f018ab2443cd9e85381923602
+0.0212	53	pyruvate ferredoxin/flavodoxin oxidoreductase	01aa4f02d7fd208716c63391d0d5923a
+0.0208	52	extracellular solute-binding protein family 1	01a43316a9c81dc5e0e541a9b07af49a
+0.0208	52	putative S-adenosylmethionine:tRNA ribosyltransferase-isomerase	02d28f6f5cdacfba3ff4e6c2a2a654a0
+0.0208	52	preprotein translocase subunit SecA	007d920557e82da901d17389056e8233
+0.0204	51	tRNA/rRNA methyltransferase (SpoU)	00c8a9bb6d0c8e2d51064ca8c7a32130
+0.0204	51	M protein-like MukB domain-containing protein	037581711638b302eded42267c4a5c1a
+0.02	50	serine hydroxymethyltransferase	002b4c24705dee728ad071d84f8ce75e
+0.02	50	transcriptional regulatory protein CutR	037ee933b66960f12b187e8ba6cbd28a
+0.0196	49	aminobenzoyl-glutamate utilization protein B	036f96fc0b1ec2fe9ac469af6482ef69
+0.0196	49	protein-export membrane protein SecD	01313730249f1f7322b2c41fc1a26e53
+0.0196	49	50S ribosomal protein L1E (L4P)	00b9e146c2cf74bcd609606c14ec7806
+0.0196	49	glutamine ABC transporte	033d0109218e107cf5d5a1ac1382b3b3
+0.0196	49	arginyl-tRNA synthetase	00b2f54396db1da34abf0875a059ca83
+0.0196	49	thioredoxin	006d7fa42d153a65b8dd24e3a1a1c8ca
+0.0192	48	penicillin-binding protein 1A	01f9e3a306127a3234ceaeec5683d40c
+0.0192	48	seryl-tRNA synthetase	009bfef591c184abb26c5b948dd44790
+0.0192	48	Formiminotransferase-cyclodeaminase	00ae30225367a462b860f7007ec6869c
+0.0192	48	octaprenyl-diphosphate synthase	000d5d1425d664d78941c8812a509f5c
+0.0192	48	toxic anion resistance family protein	02ac6da1095ea4cda9f44db893ccd9ba
+0.0192	48	dihydrodipicolinate reductase	01cfb3cbba36d10d8b0d6b3300196b31
+0.0188	47	glutamyl-tRNA synthetase	00aa0585e470abbbef93c37210592692
+0.0188	47	malonyl CoA-acyl carrier protein transacylase	00f66e5110795f42a1461fbaaa2e65b5
+0.0188	47	oligopeptide/dipeptide ABC transporte	00b23f23b2a3174dac10cefa8160b54d
+0.0188	47	conserved domain protein	016fe5c45a8e362dcca40f36d54062e2
+0.0188	47	YjeF protein	023ce4a72f4154d4d53029d7ebd5649e
+0.0184	46	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	0319faca785821a877be6876c38d92be
+0.0184	46	RNA polymerase ECF-type sigma factor	0110c994e7400b5ee12be5b1d06777a7
+0.0184	46	mannosyltransferase B	0242957afeeb963ff463947563127902
+0.0184	46	transketolase subunit B	020ef29a1e203341de692011b4b077be
+0.0184	46	MTA/SAH nucleosidase	011de4c981709e36c9c13a308ea6718d
+0.0184	46	phosphatidate cytidylyltransferase	0054fbcf3a9a36b97db7c278ccdcaf0a
+0.0184	46	glycoside hydrolase family 28	0334740cf3655db5da4a91a99487406b
+0.0184	46	glucokinas	012d3ceecb099df96debc3eb2de206e2
+0.0184	46	two component transcriptional regulato	0143b19f7f338b27b88b4f918da9f36d
+0.0184	46	cysteine desulfurase	0001af578537a285348cee7fd91ec29c
+0.018	45	beta-N-acetylhexosaminidase	0313ac0629b6e822eb18f872e4e4f068
+0.018	45	basic membrane lipoprotein	00b55799977573d1e91f50fddec235bc
+0.018	45	putative aminotransferase	002a61a6f30843cfa20885ca3dfc4492
+0.018	45	cytidine deaminase	0127e21f4eb29c931fe476166b9e18ab
+0.018	45	MazG family protein	02b7e1c20bf17bcf43405cc823397382
+0.018	45	Formate-tetrahydrofolate ligase	00c5f3d406f9f111327243ef344f4325
+0.018	45	ribosome biogenesis GTP-binding protein YsxC	00828061f4dc2894221bf883944244a2
+0.018	45	L-fucose isomerase related protein	015e9178f6dc34f0afb74ac7853ded0f
+0.0176	44	protein of unknown function DUF711	0280b5a7d6c6224ad5d0c19cf40783df
+0.0176	44	D-tyrosyl-tRNA(Tyr) deacylase	01fb92f708902907016eb31ed850719b
+0.0176	44	methyl-accepting chemotaxis protein signaling domain protein	009c47065775a00c9d4884290a21a8c0
+0.0176	44	putative galactosamine-containing minor teichoic acid biosynthesis protein	026127d57e893b64aee35ef3cd87dc6b
+0.0172	43	glutamate dehydrogenase	008b46117b52d3dbfeaa265e0754b6d1
+0.0172	43	amidohydrolase	000d9eb02977a6bf30bdd0ffcd8ae05f
+0.0172	43	co-chaperonin GroES	019e40440bc823a9a43893287e2923f0
+0.0172	43	30S ribosomal protein S2	0037990d741c7cf3f4ecddccf6c51781
+0.0172	43	cation (Mg/Ni uptake) transport ATPas	0168f7119bb09de59df5394cb13d12d4
+0.0168	42	SAM-dependent methyltransferase	02f6dd848fab4733fffe51a9a4b338b3
+0.0168	42	iojap-like protein	01a61b9f821c603717be38f560ee2b1e
+0.0168	42	peptidas	01125ae545d5bdfdbe5bea10209ec3b3
+0.0164	41	phosphoglycolate phosphatase	0057e38461e976161ab64901bcb7462d
+0.0164	41	NADH:flavin oxidoreductase/NADH oxidase	011eca5e46905ec30799f0e6cc6000e7
+0.0164	41	chaperone protein DnaJ	004be14184b0008efbba658627778fcb
+0.0164	41	putative hexulose-6-phosphate isomerase	011bb117364ea19471ae5645ae82f89d
+0.016	40	hemolysin erythrocyte lysis protein 2	003257a035c215541ac5b783507136ea
+0.016	40	endo-	02df0920a79b9acbb8ecd742ff1522db
+0.016	40	excinuclease ATPase subunit	002bf2139d5d27e332e2b374f11396d8
+0.016	40	transferRNA-Gln synthetase	01bad03c29d7e6e37d9e960733131280
+0.016	40	isocitrate dehydrogenase	008a435fcd04dd23984627f7b0a7062e
+0.016	40	bacterial microcompartments protein	011c9adf1af31e15e6c9ce20bbda6b23
+0.016	40	urease accessory protein UreG	02b2cc02974c65d4bbd344ec2d48d8b0
+0.0156	39	D-glucose-1-phosphate thymidylyltransferase	001dc09b4faddffbb118db1532e62e87
+0.0156	39	(R)-2-hydroxyacid dehydrogenase	013193d06bc39463639281cbf79ab2bc
+0.0156	39	aspartyl-tRNA synthetase	0016a3c51e68e15daf4a7a85ebe0bc1a
+0.0152	38		005c4fc0e0af7b1e4b47898b991e32d5
+0.0152	38	exodeoxyribonuclease III Xth	01758d4ee5d78c8206f52b46717e8e51
+0.0152	38	phosphate ABC transporter substrate-binding protei	00591cf9ccaadfe764789f7a0e78976c
+0.0152	38	ribosomal protein S9	02c4d4a29cdc98f890afe6030c223bd6
+0.0152	38	protein of unknown function DUF28	02632a400691b4820354fcfca9124b37
+0.0152	38	GDP-mannose	035a08fe58a35dc36bb2a1424a6d2f3e
+0.0152	38	LeuA	00f2c5e958ca754137b94510728bb291
+0.0152	38	putative peptidase inhibito	01bc25837b68a673fee395ee08042c86
+0.0148	37	S-adenosylmethionine:tRNA ribosyltransferase-isomerase	00ebb779514583fbf95ff629c612fc5e
+0.0148	37	protein of unknown function DUF199	01438b3bdc4fea3bff8e33f869f9de6c
+0.0148	37	transcriptional regulator of arginine metabolism	0219621c06b6c5c2f3eaf1ad458876cd
+0.0148	37	excinuclease ABC subunit C	00d64ebecd45cd1245646bbaa492e7c7
+0.0144	36	excinuclease AB	01ac318776db4838b7544a214f8816ce
+0.0144	36	50S ribosomal protein L35	0357d2743119483710e00fc272d80eef
+0.0144	36	flagellar hook capping protein	00ae95220acb2c32ea78a51879ef7857
+0.0144	36	long-chain-fatty-acid-CoA ligase	025d6ca34eb85756afaef9895793520e
+0.0144	36	dihydrodipicolinate synthase	014b74c93a2ae5800a03d328b04fb942
+0.014	35	membrane dipeptidase	019ef4418adf3ee953597690d449875d
+0.014	35	GGDEF/EAL/PAS-domain-containing protein	00d85140650fefb2e147971250d8b2e1
+0.014	35	leucyl-tRNA synthetase	0218f46b860936e26ac134f3dfb21b97
+0.014	35	F0F1 ATP synthase subunit C	0332afef0f9c7d47f85abdd3148c4457
+0.0136	34	inosine 5''-monophosphate dehydrogenase	013f68571236fb0de458cffbf5c1046f
+0.0136	34	DNA topoisomerase I	00347fc6a3a8be3e4c6e0a18ea128db5
+0.0136	34	2-alkenal reductase	0071490fe65f972e0f96fca2ab4a92c5
+0.0136	34	carbamoyl-phosphate synthas	026ea8ba446b32b417ad35e685e8065b
+0.0132	33	putative PA domain protein	027e42bc25fd671459a4a0a447f49853
+0.0132	33	phosphopyruvate hydratase	0118d36bc649d13bc6f7432d278034db
+0.0132	33	1-phosphofructokinase	00614de26d52c28beab6be4a37c0318a
+0.0132	33	50S ribosomal protein l11	02a63de8567e50f600942e3dedde8ba6
+0.0132	33	ATP-dependent protease La	00bc52da22c8d3d93ce66db3c1672f17
+0.0132	33	RNA binding metal dependent phosphohydrolase	012fc90d9fbc57b960e6cd763158411a
+0.0132	33	selenium-dependent molybdenum hydroxylase 1	005034fb157a265262a876430fab53c9
+0.0132	33	translation initiation factor IF-3	001cb4940321f5eed1120730dad7d01b
+0.0128	32	molybdopterin biosynthesis mog protein	029a93c3dd3fbd67849d470aa02561cd
+0.0128	32	phosphonopyruvate decarboxylase	0336db4472fcfb6cb88a8060a9e9748c
+0.0128	32	dehydrogenase	00e38b1f420a5b7a064e9f4a8df6d96b
+0.0128	32	ribonucleoside-diphosphate reductas	01ed00cccb61fabd90ff422e87f8b8ae
+0.0128	32	gamma-glutamyl phosphate reductase	00d828c6c5a00a20b91b3b82775622fc
+0.0128	32	inner membrane protein	004a38ac858daa8e4957ffc2ac34f70e
+0.0124	31	putative two-component system response regulator	01734a6b8dc889553f24c247a16a71ac
+0.0124	31	acetylornithine and succinylornithine aminotransferase	00c1df4a9cd5aa9cd48b2cf700daa317
+0.0124	31	ribosomal protein S3	015d00c9b7f7f2897a9ebd700c9a9d69
+0.0124	31	3-oxoacyl-[acyl-carrier-protein] synthase	037b3f01bffd944d952a0a1a8dbd58b8
+0.012	30	predicted redox protei	0283b9cc01b46c07abbc680cf319899b
+0.012	30	anaerobic ribonucleoside-triphosphate reductase activating protein	0056440a4fc687fb624a5bfc3a1970ab
+0.012	30	phosphoenolpyruvate carboxykinase	02a0e0a92d612a8da52c0d63b84f1597
+0.012	30	Polyribonucleotide nucleotidyltransferase	01854a0d70ac46c9958ff72133471726
+0.0116	29	erythronate-4-phosphate dehydrogenase	02c55843d6b880b2b01a051159af7d1b
+0.0116	29	ABC transporter substrate-binding protein	00ad1b60b326bf1a73634d04fc08e8d9
+0.0116	29	transketolas	00019f9ee2a11280e800d5016c132e3b
+0.0116	29	protein of unknown function DUF819	0051e5cb9f300ae52c28e1d1b4fa7bde
+0.0116	29	carbon starvation regulatory protein	0279a2ffa012913c13e207076dc9be08
+0.0116	29	twitching motility protein PilT	00a1f23b63f00fab404b13241fd7579d
+0.0116	29	serine/threonine protein kinase	004dbe7bfc4cad17b23d7e488bb7215f
+0.0116	29	putative DNA-binding response regulator	00b2d30d1393b400f40beb44e2ec8d47
+0.0116	29	rpmc	029082083f4745e17339be7e2d916be3
+0.0116	29	isoleucyl-tRNA synthetase	00605d421f927691dcc44ed86ae472d9
+0.0116	29	peptidase S8/S53 subtilisin kexin sedolisin	00651cd642219f9ce3c4dacc60ebc05c
+0.0112	28	chaperonin cpn10	01eb8042b4af88ced000599476c23a5e
+0.0112	28	beta-lactamase	002e512759f7ec929de74d26b46afc32
+0.0112	28	putative beta-galactosidase	005540df473260142da4af6cc6c10460
+0.0112	28	DNA translocase FtsK	001df863ec81a6d3cf1958618c491e4d
+0.0112	28	fermentative D-lactate dehydrogenas	035d31818ee331523ed89644e47d97dc
+0.0108	27	phosphoglucosamine mutase	0138890b039cc121d67b245cab178774
+0.0108	27	coenzyme F390 synthetase	026338dc5ab9d06f91d99c2cd7eb814b
+0.0108	27	heat shock protein 90	023da97850243f8595802e5e7d3c5f3e
+0.0108	27	glycosyltransferase	022072ff3f02cf5b617a0d34fd4116d4
+0.0108	27	cystine transport ATP-binding protein	02d748b8b78c2744ff36f139c924081f
+0.0108	27	C4-dicarboxylate transporter/malic acid transport protein	027544cf30220c7fac4fe4fe19affe2e
+0.0108	27	pyruvate formate-lyase	02341b2372b03e33c02e8745a1c6abf8
+0.0108	27	preprotein translocase subunit SecD	00d365eacf8a39b9b92a82c66d05b886
+0.0108	27	recombinase	0206cece4ea25a2839840039e55e7b4f
+0.0108	27	ABC transporter related protein	00b7445c5491ee95d0f8165b0623f328
+0.0108	27	multi-drug resistance efflux pump	002090e176f85877f835fbc55687ef02
+0.0108	27	rfaE bifunctional protein	0312fdbe7812b0f5ae5b021b9b4eff33
+0.0108	27	GTP pyrophosphokinase	003e249bb9a76e4b663b8799dba7bb0e
+0.0108	27	L-lactate dehydrogenase	033c8037dfdb650079ea1d3ca747e05f
+0.0108	27	glycogen debranching enzyme GlgX	019f157816847cccbf7cf55ad5dd5b46
+0.0108	27	threonine synthase	01aea97055d229231bca549d24e2e4fd
+0.0104	26	sensor histidine kinase	03214e0b84b8707373217e6f3d51e42c
+0.0104	26	lysine--tRNA ligase	00fa75ca56492c45cf673b38678b1a7c
+0.0104	26	regulator of sorbitol operon	01efc7f4cd31e46742f4c17427bd990c
+0.0104	26	putative outer membrane protein	014b3bb10f740984953bbd69d9a96df9
+0.0104	26	Na+-linked D-alanine glycine permease	0199eb2ab804480416a4d8da7d8056e2
+0.0104	26	putative monovalent cation/H+ antiporter subunit D	0230cec103dafeb8097501f9795cea0a
+0.0104	26	aconitate hydratase	0343b7c29900dff38ad7a08313bda19e
+0.0104	26	lactoylglutathione lyase	0294d16f8707b2c8ce11eb64ec232824
+0.0104	26	DNA-directed RNA polymeras	00c0501ddb472bd6a3054ac720fed9da
+0.0104	26	transcription elongation factor greA	01cf73128eddc5b2203e3c29b6229ac1
+0.0104	26	valyl-tRNA synthetase	007e887033256383fa0ea2e7b2d5d6b8
+0.0104	26	oxidoreductase domain protein	00874aa52f9b0a5e9753f59d677477d2
+0.0104	26	methyltransferase	011e6dfc305cabebece972a03b9a4380
+0.0104	26	flagellar motor switch protein G	01a76ba1d35872990ee7bf63e08fb120
+0.0104	26	phosphoserine aminotransferase	017d188dd7bb8164b4cb6539f167f567
+0.0104	26	beta galactosidase small chain	0094c9f8d2370aa9520c4da20b997842
+0.01	25	Sua5/YciO/YrdC/YwlC family protein	017d0ec91a4e2816ef00b0d7a8c3d3d9
+0.01	25	putative transcriptional regulato	02f208bb7cab06a0b6762d1d847d4b63
+0.01	25	dihydroxy-acid dehydratase	00001a757949ba4df5f1a9f8f6ba6c09
+0.01	25	N-acetylglucosamine-6-phosphate deacetylase	03769582e6809e8105b912d1132a9702
+0.01	25	chromosome segregation protein SMC	0188d8cdc85911f4be9402048deac049
+0.01	25	RNA polymerase essential primary sigma 70 factor	033b4f42976b1eb3467d46b36246dc52
+0.01	25	4-diphosphocytidyl-2-C-methyl-D-erythritol kinase	017a3d7c8030da1c18f4443f48d46e46
+0.01	25	excinuclease ABC subunit A	02477d1b251dc03739fa2ec196611ffb
+0.01	25	thioesterase superfamily protein	005c8742be53115e8a081114b26fc7be
+0.01	25	thioredoxin reductase	002930cc54fad1f5de8ca8305b772dd8
+0.0096	24	putative transcriptional regulator	0023bed7eb65251af04a6ab17ef06272
+0.0096	24	aspartate transcarbamylase regulatory subunit	0212e5c6bf92a3411bc7a43b3a66b117
+0.0096	24	putative 8-amino-7-oxononanoate synthase	035b3540845c5d60cfc4b3f803e4c383
+0.0096	24	glycerol kinase	01f239c07fdb73d5a74e895b9b726113
+0.0096	24	autoinducer-2 (AI-2) kinase	02249b8813c7112bdd2d055c533cdfe4
+0.0096	24	ketose-bisphosphate aldolase class-II	0076d61a7de0d88aface8ad717b88bce
+0.0096	24	deoxyribose-phosphate aldolase	01c02be6f2ebc810ad7a9b6df901aa95
+0.0096	24	two component system response regulator	0157f6aaaf1b60af639386e22956a2bc
+0.0096	24	Thioredoxin 1	018dae7cea3c105dc7138dd97be261af
+0.0096	24	rod shape determining protein RodA	00a3b44d47e7fa9cd411e4dcfc91e74c
+0.0092	23	transglutaminase domain protein	002c7544328c206efcbf1ab19daf8181
+0.0092	23	UDP-glucose 4-epimerase	000a26c797b854874ec9ae28f6b10b7f
+0.0092	23	MutT/nudix family protein	00e2379269baaee2eaa5fd89d91b0af0
+0.0092	23	Radical SAM domain protein	01de0c7b4b6662a019eae9f9bba01810
+0.0092	23	nuclease-related domain protein	00d4fd39762c043f99bf3e5b154c11ef
+0.0092	23	peptidase T	0056c00ddfcc3ec3c60ae301d9311872
+0.0092	23	peptidase S24-like protein	034b542fd8ad3d65b9a28cbfb16f37b1
+0.0092	23	ATP-dependent DNA helicase RecG	0003532c6c13db2d6a6834ce10cee43a
+0.0088	22	phosphotransferase system PTS sorbose-specific IIC subunit	024d06027ab8cf3eb12a77e03743a045
+0.0088	22	ribosomal protein S16	00c078f09b63df342eb9c479cc9d4e1e
+0.0088	22	conserved hypothetical protein TIGR00250	007ac24ac92ba34b977738758b10e0a5
+0.0088	22	xanthine/uracil permease family protein	0286afda62eb41e8588d7c29040ad7c4
+0.0088	22	peptidase M42 family protein	02ed84cfeb02edbe59dde7c30aa99457
+0.0088	22	ABC transporter-related protein	009ac618b963684a989312876257445e
+0.0088	22	Fe-S oxidoreductase	0011510536deb4868f3e3081d005d38c
+0.0088	22	DNA-directed RNA polymerase subunit beta	009438f62418fc0aecfa20dc6cc6c16d
+0.0088	22	30S ribosomal protein S5	01b17987e0c6ec52ec2bf3d3bf73d786
+0.0088	22	lysyl-tRNA synthetase	00170c88858da03a3a9d972f912df7f8
+0.0088	22	orotidine 5''-phosphate decarboxylase	0256fcd2871e16132f8f824f6d3e041c
+0.0088	22	DegV family protein	003e23b46cd4eff37b6de9def29c9eff
+0.0088	22	50S ribosomal protein L22P	033c3e0cef5f333f8aa36890ee90a99d
+0.0088	22	gamma-aminobutyric acid receptor subunit epsilon	0076a4b8490996d9297d3cdb9ef88853
+0.0088	22	putative ABC transporter ATP-binding protein	00abf5cdad767039465e8cf68695ec2b
+0.0088	22	cell division protein FtsZ	00b7a55eb65d0ede7ff482e08f26589b
+0.0088	22	heavy metal transport/detoxification protein	00cdf19b84252be92ae35c067fc49ee8
+0.0088	22	methionine synthase	028cb60dfe7db24debe87fc08a32c1ce
+0.0084	21	imidazole glycerol phosphate synthase subunit HisF	009dc548439fd3481691fb1842a9547b
+0.0084	21	RNA methyltransferas	00ddaaa62140dbb485c0a8f46df37943
+0.0084	21	peptidase S1 and S6 chymotrypsin/Hap	0118a57ff1886bf7086047d4c1391a39
+0.0084	21	spermidine/putrescine transport ATP-binding protein pota	00fe15bf88c0c0546478d850de65edb3
+0.0084	21	Alpha-mannosidase	02f11e40a991cae2b73ce48c32598ab2
+0.0084	21	vancomycin resistance protein	0063a0ca92c3d8547ecfaf203143e057
+0.0084	21	Transketolase domain protein	0179f8820d1904ae5c4861862d54b984
+0.0084	21	TonB-dependent outer membrane receptor protein	0171804682b4e92672ad0b5b01795752
+0.0084	21	glycyl-tRNA synthetase subunit alpha	01168a85a24519db8d306096efad5ae8
+0.0084	21	biotin synthase	01fa3066b1aa82aa768108ee3d76102d
+0.0084	21	putative amidohydrolase	024e77ab67af9402d1dc40d8c8e34fc4
+0.0084	21	Aldose 1-epimerase	002eaad20abcd986d5cc431987b8a70c
+0.0084	21	cytochrome c552	001c0f7d5aa6d6aa54e39224a52c8240
+0.0084	21	hydrolase	02ce0b2f39378f6d1bd5e6081f16019b
+0.008	20	cell division protein MraZ	0206ae3b40494a6826d9317652a8b413
+0.008	20	ribosomal protein S4	0003eb112220a40b705761f16652321d
+0.008	20	putative integral membrane protein	027cfd2e0b299849c770c60eb735eb61
+0.008	20	radical SAM enzym	00bfd5d2e12bb1575ae963a61d05b8af
+0.008	20	glycogen synthase	005cf32b4bf3bcc26592879cfa9f6d08
+0.008	20	formate-tetrahydrofolate ligase FTHFS	028a295d1f6a32b503567cb2fa2b2b4b
+0.008	20	stage V sporulation protein B	00889d9ef9052113fa1194ffe5f5af86
+0.008	20	transcription elongation factor GreA	012a78151c65d36f5f5fde8ab61012f8
+0.008	20	glycerate kinase	0321eb6f95e6f4c2b5f66d637daf42ad
+0.008	20	16S ribosomal RNA methyltransferase RsmE	003c101edf5f484b1af49051e35e7cde
+0.008	20	methylglyoxal synthase	01ebe132424bb99695c3e198c01173e6
+0.008	20	putative thiamine biosynthesis-related protein	0261f3ed7f56f005961eb9f028750b60
+0.008	20	outer membrane assembly comple	02c895c303f51438b590287b1cdb4d3e
+0.0076	19	CRISPR-associated protei	0109ccfdc25f519244d8bf1303a8f51f
+0.0076	19	peptidyl-prolyl cis-trans isomeras	005b04a341243c7b9ab8708ec0ea5c7c
+0.0076	19	dihydropyrimidinase	01510da00b84ccb7c97361ddc5f2e8c1
+0.0076	19	melibiose:sodium symporter	0245c7878fddc96168accdfc507b58fb
+0.0076	19	alanyl-tRNA synthetase	00197c26f1bad0853bf87ef02fbad16c
+0.0076	19	putative dihydroneopterin aldolase	005452cad1982d0e9fdf74786087bcad
+0.0076	19	cobalt transporter ATP-binding subunit	0040e92395052d552cf84ce6f49ba67c
+0.0076	19	ribosomal protein L5	005df817c8e1a7927e25e453fda753bc
+0.0076	19	cytochrome c-type biogenesis protein CcmF	003d462970571195d89227a7b1c0ad2a
+0.0076	19	sodium-dependent phosphate transporter	0257de9986c61e8b96d7bad8fe3dcf3b
+0.0076	19	probable phosphomethylpyrimidine kinase	015c9638c89106db4617e27fb526c091
+0.0076	19	2-keto-3-deoxygluconate kinase	011e6d07221e9d478b403aaeec3b9bf5
+0.0076	19	radical SAM domain-containing protein	0119b76c8ff04065281deef9d70078fe
+0.0072	18	glyceraldehyde-3-phosphate dehydrogenase	0048484cc947824ab2bf7265b60dd1e0
+0.0072	18	integrase	007592c201db4ac6efe90ab8f7596fc2
+0.0072	18	inositol monophosphatase	0035d6c7a836ac1170b31effb1c50502
+0.0072	18	stage 0 sporulation protein J	013166d39fdf6f795dadf0f7be666322
+0.0072	18	C4-dicarboxylate transporter	0190cae6e1cfc51e4568b44aabd16718
+0.0072	18	ABC transporter	019cdd2be65e10366f64efb211b8560a
+0.0072	18	AraC family transcriptional regulator	00cbcd7d71a97a9210f116b2fd77066c
+0.0072	18	tRNA uridine 5-carboxymethylaminomethyl modification enzyme GidA	00527964405ccf2d28718f15f0d3dcc0
+0.0072	18	30S ribosomal protein S3	00d3d6a4673ef71000aea7d8a5d09522
+0.0072	18	DNA polymerase III DnaE	013333bc7c833854b89f309c035b5e62
+0.0072	18	adenylate kinase	00638c617cdf0e1a5d59d39b2c52d00b
+0.0072	18	phosphoglycerate mutase family protein	030668e2d5257ee3dd6ce304d85522b0
+0.0072	18	serine/threonine protein phosphatas	021dd01b4ec0897568b4366d5270cb5c
+0.0072	18	NAD-dependent epimerase	00c07838ad7feddb870906a6ff057180
+0.0072	18	heavy metal translocating P-type ATPase	00728659961bc57a7b6e51d5cdbdf659
+0.0072	18	aluminum resistance protein	024670f8b0a3ec5a429afd70138bf2c1
+0.0072	18	PilT domain-containing protein	0047ae7a63b8b0dac4f8285d5a72e8ce
+0.0072	18	pyrroline-5-carboxylate reductase	018f039a69a657d02e7eb39eeceec2e4
+0.0072	18	beta-hexosaminidase	007274267d0f93087c767149b93a869c
+0.0068	17	sugar isomerase (SIS)	02bfe7cd37a00485c978432b51d8bcd3
+0.0068	17	FAD-dependent thymidylate synthase	025ef029d12eab19653c448b69b8f3a9
+0.0068	17	putative ABC transporte	0014c17fcba34ffecc4191c48080ae5b
+0.0068	17	dihydropteroate synthase	001e90a8f28205f101ad9924388defbc
+0.0068	17	hypoxanthine-guanine phosphoribosyltransferase	02c7f396d5f0d48356f28547715c8c99
+0.0068	17	recA protein	00985177f0eb8623974a2342a267d887
+0.0068	17	GDSL family lipase	0060aa7d8fe76762306dde1307412559
+0.0068	17	aerobic C4-dicarboxylate transport protein	02a3cec0a0a383dee56851d70f1b8dc6
+0.0068	17	thiamine-phosphate diphosphorylase	001c3ace7ef7ae170bc9965a33f37f66
+0.0068	17	protein of unknown function DUF214	01ddcb19a1556c5357963090ee04180a
+0.0068	17	Ethanolamine utilisation protein EutH	0100a8785fb7c4bc52494aee2021712a
+0.0068	17	GTP-binding protein TypA	00038351497f9aae568d0e3c87cb80df
+0.0068	17	translation initiation factor IF-1	037e7eb21bcc8f25f012a5f7bc58312b
+0.0068	17	PSP1 domain protein	02da91eaf203f2ebc35bc19739224e7d
+0.0068	17	putative PEGA domain protein	00cadb1720801878948b84fd7aecc801
+0.0068	17	S4 regio	033d2b1cbcff3b20a7063474fe2b9b3d
+0.0068	17	glycerol-3-phosphate dehydrogenase [NAD(P)+]	00f6210dfe852c7b465c60ed69d7ae06
+0.0068	17	Cobyrinic acid ac-diamide synthase	010785cb20114e859cf3c69758e1e0bd
+0.0068	17	putative lipoprotein	002809e03b1ca29e8165ef48ecf4185d
+0.0068	17	DNA mismatch repair protein MutS domain-containing protein	017883f113b4dd6d8d649008d414396f
+0.0064	16	transcription termination factor Rho	0092ce083b4ed2c880e549f9c63aad3d
+0.0064	16	putative threonyl-tRNA synthetase/uridine kinase	03449b03151b5e91fa1f94f52b5b068a
+0.0064	16	thiol peroxidase	01b386065c3f2d61e5463a7369bbc6c7
+0.0064	16	transcriptional regulator NrdR	0093ae2869ba515524fef2abfa358abd
+0.0064	16	carbamoyl phosphate synthase large subunit	002469dd29b84ba2346a9ffd78a9f003
+0.0064	16	extracellular solute-binding protein family 3	005b1643a96ed3b84123e95476f12adf
+0.0064	16	Glycosyl hydrolas	0042a753d292706035812899433fc69c
+0.0064	16	chromosomal replication initiator protein dnaa	0143e76c0a36a2ff3a48f44ee6647d26
+0.0064	16	uridylate kinase	0031a24625f044dc3224f80429cb486b
+0.0064	16	50S ribosomal protein L32	0203da650103a5cc09f443cca3eb83ca
+0.0064	16	Ser/Thr protein phosphatase family protein	00f2cfa42690a295dc7c3200b13783d1
+0.0064	16	N-6 DNA methylase	0241ae6c206220512d5832e9d8cb355f
+0.0064	16	Appr-1-p processing domain-containing protein	01e6c54da222841280c73886f2fde4b7
+0.0064	16	RNA polymerase sigma factor RpoD	01efb83e6ac4c966bd7bb5930eb155ad
+0.0064	16	leucine--tRNA ligase	022430b65fde566d81688cf68d4d183e
+0.0064	16	putative chromosome partitioning protein	0334ce236b07fc1daef51dc69ed487ac
+0.0064	16	NUDIX hydrolase	004eadf116b7dd284b7ebaafe6936854
+0.0064	16	30S ribosomal protein S18	023b1a55ff5c93d4520e1ded9016be0c
+0.0064	16	polyphosphate kinase	0056a88dc99219b16e89a1185a5cf930
+0.0064	16	phosphate butyryltransferase	002116b59afe304114be9472be4af740
+0.0064	16	ferric uptake regulato	0126e0e7e8c791d1efb66d2ddfcc2a78
+0.0064	16	4-alpha-glucanotransferase	012beee97b8ebec98a4fa8e2c544a4a5
+0.0064	16	histidine triad nucleotide-binding protein (HIT)	021b5ce92b2e314e0354416513777802
+0.0064	16	glucosamine--fructose-6-phosphate aminotransferase	001c249822055dd6fc502de7fcbd9e55
+0.0064	16	peptidase family protein	00a13e6eb006cf96978dbea490b78ebf
+0.006	15	indolepyruvate ferredoxin oxidoreductase	0038502af02a5a66f0570e6a6730451c
+0.006	15	tellurium resistance protein TerD	014dbbd9c85b4a79d3893e2e0949abc8
+0.006	15	5-keto-4-deoxyuronate isomerase	0006ae9ac4b7ac838a668835d2466134
+0.006	15	ribosomal large subunit pseudouridine synthase A	0138b336f3546643581014ab43096312
+0.006	15	putative mobilization protein	01458fd6c0417f6ecf98637ff56f11ea
+0.006	15	DEAD_2 domain protein	009f991d4ddda6a9a7d7e00ab8f9d439
+0.006	15	germination protease	025c6465a469a0a6d7f7c4bf55cb1c0e
+0.006	15	exopolysaccharide tyrosine-protein kinase	02bf28253fe985ba22c84be829c28c49
+0.006	15	macrolide-specific ABC-type efflux carrier	005d725e3390741efd91a2c01b9ee5b2
+0.006	15	taurine ABC transporte	01434f0ce3da6da1398ea911d4f6d25c
+0.006	15	outer membrane protein OmpA family protein	0322cadb0f5f564194bb97caa99f0d70
+0.006	15	oxidoreductase	00c8b5b0c31fa892f9d75566270cf4d1
+0.006	15	helicase domain-containing protein	01a11dce9c662e4d171a9807fb862f63
+0.006	15	D-alanine--poly(phosphoribitol) ligase subunit 1	02d5a1957610608e3575c95f0eaa23b2
+0.006	15	outer membrane protein	028e35189b93a8c98fc17bf88fe70d4d
+0.0056	14	mannose-specific PTS family enzyme IIAB component	007e8e0e5e86e96acf78fb617cb44eb3
+0.0056	14	signal recognition particle protein subuni	006ecceed926045bbb8f71e0a9b627cb
+0.0056	14	nucleoside diphosphate kinase	037dbc8aa41893409c35b797be5ec35a
+0.0056	14	DNA-binding protein HU	009eeba45d3af2aacb0fabb39cb57aff
+0.0056	14	SPFH domain / Band 7 family protein	00e8fa82fe7b7e48db2f9874580c2797
+0.0056	14	GDSL-like protein	019fac791cf9a406a2becea4c16986d8
+0.0056	14	thiamine pyrophosphate binding domain-containing protein	012e12d2ba0df71aadce5f4e3657e245
+0.0056	14	thiW protein	0173e029a82cb64c3127538a2cdeef68
+0.0056	14	two-component system response regulator	01522f9cb05e6e06104d5f2a4e1075b1
+0.0056	14	methionyl-tRNA synthetase	001c66cbfa072da9bcc419e1938e29d4
+0.0056	14	D-lactate dehydrogenase	006c035a943386d3293bfbc941040494
+0.0056	14	glutaconyl-CoA decarboxylase subunit delta	02bfea74fcbe56d4f2b35751af5bf1b0
+0.0056	14	cobalt chelatase	002eb5faf99616e0525f5240a8ffdce6
+0.0056	14	ATP-dependent metalloprotease	02174cee9a3342d1ad2f32a91cd2a512
+0.0056	14	putative oxidoreductase	00be4216d949eda3f3a21c53ce9d5632
+0.0056	14	cation efflux pump	02c08a73769eaa9b3d4bb0e9df2c22c1
+0.0056	14	oligopeptide transporte	025f144204f184bd917eccab7b9327f9
+0.0056	14	putative thiamine biosynthesis protein	02d6fd97966539b18c819d7a5a481075
+0.0056	14	myosin-cross-reactive antigen	032695e79a76f697342a33eb0b4101a4
+0.0056	14	HTH-type transcriptional regulator MalR	0349fe58ba3df2b06656b6bf8e1cc598
+0.0056	14	RNA polymerase (beta subunit)	02cb7cfecccf92db1faf62370db8b4c3
+0.0056	14	outer membrane protein Omp121	003ea4723907a61f79f80a6e03531d0e
+0.0056	14	FdhA-II protein	006d77575f46e1e00492001f7776a499
+0.0056	14	3-isopropylmalate dehydratase small subunit	01bbfe3de470985050b3f0b646f9488d
+0.0056	14	glutamine-fructose-6-phosphate transaminase (isomerizing)	0001a6156ed94a007e0e9d9623831ce2
+0.0056	14	death-on-curing family protein	02b10bbe38a3838c2ff90758ec8f6ca9
+0.0056	14	site-specific recombinase-like protein	024ea6c717e55c870367623394fe532c
+0.0056	14	molybdenum cofactor biosynthesis protein C	01070dc7b4b0e01072fa1571e826648c
+0.0052	13	DEAD/DEAH box helicase domain-containing protein	001e7f65f47f7584492c408d3e581479
+0.0052	13	glucose-1-phosphate cytidylyltransferase	00b9a13f949cb2f8269c87acbdcb6043
+0.0052	13	cadmium-translocating P-type ATPase	008647600f1198ca7494fbbdfad8a9e2
+0.0052	13	fumarate hydratas	020b85f7fc9a83e6108e4677cffb32ee
+0.0052	13	putative transporter	0349e8d3f145803a85975e4696f53189
+0.0052	13	phenylalanyl-tRNA synthetase subunit beta	01ec6e0093527ac02fb9f998dfdd7778
+0.0052	13	ATP synthase F1 subcomplex alpha subunit	01ba5fc467899a38dfbfe99f2702a609
+0.0052	13	Heavy metal transport/detoxification protein	032433c45b6206ae57673aa0031aad99
+0.0052	13	PTS system glucose-specific transporter subunit IIBC	01f20dea6a8e8a15b915bc846cfdaea0
+0.0052	13	putative cyclic nucleotide-binding domain protein	00cc9ab65036f8eadeba77c38990e2ee
+0.0052	13	ATP-dependent RNA helicase SUV3	020cc01d86641f69b87dcbc2094f2787
+0.0052	13	curved DNA-binding protein CbpA	01a569f23e16287e461701311aac0590
+0.0052	13	phosphomethylpyrimidine kinase	002a0ea65fd88ed5ad77d190f7f56158
+0.0052	13	3-methyl-2-oxobutanoate hydroxymethyltransferase	01e1bc7779ad37615845056e7817d38d
+0.0052	13	Oligopeptide ABC transporte	014732e20e92ec7f638ba49bfb52c905
+0.0052	13	imidazolonepropionase	010fe4641c9189cfb127127c0709cb80
+0.0052	13	magnesium transporting ATPas	02589979a3318235d33af2074a9b0c07
+0.0052	13	FlhB domain-containing protein	014bfc444ddef34654ff70ec4af98831
+0.0052	13	F0F1 ATP synthase subunit A	0101974f5584d40dd56e65f2bfcea24a
+0.0052	13	protein of unknown function DUF955	0021ba382551f439e855df3bd534e16f
+0.0052	13	glycoside hydrolase family protein	0131e72bd45463b9edb62ba7d93ed7ad
+0.0052	13	flagellar basal-body rod protein FlgC	009edb2cd7b96c221966744b09024306
+0.0052	13	peptidyl-tRNA hydrolase	00af3b0e5bfb15443280bd9ed779d523
+0.0052	13	acetyl-CoA carboxylase subunit beta	00f16035247d9646639b739f14fd7dc5
+0.0052	13	capsular polysaccharide biosynthsis protein	0063b2c03aa677a680d8f89dc8768a6d
+0.0052	13	nucleoid protein H-NS	01574068c5d21a10fc3443f30d0832a2
+0.0052	13	preprotein translocase subunit SecF	01a8a21acfe00fe23b59042a50fa08e6
+0.0052	13	bifunctional glutamine amidotransferase/anthranilate phosphoribosyltransferase	02203016285a48b3982e41cc93a5f31f
+0.0052	13	argininosuccinate lyase	0069ff13115c0d1eb897256b69afa7e7
+0.0052	13	ABC-type maltose/maltodextrin transport syste	029411a19352d4b2f2d8d2801b53710c
+0.0052	13	DEAD box-like helicase	0322f99cf1f61289d43aad7881c551d3
+0.0052	13	putative TonB-dependent receptor	00f3fc4b5c47d354d3f0b29729c72c36
+0.0052	13	pectin lyase fold/virulence factor	00b7cd946d90b4de0c3e4d4b244585f4
+0.0052	13	LSU ribosomal protein L5P	0295e447ffb1a7482a0d406b48f370a8
+0.0052	13	glycoside hydrolase family protein 32	01182254b53b42c5c1e47e6a588da80d
+0.0052	13	DegT/DnrJ/EryC1/StrS aminotransferase	011931dc960e99857480f3bf74f3a12f
+0.0048	12	aldolase	028e98a850dce7f7a68b3c7b33cd13d9
+0.0048	12	NAD-dependent epimerase/dehydratase	002abf8b9b7dbade02f62d85caa72969
+0.0048	12	adenylate cyclase	0110a4e84ca91e73616ca384d96e0a8f
+0.0048	12	iron-containing alcohol dehydrogenase	000680bc3b8c2c2f2616a8c0c4782d11
+0.0048	12	3-octaprenyl-4-hydroxybenzoate decarboxylase	001f6dd3c8e52462945ea3132da42851
+0.0048	12	cardiolipin synthetase	02e2ad1bee676086422148b18b79615b
+0.0048	12	cob(I)yrinic acid	01ddf25cc87eba3fdf616aebfa394d44
+0.0048	12	fumarate lyase	0113546a201868b26648cff70e3fa31f
+0.0048	12	adenine-specific DNA methylase	00d8a541c171f2c016c64ab37aede8f0
+0.0048	12	small-conductance mechanosensitive channel	03743b35d9b5dace1b84acebe22b56c6
+0.0048	12	sulfur relay protei	01e03a9222fc812eaff3d4b38023bbd0
+0.0048	12	electron transport complex subunit RsxE	0224ffe0cdf9c7dd0e6c732715a33629
+0.0048	12	putative epimerase/dehydratase polysaccharide-related biosynthesis protein	02b85cd5dd56346b711430f4c52b60c4
+0.0048	12	nucleotide sugar dehydrogenase	033ba98dc8a1c0bb51a8fc633919aa66
+0.0048	12	glyceraldehyde 3-phosphate dehydrogenase GpdA	033149d7d3e5532ee8dc70dbf59831e8
+0.0048	12	stage V sporulation protein B transporter	02902cc174047fc49c66670b0ef95502
+0.0048	12	hexapaptide repeat-containing transferase	01ad1a8120351027186e22d392527b2b
+0.0048	12	tyrosine recombinase XerD	027375da1057756330e510bd9688f54c
+0.0048	12	flagellar filament 34.5 kDa core protein (flaB1)	017444c36191a0d810c2c7862f5cc08b
+0.0048	12	rod shape-determining protein MreB	0152b09e5520e749aeef5bee0b049518
+0.0048	12	probable 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase	01eaee4654ff74eb669d4f120a7d72fa
+0.0048	12	LSU ribosomal protein L3P	014ff14f3308e04af599d2110ed2048a
+0.0048	12	ribonuclease R	0087c668cb4fbf867cb5f887c18da616
+0.0048	12	bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase	00ec5517ccac95316ea3f411c36b5dff
+0.0048	12	periplasmic beta-glucosidase	036d7f796f9bac6a53151b8a8d2529d9
+0.0048	12	putative DNA polymerase III epsilon chain	006d112f840e9b76aadf3b9c36b72055
+0.0048	12	restriction modification system DNA specificity domain	024d3d8ddc72b4959fb6bb10997e7a8c
+0.0048	12	ribulose-phosphate 3-epimerase	00fe2fc45546fadf516aec09e99acfc2
+0.0048	12	predicted DNA-binding protein with the helix-hairpin-helix motif	0050fd18f1bdd3469c964b7a76d645ff
+0.0048	12	putative transposase	009148614b716238a026db02d8f3ebe3
+0.0044	11	oligopeptide transport protein	02121b737e4dabeb22837f2e1939abac
+0.0044	11	AAA+ superfamily protein	0045bd57055455495c9dd402b05dc609
+0.0044	11	amino acid ABC transporte	0044e08ebf358aa54e0a2555056cb5a9
+0.0044	11	altronate hydrolase	0243b0e48c3c35e7f9ef535447c7ad40
+0.0044	11	Alpha-L-fucosidase	02494b5e71b00402f26eb2d8a8fad4e0
+0.0044	11	carbamoyl-phosphate synthase large subunit	020a7b63a59ad23cbcc6557ae4f319a1
+0.0044	11	oxidoreductas	00cc697d9a9b8c076644406a49726a86
+0.0044	11	dihydroxyacetone kinas	01df9ca865e9d6335eb3628712c0a408
+0.0044	11	NADH dehydrogenase subunit G	0091333ddb1c6782b39e0a93ea40c8aa
+0.0044	11	stage 0 sporulation protein A	0104c75f8aedeaaf697c66596e0dc6d6
+0.0044	11	toxin-antitoxin syste	000e7b79b2aadb37c54d8561469a1de4
+0.0044	11	sensory box histidine kinase	0053dd50fd56f3eedf3b04e1b629fed9
+0.0044	11	pyruvate carboxyltransferase	030a9855252acc093a4cba9dde81f158
+0.0044	11	acetyl transferase	0028649e303c791cc187e3c3e3179b53
+0.0044	11	signal recognition particle protein	0072af3862ca126acb9f91f6f49a4c9f
+0.0044	11	UDP-N-acetylmuramate dehydrogenase	01defd52c773f90f51dde11261ebe338
+0.0044	11	sensory box protein	015faaa7032fba0fd36b4c2a44f8ba30
+0.0044	11	aspartate transaminase	02fec0934ceebee7ef6c9590d7fd6864
+0.0044	11	rhomboid family protein	021a49756641065873ea1edb0c25ba08
+0.0044	11	tRNA delta(2)-isopentenylpyrophosphate transferase	008f48e01f392e5f4f38f2941bded209
+0.0044	11	N-methylhydaintoinase A	005a0b669b25443778eeb1dde2416260
+0.0044	11	putative lantibiotic ABC transporte	00a39f3cc259c8d4fd666d3a6f0bf0a5
+0.0044	11	flagellar basal-body rod protein FlgB	00d6538fcb3a7d2b4531d59bbef8415d
+0.0044	11	conjugative transposon protein	032eb531284130887177c224674c5fa6
+0.0044	11	adenosylhomocysteinase	00ab0b45f275cd34b4e3cc0b2d3f453d
+0.0044	11	oligopeptidase a	03089e346932d168afd1f53d8571566a
+0.0044	11	2-amino-3-ketobutyrate coenzyme A ligase	0106c8f5dd1402d721f73eb6d1b1e419
+0.0044	11	AMP-dependent synthetase and ligase	02710ce0a3b03ba1921d0c245b686213
+0.0044	11	ABC-type multidrug transport system protein	01352494c180959901234d8786ca2cd9
+0.0044	11	serine/threonine protein kinase with PASTA sensor(s)	027044ec49ac07d9f0b7c9ca9da7d72d
+0.0044	11	4-diphosphocytidyl-2C-methyl-D-erythritol synthase	0226a8ee0e52e27bf9c68797556a4554
+0.0044	11	putative 2-hydroxyglutaryl-CoA dehydratase	02e6403405605ae21e55527f2530dcf7
+0.0044	11	ABC-type uncharacterized transport syste	027d7ea47f7d7d5ac8b78ecf6c4eceec
+0.0044	11	SpoIIIJ-associated RNA-binding protein	03008142fb207909fb8aaf097137394b
+0.0044	11	UMP kinase	00e8f592d0b837145f0829a6236d232f
+0.0044	11	phosphate acetyltransferase	0271c0a0941d313438c98a9e44c7ac58
+0.0044	11	GTP-dependent nucleic acid-binding protein EngD	000433e122e29f5a2338c64338092dff
+0.0044	11	polyphosphate glucokinase	0090fa3c85a945e447c00c15f733db78
+0.0044	11	TatD family deoxyribonuclease	00f5c579d890cd7545b1997a9429bf2e
+0.0044	11	alcohol dehydrogenase	02719653ac76c77c0174c640f5e52205
+0.004	10	tyrosine type site-specific recombinase	01d29152014d4263b149b34da84170f6
+0.004	10	neprilysin	022b71a4ba9528b53df3bcaa13cc26e2
+0.004	10	TRAP dicarboxylate transporte	005d6884a250c4da7a6c343a40fd1044
+0.004	10	extracellular solute-binding protein family 5	00219493bf38461d4d766ec04421aae9
+0.004	10	ATP-dependent Zn protease	023dd330abc9daba487a13bffc253f54
+0.004	10	guanylate kinase	002760592c668a0a83a1e18762d2be5a
+0.004	10	alpha amylase catalytic region	022b9bb6434f0bdea00e37ee1d330d0f
+0.004	10	putative dehydrogenase	0232a2528d1222151658f7d5b2d20986
+0.004	10	50S ribosomal protein L15	00ae199d26950e9f9d76cdbbdb2ed567
+0.004	10	grol	02325fb0824b9c4ae99a53b401aae3f8
+0.004	10	NADH-ubiquinone oxidoreductas	0190eca1dd9f5fb8d7b6664bff0e23a7
+0.004	10	serine type site-specific recombinase	015d058f7aeee37f87d471d878f747d5
+0.004	10	PTS system cellobiose/arbutin/salicin-specific transporter subunits IIBC	02b10c457fa6060bf91b7f49cef6c0a3
+0.004	10	chromosomal replication initiation protein	005eaa3104943917daa42083377b73ac
+0.004	10	aspartyl/glutamyl-tRNA amidotransferase subunit A	022b3cd4f9b55f87b3502bf4b4eac844
+0.004	10	phospho-N-acetylmuramoyl-pentapeptide- transferase	012c9b23c3025bbd62059fd72d4d8703
+0.004	10	single-stranded-DNA-specific exonuclease RecJ	0051ceef56379ad9267049ffab7b3c3b
+0.004	10	ferric transport system permease protein FbpB	019eb58c04cbe48ddd7e528411a71f6a
+0.004	10	pyruvate formate-lyase activating enzyme	0202e2d2b59e11f94f5e9c84055065d6
+0.004	10	competence protein CelA	00f79fce9836deadf1999a189ec864dd
+0.004	10	triosephosphate isomerase	0174ed5243e47784843a3024b74e9778
+0.004	10	possible alpha-N-arabinofuranosidase	020d33572a5fd6d748dcc95896ce21ee
+0.004	10	thiamine biosynthesis protein ThiH	00680a28e0083a2a5400fa2042f74994
+0.004	10	putative collagen-binding surface protein	01f86e3b14d1b77fc217dbe255b44e25
+0.004	10	pseudouridylate synthase	028856e832210a30ebf5a741c5d12bc6
+0.004	10	30S ribosomal protein S9	02497aa177e667d24852b181677d76eb
+0.004	10	30S ribosomal protein S4	01fc005b8c465a1b30136940d8012eea
+0.004	10	TRAP-T family transporte	0217bf4953efb621f684102755b0eadf
+0.004	10	glycoside hydrolase	0218eb38356054018c141b1a4d3bdfe0
+0.004	10	sn-glycerol-3-phosphate transporter	0062f5d6b62aa6f6e3fc74bb26912446
+0.004	10	serine/threonine transporter	01cdd440399e52567c3577c1526e401e
+0.004	10	riboflavin synthase subunit alpha	028ee8196d28a24e22fe69df115f9b14
+0.004	10	HAD-superfamily hydrolas	00d8a1ec7ff13b5759c5d1cd3d0ff0ba
+0.004	10	transcription elongation factor NusA	0020f27323c6f55e37ed7769c01a1692
+0.004	10	competence associated membrane nuclease	0074b76ac264371701381c3086af30ec
+0.004	10	CRISPR-associated Cas2 family protein	010ff37baa120d9a013308f553de5524
+0.004	10	DNA-damage-inducible protein	003a6d819f23df7b01832014c80634de
+0.004	10	malate dehydrogenase domain-containing protein	0194eea6e0c2f0fdecc84bf4a5a533ff
+0.004	10	nicotinate-nucleotide/dimethylbenzimidazole phosphoribosyltransferase	0310f4a83dae9d07bf968555898eca97
+0.004	10	DNA repair protein	00128f9b4b48490daa84852f0e7a9e5a
+0.004	10	propionate CoA-transferase	0152813069763b129c94e652d4e3b627
+0.004	10	acetyl-CoA carboxylase subunit alpha	0035e433ee4b783ff985a24783dc7ae6
+0.004	10	helicase domain protein	017fd7d2f792486d834f8ee58a07918f
+0.0036	9	primosomal protein N''	00ea35ce00735f4eb79b64dd6ad11681
+0.0036	9	acyltransferase	0075ebd5bb830dc67ac6d1cd04a89a16
+0.0036	9	putative alpha-glucosidase	026f659fcbb90af61900f12c86645edc
+0.0036	9	diguanylate cyclase/phosphodiesterase	00ce5be59394f679e9f4438c789c7cbc
+0.0036	9	agmatine deiminase	02124991ee59ed0f83d092ce4cb97d2f
+0.0036	9	aminotransferase	01a2ef1e538ff4c2e598ca0342b42743
+0.0036	9	thymidine kinase	032153aa7b8b765cb1a98da6db5c6ed1
+0.0036	9	sporulation protein YunB	00f643c014e0601d9363a5e2f1d78797
+0.0036	9	putative anti-sigma factor	013275e31c503721ba9ddcfb4bb3b18e
+0.0036	9	phosphoribosylformylglycinamidine synthase protein	015bf284431b93175afff949f0545112
+0.0036	9	ornithine carbamoyltransferase	01af474d491e71cf7e9fb64182cff008
+0.0036	9	haloacid dehalogenase-like hydrolase	0019a06aafbc0773771b2e12802da5bf
+0.0036	9	acetyltransferas	029579eb3f8aa03da529259095014d61
+0.0036	9	ribosomal protein S18	01a1a4cf8c75715b9b618e27acb58d0e
+0.0036	9	folylpolyglutamate synthase	0190ddedebc213c7d7cb5397aad5bcdd
+0.0036	9	transketolase subunit A	020f6576cd7589a4fda99bade3081aec
+0.0036	9	inorganic diphosphatase PpaC	006083905dfad30df68c32f8781fcbe8
+0.0036	9	site-specific recombinas	004d96d603fb5d6031073c4c746299f4
+0.0036	9	Carbohydrate kinas	015832888c480f1f289b28ef363417d9
+0.0036	9	riboflavin synthas	01b03eeee64e25c51e020a49a2c4bd68
+0.0036	9	Serine-type D-Ala-D-Ala carboxypeptidase	00a068c5ba0a8aa72a5ff953105b8fed
+0.0036	9	hokD	028893e10d438642ea4112e883488ca5
+0.0036	9	cation efflux system protei	006f8fa4718009cb5383facefbbe5304
+0.0036	9	putative deoxyribonuclease	000703dc35a656b7f1c5effedeb74c98
+0.0036	9	GMP synthas	00831a7ecd3049853af3fe9bd22d4268
+0.0036	9	glycosyl hydrolas	00b5a9d3e2133d7c173b8683cbfabacb
+0.0036	9	exonuclease family protein	01ebb75b031d43288a0100341789b322
+0.0036	9	GntR family transcriptional regulator	01250037f258580e201cf7db2030c96e
+0.0036	9	Glutamate 5-kinase	015a02eaf2c3125fb12e3bcde54ce308
+0.0036	9	sporulation sigma factor SigG	010c27c290c1b77a933859bf2f1bd915
+0.0036	9	metal dependent phosphohydrolase	01b1d433a577e54e09d43ec2c0e03ea7
+0.0036	9	DNA topoisomerase III	014a4291a83b5d3f4b76df10a323be19
+0.0036	9	putative deoxyribonucleotide triphosphate pyrophosphatase	0189171ca42d28c16e5df08cc728b72e
+0.0036	9	cell shape determining protei	00b5b181928a7b9570501e48fc6f2af3
+0.0036	9	V-type ATP synthase subunit C	034ca3c30b702136efbf10f6074562c1
+0.0036	9	mannonate dehydratase	0025c2fb06b450079f421a83919b60d1
+0.0036	9	LSU ribosomal protein L2P	032d8f7832081a17bdda3cb8a0bffc03
+0.0036	9	glycosyl transferase	0301a90a55bec89cb09c2c9998aae20f
+0.0036	9	phosphoglucomutase	01066972a809dfff79b6ab6307cae18b
+0.0036	9	sn-glycerol-3-phosphate dehydrogenase subunit A	00c2fc6fe8b6bc754cd035c41641f97d
+0.0036	9	metallophosphoesterase	0057c623f5250a7caf8c365e2c0bcdff
+0.0036	9	peptidase M20	004d6f4e8737796cf0ebdf0de3481045
+0.0036	9	multiple substrate aminotransferase	027f902b75a04b84fbcd972f77b90bff
+0.0036	9	ferric uptake regulator family protein	0160d695ac1ce4d7a6762f5fe00a3c87
+0.0036	9	L-fucose permease	0128212f5cc8ba43aa43154e81494d04
+0.0036	9	2-isopropylmalate synthase	02b1a72ffa3135ebc68fff18426e9031
+0.0032	8	basic membrane protein	007433b6d2e69d71a4962839de072d64
+0.0032	8	ribosomal protein L18	0317aaa2b83d83e3e7abbaab0ea00778
+0.0032	8	COG0821: Enzyme involved in the deoxyxylulose pathway of isoprenoid biosynthesis	0030ee4facf1862efb0c33d94f851aa9
+0.0032	8	phosphoglucomutase/phosphomannomutase family protein	031305c368e1acf345172734a8a6eda4
+0.0032	8	putative outer membrane protei	01e5e4b62d75ab34147458db88666943
+0.0032	8	branched-chain amino acid aminotransferase	003ce7943c68cb03afecfd3c6b95d907
+0.0032	8	pyruvate kinase	01e5a01586b8aed8038282a81c43c56c
+0.0032	8	membrane protein with acetylase function	012d12ddb539eee485a115c824f061d3
+0.0032	8	Ribosomal-protein-alanine acetyltransferase	0323cbd1a184618aecd016b1d804eaa9
+0.0032	8	glycoside hydrolase family 63	02dd606ede595d1897ade41a781898cc
+0.0032	8	R-phenyllactate dehydratase medium subunit	02e6e67d8c45e79f28d356d954b94df5
+0.0032	8	translation elongation factor Ts	001bf3e475c3c8792694e7d8253f1c37
+0.0032	8	serine acetyltransferase	0079cb30902f61e702ed25acc0aa30d4
+0.0032	8	ABC transporter permease	00542cbba276d2ba6085427aa77723fd
+0.0032	8	Cation/multidrug efflux pum	01cc56ae22610a15681c60034dad573b
+0.0032	8	zinc-transporting ATPase	00e69c9a47f53fe96144a458713e098a
+0.0032	8	multi-sensor signal transduction histidine kinase	02e8fc6508cd246b18847aa5aa2d2c93
+0.0032	8	ADP-ribose pyrophosphatase	004479020b723e43120c95a7feb80e5f
+0.0032	8	30S ribosomal protein S10	00348a75622dc57b67f64434cdae08f8
+0.0032	8	RNA pseudouridine synthase family protein	026e5e9b95c816816caa66aebb28d18d
+0.0032	8	cobalt-precorrin-6A synthase	0284e5d10cf02e18da20c2d3a6e7adfd
+0.0032	8	putative endoribonuclease L-PSP	025e2b574ced07fa881c72ec378009be
+0.0032	8	periplasmic serine peptidase DegS	0137f40217a9dffa173b5d6d0647af02
+0.0032	8	aldo/keto reductase family oxidoreductase	00b571177a48fd0e5d5b9a381e9c6f21
+0.0032	8	cellobiose-specific PTS system IIC component	01a4d40f542ae40ffc743414c296889f
+0.0032	8	carboxypeptidase Taq	01f4ff7e2782687513e0925a6625f961
+0.0032	8	phosphopentomutase	007c5ca36e057ca344c2b8691c1723f7
+0.0032	8	putative alpha-mannosidase	0162ce9d13356c870919791d737d4e77
+0.0032	8	protein of unknown function DUF370	00cf8f7e16ce88ceda4eb3d2595a4cc3
+0.0032	8	polysaccharide biosynthesis protein CapD	00a44c781f0916e078500c2acc8a09fe
+0.0032	8	ArsC family protein	00c51470f50dd7f85a5591369322c372
+0.0032	8	recombination protein mgsa	017e92c15b3f9032cb3a51454173a944
+0.0032	8	GTPase ObgE	00b5539171b7e6f41b3b860b09695bbc
+0.0032	8	ethanolamine ammonia-lyase large subunit	0090e18d77fee88c1986462ad263cb5a
+0.0032	8	galactose-6-phosphate isomerase subunit LacB	0002526b05a5fd23c2c90b7da32bf0d8
+0.0032	8	tRNA-guanine transglycosylase	00e2d7c40ebf3f92c266a4f2d8a2b0e7
+0.0032	8	sulfatase	01019042435d8e9dc37a40c1bdd9afd7
+0.0032	8	phosphonate ABC transporter ATP-binding protein	027a5cf167b5903b05e2cc3d623d12dc
+0.0032	8	methylaspartate mutase subunit E	001f9677197a3f8ed5d34f5d55a7ec34
+0.0032	8	glycosyl transferase family 2	017b7fe3bb6b3b8d2ce3bb1c9dd028da
+0.0032	8	CTP synthetase	013404b67b25891e25ec36918f681e66
+0.0032	8	polyphosphate:nucleotide phosphotransferas	008c3c66512b99a6c5b274a65efd4521
+0.0032	8	restriction-modification system regulatory protein	00f661fdf55ff46a4b6cad23075c222b
+0.0032	8	glutamate-1-semialdehyde aminotransferase	0004ac8ad40c6a57f21a99144c39297b
+0.0032	8	CBS domain protein	016090a73c52310b0e1038e58e2f4c8c
+0.0032	8	acetylglutamate kinase	011069e034996323f1975bbfa8cb93ff
+0.0032	8	DNA mismatch repair protein MutS	03021f19847c5924e39da5e8cca35243
+0.0032	8	bifunctional preprotein translocase subunit SecD/SecF	013a9f2120566c2d0367d50de51b1921
+0.0028	7	cytosine transporter	019a51f5294ca9e54971b9d75173737f
+0.0028	7	oligopeptide transporter subunit	01ad68936231533acd3fb3589ad4566c
+0.0028	7	methylcobamide:CoM methyltransferase mtbA	01ff3bad8031c2bf33d765ef07cc1cd3
+0.0028	7	PTS system sorbose-specific iic component	006370ef7c0fafb20d58c3c9a80ff4c0
+0.0028	7	ATP synthase subunit C	021b5b7cbbed61c0449efc7795224530
+0.0028	7	electron transfer flavoprotein subunit alpha	00928eb925290bb53556a10aa5761900
+0.0028	7	acetoin utilization protei	01bfda4e837581ea437f45c341a96166
+0.0028	7	phage protein	01cb70677d48bd3648f581d69cbb48aa
+0.0028	7	putative GGDEF domain protein	02ea4939ddf22293008e394a635636b2
+0.0028	7	glycosyl transferase group 1	02dc317f9b0aeb87ae5d2cec4642af63
+0.0028	7	Putative protein of unknown function containing WW and FF domains	00530f39a4e38c157efe7f85d5138759
+0.0028	7	glutamate--ammonia ligase	00d8231d2ff276419c856d9016ecb66f
+0.0028	7	N-acylneuraminate cytidylyltransferase	021fc715713905cca69e2dc758978e54
+0.0028	7	tRNA modification GTPase TrmE	017a0cb7783efa77f73318aa00881043
+0.0028	7	bleomycin hydrolase	02800a0279a6ed074a2a9cdefa3644bf
+0.0028	7	putative glycosyl hydrolase	0120a2f3fb304b464e169451b4b07576
+0.0028	7	ATP-dependent chaperone ClpB	00dce74be0fff511754d3ad59f289866
+0.0028	7	RND superfamily resistance-nodulation-cell division:proton (H+) antiporter	01e7a5e50eada25429ba5495686e0f22
+0.0028	7	major facilitator transporter	02eb12c1db6339921b7c621bbe27ed29
+0.0028	7	glycogen/starch synthas	02e68667863b03108f026bdce0458042
+0.0028	7	DNA primase	001772b9c4992e18b9f49dbd053d6f8b
+0.0028	7	transposas	0028b571371960572ec578c2e95a3bf3
+0.0028	7	DAK2 domain fusion protein YloV	02f17ed2ca23a3aa15697137e1ee28d9
+0.0028	7	phosphoribosylaminoimidazole synthetase	029a72160bcaddf781c21202c0b28371
+0.0028	7	galactoside O-acetyltransferase	00b1ac8105b290edab686ace6d361ce5
+0.0028	7	RluA family pseudouridine synthase	026974f27319114f8640741430d97803
+0.0028	7	PTS system mannose/fructose/sorbose-specific transporter subunit IIAB	01f4bebb4dc7452b098cb564f9d9eeec
+0.0028	7	50S ribosomal protein L2	001d14ab7f92a031cd6a90777eaf56e8
+0.0028	7	50S ribosomal protein L5	0150b71bcef26d672409c6630c3560cf
+0.0028	7	phosphotransferase system enzyme I	025a685b39248efd9f37ebe2e0d70ef4
+0.0028	7	putative resolvase/DNA invertase	00be54f0e1bf097b54545eacacd5b9e0
+0.0028	7	NOL1/NOP2/sun family protein	02c51a176b17f43e688c4652e28e502c
+0.0028	7	chaperonin GroEL (Hsp6	0311d0004a3b8409ff4b91e31a7c9f69
+0.0028	7	reca protein	003b760736a1504b922f2d111c2adb5f
+0.0028	7	recombination helicase AddA	01f5eda00aedd78f89476828e6e7484b
+0.0028	7	ribonuclease III	02c5c0340de4243cdd67f586b778e0b4
+0.0028	7	GTP cyclohydrolase I	02d8f803f38cf7281236d237d6c6508c
+0.0028	7	serine/threonine kinase related protein	001412e91dc092a808dfac3bca7f9c2d
+0.0028	7	elongation factor P	00124e1437444cf7c4d4824c1c07d9dd
+0.0028	7	sugar kinase	0284b177ed42dfb1d001daee72c7fd39
+0.0028	7	3-dehydroquinate dehydratase type II AroQ	01dd3cdf33fe29e08c849c77b19a3a3c
+0.0028	7	cobalt transporter CbiM	02e4f809da2d35028215b7c3fd4e326e
+0.0028	7	isoleucine--tRNA ligase	002b18f11d8e19501a6dfb2feb5c8135
+0.0028	7	Glycosyl transferas	028cb5dc3d20f7d81adec8de6cebefa2
+0.0028	7	formate dehydrogenase-	02ad4624ae1ed9ec371542f66c8745b1
+0.0028	7	4Fe-4S ferredoxin iron-sulfur binding domain protein	002de5dc4427aa304a9baf64ddf8a519
+0.0028	7	amino acid permeas	007cabdab2c9e80b52533dfa31a6b2b1
+0.0028	7	elongation factor EF1A	011f724d66d384f2df5f02476a4b729f
+0.0028	7	acetyl-CoA C-acetyltransferase	027884a940c78add44fbd80966404646
+0.0028	7	putative ABC transporter permease protein	01186d6192f09cda5bed5f58482d80e7
+0.0028	7	DNA-binding response regulator ResD	017d754b8272a375ab02dad4e4c1f4dc
+0.0024	6	molybdate ABC transporte	012633bf2a91e6f37a65443b804e1706
+0.0024	6	beta-phosphoglucomutase	036f5ffcbc7601f3e068b23b44059384
+0.0024	6	transcription termination factor rho	02634d93e80ce6ff81f583a3b099f3c6
+0.0024	6	acetyl-CoA carboxylase carboxyltransferase subunit alpha	005845af6ff8b1452e4fae4050dcafa5
+0.0024	6	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase	00ef0069eec6f91713abc04a7ef016a9
+0.0024	6	putative domain of unknown function	00646f98735cdaab8601ab25b9aa4ad2
+0.0024	6	DNA-binding response regulator PhoP	001e0279bd3c94b9159e5b0055e088ad
+0.0024	6	gamma-glutamyl kinase	00ee677a5cea75bab8fd55b7280fbb8f
+0.0024	6	peptidyl-dipeptidase dcp	02570e88d33cb49d02c4f7f2ef565ab7
+0.0024	6	aldehyde dehydrogenase family 3 member B1 isoform a	02e24ee40e3ceed1f81a39e3851cf60b
+0.0024	6	aldehyde dehydrogenase	0076c57ad0dd6162563f7229d205fa55
+0.0024	6	Mg chelatase-like protein	00eda4d0096e1acc6408d1c48e6f7328
+0.0024	6	glycerophosphoryl diester phosphodiesterase family protein	01191038c95812312d915e23c0764c38
+0.0024	6	arabinose-5-phosphate isomerase	03451e7a587a1bd2f63275e5b2361b76
+0.0024	6	SufS subfamily cysteine desulfurase	00809ea2a1ec6935c3d4c9639a3fa7d2
+0.0024	6	Sel1 domain protein repeat-containing protein	0162da6dc692a2b863511ab0d2ca57c1
+0.0024	6	RNA-directed DNA polymerase (Reverse transcriptase)	003507ac86cc9c30b177fdaf9a83992f
+0.0024	6	aspartate--tRNA ligase	00c557cf654401e9b67e354a8d940c9c
+0.0024	6	L-carnitine dehydratase/bile acid-inducible protein F	00860555ca75caa940b6aa11003aed22
+0.0024	6	selenate reductase subunit YgfK	011ea8fd48d40986a65de6c56eff4d2d
+0.0024	6	aspartyl/glutamyl-tRNA amidotransferase subunit B	01c14f35ef9f1d1a9b223640ba9f90d0
+0.0024	6	protein of unknown function DUF205	0084cbbd0444abac6980a2904b51e549
+0.0024	6	trypsin-like serine protease	0095347efa0a7ee29789b4b14d1c8df8
+0.0024	6	putative TnpX site-specific recombinase	03294d4af7a4af96b79553f74f238564
+0.0024	6	peptidase M2	00c8020a9a4af81ea7b72a90182275a3
+0.0024	6	valine--tRNA ligase	002dfece648a033dd69ac5014008abb7
+0.0024	6	protein phosphatase 2C domain-containing protein	01cbde71cbb8c0bd7b83704f9805551b
+0.0024	6	tyrosyl-tRNA synthetase	0051b2f229869415590e250b665c2c14
+0.0024	6	thiamine biosynthesis/tRNA modification protein ThiI	009d84deb7008fa96448b50b8dc0ea77
+0.0024	6	50S ribosomal protein L7/L12	00e41dcff32b3e2ed77e1ed841fbe9a6
+0.0024	6	conserved hypothetical protein TIGR02453	01ef5753662d350aa95f384004d238e4
+0.0024	6	microcompartments protein	0036c246ab02d0f523c82afe63dee0c0
+0.0024	6	pyridine nucleotide-disulfide oxidoreductase family protein	00584c459e90e8a971160b6e08cf2825
+0.0024	6	sugar ABC transporter ATP-binding protein	01b9206b54e260fba41939914d180fcc
+0.0024	6	GTP-binding protein TypA/BipA (tyrosine phosphorylated protein A)	00e43020e6d4701b229dd2b32cd07ad2
+0.0024	6	orotate phosphoribosyltransferase	003b38477e7d9999f4a04a0a66e55f11
+0.0024	6	DNA damage-inducible protein	01fc2db312f50dc86e846ac29341fec8
+0.0024	6	polysaccharide biosynthesis protein	00649f1388eeab3a24d4d38e9294a61b
+0.0024	6	YahA	00b20ce598e90d433500b0cef3d654aa
+0.0024	6	response regulator receiver modulated metal dependent phosphohydrolase	00f23c6c6275ab6e420a50c9cb99defe
+0.0024	6	sucrose phosphorylase	00c2914d0f41d827cd303258137281da
+0.0024	6	Silent information regulator protein Sir2 /NAD-dependent deacetylase	0270ad337496744b660e994a9ed303b8
+0.0024	6	Aspartate aminotransferase	03410c8b55c6504eec02c14a66a9684f
+0.0024	6	thymidylate synthase	023baf52fc46650295722cb5aad03dfe
+0.0024	6	NADPH-dependent glutamate synthase GltA1	03523f5af998e862d6ed8f2cfa9cc617
+0.0024	6	COG0463: Glycosyltransferases involved in cell wall biogenesis	01b3e36417091710950bad3409e42d08
+0.0024	6	endonuclease III	021c2a1fbf10728cc3f1a3ec8e58b10d
+0.0024	6	prophage LambdaBa0	012ef0697c53f3fd4cb0aaaf1ed9e78f
+0.0024	6	cobalt ABC transporte	0129303872d63b5eeb2be387ff2134eb
+0.0024	6	deoxycytidylate deaminase	00ec643128aa49588ca69aa7fdd0e2b4
+0.0024	6	Cof-like hydrolase	0181de9453208b1e445c2cce047f40cd
+0.0024	6	PTS system ascorbate-specific transporter subunit IIC	005ddb5cf6e63db065578f7d639c1ede
+0.0024	6	phenazine biosynthesis protein PhzF family	01d21945d94a7d1084000380380c645a
+0.0024	6	CAAX amino terminal protease family protein	035466fec37ca7a0521f2d61868199b0
+0.0024	6	alpha-L-arabinofuranosidase	012388f2d81d70ccdaf6b3155ce4c47a
+0.0024	6	ABC transporter substrate-binding protein - oligopeptide transport	00bb8e494ba332ea38a2ba983892f268
+0.0024	6	putative uroporphyrinogen III C-methyltransferase	001a19d0ec0bd5022487526adf036a3d
+0.0024	6	metalloendopeptidas	02c35c4edf8a13bbca16854b94c9bf5b
+0.0024	6	bifunctional	009adcce0f9d52ea00f9bd057d765d25
+0.0024	6	DNA-binding transcriptional regulator OxyR	01f7ef453121c0bb818ead6a5da9a2b6
+0.002	5	putative L-fucose isomerase	01a4647612280c3a051c746e46943111
+0.002	5	high-affinity branched-chain amino acid ABC transporte	02d301afa76bffca913075770fda1699
+0.002	5	AcrB protein	02a5133955edcb8a90a5facf42d3ccdd
+0.002	5	nodulation protein l	00671a2c93150e091a8f8b160dfb5048
+0.002	5	histidinol dehydrogenase	00dbad4442ff2aefc206bad421287149
+0.002	5	phospholipid/glycerol acyltransferase	0097ececb410379ca717dc15bf5020d7
+0.002	5	RNA binding S1 domain protein	031804f0655d1b8b62893e09d073b590
+0.002	5	ATP-dependent RNA helicase DeaD	02d5dff18c4391e76aa07af670831c76
+0.002	5	6-phospho-beta-glucosidase BglA	0329e99e509c2a40d3bd879b27d1703c
+0.002	5	putative binding protein-dependent transporter	035def07b582b0462fa7b2e1a481c776
+0.002	5	periplasmic binding protein	001b947a7161002b00ca753463e6dbf1
+0.002	5	alcohol-acetaldehyde dehydrogenas	02241c28def72293405f9e6a2b63411d
+0.002	5	cysteine synthase	020c1a369333d76dea8fb24b1679863e
+0.002	5	O-antigen polymerase	031a569fb74d38f347e6d421a0378a01
+0.002	5	ybaK/ebsC protein	0032c71ba16d83ab1b468cf41e78ba9d
+0.002	5	putative lichenan-specific phosphotransferase enzyme IIA component	009f3143e4a8cfe844040d842f55ab27
+0.002	5	peptide deformylase	01b5a1b1b3cddddbbd146d33a14ec30a
+0.002	5	Polynucleotide adenylyltransferase region	0131b6f23834e9e9b4a7f0687fcea3db
+0.002	5	oligopeptide transporter ATP-binding component	02fbee7f9ccdea0abdf487651572e5af
+0.002	5	beta subunit of mitochondrial ATP synthase	00cdfb3a4c8fed1798ca4df168c9f741
+0.002	5	polar amino acid ABC uptake transporter ATP-binding protein	034dda4696b79bb2c30dd7139f4494fd
+0.002	5	exodeoxyribonuclease VII large subunit	0327576e6b75bdc79f517593a09f281e
+0.002	5	ribosomal protein L22	0268bb03ab4eac1531ec543033c2fe68
+0.002	5	DNA-directed DNA polymerase III alpha subunit	01639f527ab8d5a1265b1fba59f21900
+0.002	5	chromosome partitioning protein ParB	033b0de1175c427c12951ea9a3850382
+0.002	5	nicotinic acid mononucleotide adenylyltransferase	00da0d623c60645f57c155b7a28f32a2
+0.002	5	phosphoheptose isomerase	013260448d4d71c7d0152ff6b5977ac6
+0.002	5	sodium ion-translocating decarboxylas	029686f514378f03348e889e835c544a
+0.002	5	COG2826: Transposase and inactivated derivative	002342809748d10d560a1a69ea38d88e
+0.002	5	protein of unknown function DUF520	02de9843b0dae1bede97aefffbfbd05b
+0.002	5	C_GCAxxG_C_C family protein	01a1590c54c2afaffde2ef5c14dd78a1
+0.002	5	putative ECF-type RNA polymerase sigma factor	008a85857b4d91643470a179e20d6f69
+0.002	5	ABC-type transport syste	02d88093f97727940cfd37a2ff1292c2
+0.002	5	tRNA-specific 2-thiouridylase MnmA	0142dab2cbf1bc6f86043fd31c8e54ce
+0.002	5	prolyl endopeptidase	0174581f9194fc1e7db28f2bb4734476
+0.002	5	UDP-N-acetylmuramate/alanine ligase	011eaf713e60c718e94be6f8749bab29
+0.002	5	binding-protein-dependent transporter inner membrane component	00add7616bd6f66257ab2a621bb148bd
+0.002	5	permease of the drug/metabolite transporter	020b3b4e27ad277fd0af380c4ebcb974
+0.002	5	RNA polymeras	0298460f2464dd6ae316bae0dd119bdc
+0.002	5	glucuronate isomerase	034ec1240309f3f5f02dbb34f84d27b3
+0.002	5	Binding-protein-dependent transport systems inner membrane component	03391e0bd98e8d2859c413996cd224c1
+0.002	5	ribosomal large subunit pseudouridine synthase F	03732c02c73637085556ccf71a3909d8
+0.002	5	carboxy-terminal processing protease precursor	00071d941319719efd6bad488695afb2
+0.002	5	orotidine-5''-phosphate decarboxylase	022bc64fe3895589af3827ddad128969
+0.002	5	oligopeptide ABC transporter ATP-binding protein	01b01ee661a7665732b0b874c2c8b33f
+0.002	5	ATPase with chaperone activit	00ac4dcef006fcb59db4a712055a8747
+0.002	5	prolyl-tRNA synthetase	01b5784532b5d8452ac1b2da0ff53924
+0.002	5	phenylalanyl-tRNA synthetase subunit alpha	015c15974442870cb29128149cfbb4c0
+0.002	5	phosphatas	0010360cddfe99581579cec59f078610
+0.002	5	nitroreductase family protein	02117cfa89a42cfbebc15cb9e807472e
+0.002	5	acetyltransferase (isoleucine patch superfamily)-like protein	02bbfce3d596d718eeac7045ae9c4e07
+0.002	5	GMP synthase	001c7864820322a62b204889f60a9bae
+0.002	5	membrane protease FtsH catalytic subunit	018795f30add994afd878ad130a123ac
+0.002	5	TPR-repeat-containing protein	016559372cd2dbf87cc4a2a622c7b9ee
+0.002	5	excinuclease ABC subunit B	00ac542151522a889b1a6f09372618e6
+0.002	5	aminobenzoyl-glutamate transporter	013b0f076b27aa0f93ab707ed187f3dd
+0.002	5	DEAD-box ATP-dependent RNA helicase ydbR	037567ff928c62465b5aec236c85e0ce
+0.002	5	Adenylate kinas	01c904d46e329ce26a72291aabe60bad
+0.002	5	glycosyl transferase family 2 protein 2	00f6264c1726fe01da70683f3f72c30e
+0.002	5	imidazoleglycerol phosphate synthas	02cde50394eae1b0b64b9275ef7e7b04
+0.002	5	GGDEF domain-containing protein	01409a325b3a7515d76a5c2952155f1c
+0.002	5	two-component system sensor histidine kinase/response regulator	02592c39490b032770b8cfcb821281d6
+0.002	5	cardiolipin synthetase 2	0069cf0be1d85e764b1e41c1accfecf9
+0.002	5	dipeptide ABC superfamily ATP binding cassette transporte	02cb5b48f73e234fc955a2751385d3ca
+0.002	5	glycosyltransferase 36	031bf103d9e9af6a9174ed364d0246ca
+0.002	5	putative carbamoyl-phosphate synthase large chain	01ed1b0def611b126c6cab8b35b88eca
+0.002	5	3-isopropylmalate dehydratas	00f4a0a9144fb9a6caf7ecb6365f6e60
+0.002	5	phosphate ABC transporte	0376dfbf964251d67e55e5dec7cda054
+0.002	5	relaxase/Mobilization nuclease domain protein	00da659e12a233920845d6f2e8595de2
+0.002	5	50S ribosomal subunit protein L7/L12	028f082938e5d2e5704bba9db3ab6389
+0.002	5	winged helix family two component transcriptional regulator	0184a772dc66142fcf7f2d9b2a20cd21
+0.002	5	cell division protein FtsW	01185a12a855849ceef9e85428ef0c24
+0.002	5	Acetyl/propionyl-CoA carboxylas	016923cc03f3341cf03d7811324b174a
+0.002	5	cysteine desulfurase activator complex subunit SufB	02be035edc088bc5a0d51867d40ce2bf
+0.002	5	5-formyltetrahydrofolate cyclo-ligase	0134fa5a6aab548bc2493105358fed64
+0.002	5	phenylalanyl-tRNA synthetase beta subunit	00f08b8030d88c70bd6ff91ff2a89dbc
+0.002	5	oligopeptide ABC superfamily ATP binding cassette transporter substrate-binding protein	02a402a54322991c01aa9991d3c30a57
+0.002	5	polynucleotide phosphorylase/polyadenylase	015046c7e9d91c3466c9918a10dbf67a
+0.002	5	zinc (Zn) alcohol dehydrogenase	01ce590052ee290bcea1654a7df4d4fe
+0.002	5	hydrogenase-4 component C	0195401624d7ce1989859577daab09cd
+0.002	5	transport protein	0277b6d4efc70e140dfbb62044bb70bc
+0.002	5	sporulation initiation inhibitor protein Soj family protein	0002d4df54045c32e38fda3778ea2bb3
+0.002	5	adenylosuccinate lyase	01bc7dffd5ff407266a4f8f70c0223a6
+0.002	5	sugar-specific permease	01b49c08dcbefeecb9d66c04c655941b
+0.002	5	hydrogenase 4 membrane subunit	03287bb86788f6f556907745df9890bc
+0.002	5	protein TolA	01e45e3c70b6f7cc2c8e382595e11b07
+0.002	5	L-serine deaminase	0045dc3b10b12c5c53be26fd15838e8e
+0.002	5	molybdenum cofactor synthesis protein	032061bd748d6c612ea07845ceb50b12
+0.002	5	urea transporter	0014f76095100cd39b52c6ebc3e9ede7
+0.0016	4	putative oxygen-independent coproporphyrinogen III oxidase	0193d3ab79613eb162b9aacd1bbcc6f6
+0.0016	4	ABC transporter truncated	01c0eedf5d04fd6691bc4150a2b9a9cc
+0.0016	4	Alpha-N-arabinofuranosidase	01f702a7c8a79392a70fd8c20657f420
+0.0016	4	putative toxin regulator PfoR	004150ff5bef37b781d73481efa7863f
+0.0016	4	PpiC-type peptidyl-prolyl cis-trans isomerase	0190d4eb7860ef60925130aecd8e3fdc
+0.0016	4	sorbitol PT	0226b0830dec00322ecbaef9d3d0d22c
+0.0016	4	ser/Thr and Tyr protein phosphatase	004099fa0ab4a0711dd4dcebad1ae133
+0.0016	4	class II aldolase/adducin family protein	00696aedca441e7999964815c8cbb033
+0.0016	4	transposase for IS1541	02c1826e717b532ef29b7d23acaee2e1
+0.0016	4	hypothetical	03412a371c1e81f91a7759cf62478914
+0.0016	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase	0267d4ccba7e37b4304d0f0160f53639
+0.0016	4	phosphorylase	026e03ecf468bd433d30561540364e61
+0.0016	4	septum site-determining protein	00c34d7589ec94ab9a1228ca41ddb627
+0.0016	4	ribosomal protein S7	0365425ccbf38b8ab4d8a306be5dfb2e
+0.0016	4	5''-nucleotidase	00515bd18f10d192abcf197cd0ac180b
+0.0016	4	putative metallophosphoesterase	035126e9a5704ebf4366f6bc3e7bee84
+0.0016	4	extracellular solute-binding protein	014df71958d9d27f6a3ab6bb1dd4f8a4
+0.0016	4	poly-gamma-glutamate synthesis protein	01f3c47995c002349a1eec033e5750fc
+0.0016	4	protein translocase subunit yidC	032587e2b4d9a44ca5039a58d2200c11
+0.0016	4	spermidine/putrescine ABC transporter ATPase subunit	0101c717b07278f337ac30012c2fe479
+0.0016	4	ribosomal protein L30	018d583dbcce041548a72d7fa2f6560d
+0.0016	4	chromate transport protein	033013d9930afadf95c3966a351101fd
+0.0016	4	peptidase family M3	007de21a7e447d5045a76accae927356
+0.0016	4	translation elongation factor EF-G	01e76f76da9c67b67db99fca2c03f07c
+0.0016	4	Lon protease	02e1720dfc712ccba6f624dc38646c52
+0.0016	4	50S ribosomal protein L20	02413d27ae704e4d0bb4eabb55f38a65
+0.0016	4	ribosomal protein S19	00ed86f80b476a4c2b927cc74139f387
+0.0016	4	capsule biosynthesis protein CapA	01f02479af07e055c12551cba2d5c6a7
+0.0016	4	transporter	00ea171eed844ee5be7b659e00f39d8e
+0.0016	4	retron-type reverse transcriptase	02ae1a1a43657f865c9c1f0b2bd80f03
+0.0016	4	flagellin	01a1c397929193a842db45a073f0b665
+0.0016	4	restriction enzyme methylase subunit	0280e56677e2914c1f976a0822aeb10a
+0.0016	4	putative glucose-6-phosphate 1-dehydrogenase	03689d46a7a3a29688b03cdcd69bc5eb
+0.0016	4	glutamate synthase subunit alpha	01fee2f65a2cd2ea02fff16353852261
+0.0016	4	50S ribosomal protein L19	01a39dc4a9f24b666d0558581d98e0fb
+0.0016	4	ribosome recycling factor	00393edb3f9a790dfb1bdcdef158a318
+0.0016	4	beta-xylosidase-like protein	02ede2e8813b9ba0abe76fe137520633
+0.0016	4	manganese-dependent inorganic pyrophosphatase	01035b30539341d336974f5789b8288d
+0.0016	4	IlvB1	022b7dd7165e4035a89ad12cca556922
+0.0016	4	gp60	03277a03a1029a4027a7bd88022151cd
+0.0016	4	cara	0005409786f655eca4ac34866ae9aea1
+0.0016	4	DNA-binding transcriptional repressor ExuR	022fb3f73dae00ef40aaa4e42ab852b8
+0.0016	4	alkaline phosphatase synthesis transcriptional regulatory protein PhoP	014d09f5d24a8c8c938af60fe16a59bf
+0.0016	4	6-pyruvoyl tetrahydropterin synthase and hypothetical protein	030bc148711c1fadbf6754215e9a6fa6
+0.0016	4	GntR domain protein	00f19f83b9c59c8d85e2e1a7337626a8
+0.0016	4	lipooligosaccharide sialyltransferase	033d571c6873677101906907eb2da287
+0.0016	4	acylneuraminate cytidylyltransferase	02cd0858662ee40b712deb288346400a
+0.0016	4	3-methyladenine DNA glycosylase	013c5d4bc230dafb3c4e9cb3fba132c9
+0.0016	4	ABC opine/polyamine transporte	0302acef2d00024dedaef9ab2eaeb5a6
+0.0016	4	ClpXP protease specificity-enhancing factor	0344807a9a3d95e3bb0f87f63128f377
+0.0016	4	dihydroxyacetone kinase subunit DhaK	01eb00905ed44b0d4c8b897a10db3122
+0.0016	4	LL-diaminopimelate aminotransferase	02af10b4c2be410780f7711cdf4baf31
+0.0016	4	rRNA methylase	0140eb4fa37dda39e874d741605a3822
+0.0016	4	primary replicative DNA helicase	031b85605f9ec7a88d6a7ea25e16f1d9
+0.0016	4	UDP-N-acetylenolpyruvoylglucosamine reductase	01933d8c1c8dd68b68058d6d35d73759
+0.0016	4	lipopolysaccharide N-acetylglucosaminyltransferase	035a35eee5bd95c3f39af286982cd5c7
+0.0016	4	UDP-N-acetylglucosamine acyltransferase	011abb3734072ce9900b73c441b10ea1
+0.0016	4	selenid	002276901bd7859440a4a783a56c3fbd
+0.0016	4	HDIG domain protein	01b751c46e10d2cf8955199e14e9f271
+0.0016	4	folylpolyglutamate synthetase	01c9de6a9ddec6d6917ee67062496571
+0.0016	4	Cysteine desulfurase	01ab04c0489e6bc085dbdea5f0f75039
+0.0016	4	similar to alcohol dehydrogenase	020e77d36a209860268182b4c9b00d02
+0.0016	4	DNA-directed DNA polymerase	019bf675d1b1e8b619120084b2a19211
+0.0016	4	hydrogenas	00fa3ee996fff03a08913543658d9532
+0.0016	4	putative selenate reductase subunit YgfN	0233fc7275884511cb3c6a9f26d19710
+0.0016	4	oligopeptide ABC transporter	01fd6ce1da060ec0ee3bd167a850814e
+0.0016	4	putative restriction enzyme	007c66109f55e815bd4368dd9a927914
+0.0016	4	ribosomal protein L29	029c2bc33a3f99501fe4f6ec84493fc1
+0.0016	4	aminotransferas	01e9191accf4551189e7de64e0bbba6d
+0.0016	4	UDP-N-acetylglucosamine 2-epimerase	0117b2804e6bdc29a6b8def68dc08435
+0.0016	4	type II restriction enzyme NlaIV	001e7910ed96fa4af93dd696739f3d5c
+0.0016	4	acetylornithine aminotransferase	020f58559270eb3216b5dfb4c468d14f
+0.0016	4	glycine radical domain protein	00bf723edcb1960cd0a0770d829463e3
+0.0016	4	aminopeptidase	00691f6600618603a204aaa17e6de3cb
+0.0016	4	pyrimidine-nucleoside phosphorylase	000c22fc64171f5f6841abb2e08876f0
+0.0016	4	D-psicose 3-epimerase	0272e6f5806ee5fa61468c28741576ea
+0.0016	4	phosphate permease	00c492230a8ce0b75e439a85bd89865b
+0.0016	4	Methionine synthase	03700fcfd52198336a5e17d58c4ab45d
+0.0016	4	alginate O-acetyltransferase	01f14e5cd53091fa723efc5ccc16d2be
+0.0016	4	calcium-transporting ATPase	00533135e602db40c3192dc1a37db33b
+0.0016	4	polysaccharide biosynthesis protei	0081d048cc71a347621ad39b84f3a9f8
+0.0016	4	alanine dehydrogenase	00e7d07247e2cd0f3a978e4f433f9016
+0.0016	4	taurine--pyruvate aminotransferase	01e799973851c4c0c8dbdb97bf4be31b
+0.0016	4	50S ribosomal protein L1P	01dcb505a2e43b335ce5be7224e6fb8f
+0.0016	4	cysteine synthase K/M:cysteine synthase A	0036874fefb9703d5864c15d802299e1
+0.0016	4	nicotinate phosphoribosyltransferase	0122ffb3cef810a38af9644635d7b16e
+0.0016	4	pyruvate dehydrogenase	01668a02c46ed82dc0d456f8c25df4ab
+0.0016	4	GtrA family protein	0276136ad77519ce3ee94a90dfc10dca
+0.0016	4	phosphopantetheine adenylyltransferase	01f3637fba7960e5193896faf97eb505
+0.0016	4	L-serine dehydratase 1	02abef1ab9977b1c5d13c02cbdd990d8
+0.0016	4	serine-type D-Ala-D-Ala carboxypeptidase	01357c678739cd912069e7ab3d192948
+0.0016	4	LexA repressor	016b073bb879eb049cf03c9dfb5f7d74
+0.0016	4	protein-export membrane protein secd	02b6508bf19d4021adfbf42d7b28e41b
+0.0016	4	acetolactate synthas	02a1b6d68587d7e1d83bf5140e6414a1
+0.0016	4	Phosphotransferase syste	019c2dc7f7263f6c4e48dfa704594d68
+0.0016	4	periplasmic solute binding protein	008fbe04c586d444bcbd7bef0ec1e569
+0.0016	4	two-component sensor histidine kinase YesM	019e5db3f035849fa6be2f8907f817a1
+0.0016	4	D-hydantoinase	0003cef899962e850a9f56c4f112f1b5
+0.0016	4	glutamate formiminotransferase	01d0022732bd0e865717d7c18b4710c8
+0.0016	4	competence protein comM	00b6ef79ba57ec6bd83c734e2068d4fa
+0.0016	4	capsule chain length determinant protein	0309a0536bc9c49e516dd14dcd7f0bde
+0.0016	4	modification methylase HphIA	010ab156b30d7eda69c71abd3edae73e
+0.0016	4	phosphoglyceromutase	02379682864dc0f821e16dfee4a57e98
+0.0016	4	putative regulatory protein cII	030f0f28aba9c209a5cd54898be12eb5
+0.0016	4	possible dGTPase	027b19c3820261cdc2c0499bd81edc99
+0.0016	4	purine nucleoside phosphorylase	01910ac1d241616993bf94a36cab5bb7
+0.0016	4	ATP-dependent DNA helicase RecQ	00ca93948ba7342e22fb0f3eba996bb7
+0.0016	4	pyridoxal-phosphate dependent TrpB-like protein	002076bceaf1b73f6e6c19a725905698
+0.0016	4	pseudouridine synthas	007e91ed8c72886d7f9fd02da8969de7
+0.0016	4	tryptophanyl-tRNA synthetase	022360e66e550709c993f06040e6c0dd
+0.0016	4	putative glycosyl transferas	02222f3c8ef700b517f5e5c5e41da3c7
+0.0016	4	DNA repair protein RadC	01638fb993105be8852ad6bc9f082151
+0.0016	4	2-C-methyl-D-erythritol	011a509f576fc6411a3784044d946804
+0.0016	4	DNA protecting protein DprA	037e6802e2af889b168845e96dbdb613
+0.0016	4	F0F1 ATP synthase subunit gamma	00d12f8ee84624cb7dea0862c35c29fb
+0.0016	4	geranylgeranyl pyrophosphate synthas	025c74af9a871bfdd47216efc2c6a35d
+0.0016	4	putative cell division protein FtsQ	022e4fd1444123c096a36e77f2498936
+0.0016	4	outer membrane receptor FepA	00e3c6401c249872c02dcaa25b87d669
+0.0016	4	chorismate synthase	01162c02dc1d134f05fe186401283b3d
+0.0016	4	Glycine hydroxymethyltransferase	030e2e3a570bd1d66801bab9c441f141
+0.0016	4	possible 1-deoxy-D-xylulose-5-phosphate synthase	01b726bd8f65f0b160c5c9511d8c9be5
+0.0012	3	regulator of length of O-antigen component of lipopolysaccharide chains	01dc05a694fbf10399eb57385247d798
+0.0012	3	alpha-L-fucosidase	03566719ccbf6b1286c7119b89e78997
+0.0012	3	ISSag3 transposase	012c74f022f2af7ca1828b456959abbb
+0.0012	3	ribosome biogenesis GTP-binding protein YlqF	03422b9b55846bb8f16fbedcd5340a8e
+0.0012	3	response regulator Rr1	014621f3d76bac4a2e15431dcc015ae0
+0.0012	3	glutamine ABC transporter ATP-binding protein GlnQ	01878adcf4d5660483d0969ea9a5f9c1
+0.0012	3	ribosomal protein L19	024414f2fa438743bb47f5368e8404ec
+0.0012	3	23S rRNA (guanosine-2''-O-)-methyltransferase	029e1ab258fa9e13a381f38b22c3240c
+0.0012	3	alpha-N-arabinofuranosidase 1	004cd4ae236a93d3a67502907318eb1a
+0.0012	3	putative manganese-dependent inorganic pyrophosphatase	01168c704d9eb6968178c734f5c9feef
+0.0012	3	M16 family peptidase	01bba66c95ebd49533c82b58ffd155b5
+0.0012	3	GtrA-like protein	02345e3b1c10028787d051a9693b6231
+0.0012	3	RNA-binding protein Hfq	01b6373c4669fe0f133d83a128396f91
+0.0012	3	OmpA family protein	0076c3c2d3a955506af824b4831f9490
+0.0012	3	RelA/SpoT protein	0316ac44c07ec25011524a7b6863e84d
+0.0012	3	cytosine-specific DNA methyltransferase	025688c2d1dc2158907a0414b7dac682
+0.0012	3	phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP diphosphatase	010c75b91535369802a8786c7818c326
+0.0012	3	efflux transporte	034179823e1e6b7a5c1c88fd95920230
+0.0012	3	mbl protein	019c2d9c42dc980038b510968e754b63
+0.0012	3	inosine-5''-monophosphate dehydrogenase	0087303c7ac6476cda78d31da49e1274
+0.0012	3	fructan hydrolase	02e1a41b8be622bf11687738701b38d3
+0.0012	3	stage III sporulation protein AG	037a956fc4cff0cd62ef28926af92a43
+0.0012	3	IS1 ORF2	02e8cd57a5deb4498c2fe80a3a96688f
+0.0012	3	PrkC	0345093d43d165adc3ecbf5081bb669f
+0.0012	3	cell division protease FtsH	028b30063036cf8b13348a29f05dbee0
+0.0012	3	phosphoribosylamine-glycine ligase	02724c3bba47d9523a240a2727217d2f
+0.0012	3	zinc-binding domain protein	0233b8210f8bd50381051c651ea348d4
+0.0012	3	phosphate transporter ATP-binding protein	0034350ce28b853edfe4c6ba972ada43
+0.0012	3	prolyl-tRNA synthetas	016e5043d2315ff6722407f7799108c2
+0.0012	3	protein of unknown function DUF6 transmembrane	02e4ebb553325d6ec4b229227581e71a
+0.0012	3	putative metalloprotease	02a98caf3f4f7b7f78ce675d70feaeb3
+0.0012	3	glycoside hydrolase family 2 sugar binding	008ce50e1fa30b9099e1c582e56bef12
+0.0012	3	putative permease	0301e66e0f603cde30c74d88d84ae92a
+0.0012	3	50S ribosomal protein L2P	011cafb79f6b010fd0f1fa70d841642f
+0.0012	3	peptidase S8 and S53 subtilisin kexin sedolisin	02cd419235a94a1faa95597e5dc93247
+0.0012	3	glycerone kinase protein	02abdd95ad98e1b8c7af6025c2389b3a
+0.0012	3	putative dinitrogenase reductase activating glycohydrolase	01d623fc0a066aef1c16c391e6eb1d66
+0.0012	3	putative O-acetylhomoserine sulfhydrylase	024ad282cd30bdd7a4c8d2aca2b4568e
+0.0012	3	phosphopantothenoylcysteine decarboxylase/phosphopantothenate--cysteine ligase	007c10170609e772013a84ac6049825d
+0.0012	3	DEAD/DEAH box helicase domain protein	01a531b8a59fd5b3650b8413eb3cc666
+0.0012	3	5-methyltetrahydropteroyltriglutamate-- homocysteine S-methyltransferase	021b8c47c98f99594c7f777d77083966
+0.0012	3	DRTGG domain-containing protein	003d61aab1e64d4895f7fa2f7e8f92dd
+0.0012	3	Ferredoxin hydrogenase	001895baf108ab0c5bb6cdd13a1879be
+0.0012	3	CTP synthase	029a950c42b06f66732ffcc85c63068c
+0.0012	3	putative cryptic C4-dicarboxylate transporter DcuD	0252732b1a46525f29f1b92e76944b55
+0.0012	3	calcium-translocating P-type ATPas	0152e1afc8192ab6894f6c0c9a6902f8
+0.0012	3	thioredoxin family protein	02ca18b4745712d72e11ff1af0f60343
+0.0012	3	50S ribosomal protein L11	00391815f2fb1e4d308fd38080222bb2
+0.0012	3	3-deoxy-7-phosphoheptulonate synthase	011eb6f6f0ca4deff7edf7b6e85407ed
+0.0012	3	two-component sensor histidine kinase	01cdb4933967edf7cd939dc7eb3d6001
+0.0012	3	DNA polymerase III alpha subunit	00fb3e153b50dcccdbe2b41df19aa556
+0.0012	3	ygiQ	025a0129abeaaabf08a5d86061bc832f
+0.0012	3	dihydroorotas	00dc21686bf0f6384f76ccf91f445627
+0.0012	3	Cell envelope-related transcriptional attenuator	00d9ab0c2a21c0fecb4913a62e94e697
+0.0012	3	signal transduction histidine kinas	0033512a8816b3f01f53b8f45c508646
+0.0012	3	cytochrome bd ubiquinol oxidas	0259f6e3ab7fc10ddda2167150687b2d
+0.0012	3	putative glycosyl transferase	0006aab680dc615f40350f8a5ed0d7b0
+0.0012	3	PfkB domain protein	006ae9a48bb0ac8ae3008097593567c2
+0.0012	3	fibronectin type III domain-containing protein	02c681e824f8d1d6b5d5e794723c8748
+0.0012	3	putative diacylglycerol kinase	00951f367199bdbf40cd2645573ab32b
+0.0012	3	septum formation initiator family protein	01cc07832440105436ce466a949fcd1e
+0.0012	3	acyl-CoA synthetase (long-chain-fatty-acid-CoA ligase	01d6700ea205e92df35f5d8a720381d8
+0.0012	3	HIT domain-containing protein	024eeb3df254e7e9d5791c211fe67f8d
+0.0012	3	putative 30S ribosomal protein S1 homolog	0165e1db4974b66373e8e0dfcfd74d17
+0.0012	3	tetraacyldisaccharide 4''-kinase	024760559cac45b7e0b4b0ab04241bce
+0.0012	3	SpoU rRNA methylase family protein	02e651f169c9dd87362a5463bcaccbd8
+0.0012	3	2'	01f4ba53ef166ec1996090d93525a6db
+0.0012	3	putative sugar kinase	013dc22efcc1a683dbb12df152f82f14
+0.0012	3	glycyl-tRNA synthetase subunit beta	020dcd2ee31c26dba30853789d2f320d
+0.0012	3	LICD Protein Family	02486abb5a7982a73d0d311c4dcc9197
+0.0012	3	Auxin Efflux Carrier	012f594d738c53d2535355a134d88f38
+0.0012	3	ATPB_NEUCR ATP synthase beta chai	000fedb1854156bb5fbe93bd31a04fb2
+0.0012	3	ACT domain-containing protein	0047ff05804bf1f7399252e1b7c09b20
+0.0012	3	LysR family transcriptional regulator	00255a7737f09679dd8930f8bc1eeb71
+0.0012	3	restriction modification system DNA specificity domain protein	01bf59eaf1adeffc75d6fc26ac6f9182
+0.0012	3	SMC domain protein	016167749dd1ee22d0d4196437b39b2a
+0.0012	3	NAD-dependent oxidoreductase	02dda90f7874fbfb86941e4a56085b8b
+0.0012	3	DNA-binding response regulator	017fbb9a522fa2b4e5d9e05e8316ddc6
+0.0012	3	sugar isomerase	02d0acb64ef2ac0c5be9f8572be3541f
+0.0012	3	oxaloacetate decarboxylase	017468becbb8c7852df65127a395c539
+0.0012	3	propionyl-CoA carboxylas	018a72a78d673c216269b6ac392770cc
+0.0012	3	insertion element IS1 protein InsA	02a1a18122b6ea5779aff0d8a3b6c72e
+0.0012	3	sodium/proton antiporter	012af128125b4d453757711f50878287
+0.0012	3	cobalt transport protein	0352969eb9d19cb5f30c225551d5d179
+0.0012	3	Glycoside hydrolase 97	013ed41a04e48e3aaa1d6ec77856846c
+0.0012	3	4-hydroxythreonine-4-phosphate dehydrogenase	00d525925287e8d99e23d704a322929f
+0.0012	3	lipoyl synthase	031c097652d9991562d6741353a3b20d
+0.0012	3	galactonate dehydratase	024d889fdee8925b43a52c73303b6797
+0.0012	3	tryptophan synthase subunit beta	01265c15b0bfeacf77bb5a2cc79b5ae4
+0.0012	3	mannose-6-phosphate isomeras	026f423792ced15574aed9ee9ab0932a
+0.0012	3	thiamine biosynthesis protein ThiI	01965e9bcbde61a0fbbc688c714ae4a4
+0.0012	3	2-dehydro-3-deoxyphosphooctonate aldolase	033b7453fcc123fb8b8d14d963422d4f
+0.0012	3	alpha subunit of malonate decarboxylase	010e3bd39d874ec57aa74a6d28963b1c
+0.0012	3	PTS system	0282d63cfecb2301d3e849443b660504
+0.0012	3	DNA-3-methyladenine glycosylase I	02ed2d2c40effad8e0ff68f43dea00fa
+0.0012	3	proline/glycine betaine transporter	035b7661f8273a65b2d9a4e1e3608412
+0.0012	3	Aldehyde dehydrogenase B	0196f663d0e88b8faf9b4956818f4196
+0.0012	3	HAD family hydrolase	000d35c02f409641eb252869bf91b2d4
+0.0012	3	putative addiction module antidote protei	03284c7de774ddefe233770cc77797dc
+0.0012	3	ribosomal protein L6	00b10e21bffb5b44aca3a9fc5df9d264
+0.0012	3	RnfB/polyferredoxin	00acf11174cb3ef88b9e7fe46d05f062
+0.0012	3	glutaminyl-tRNA synthetase	02706d71580bf033349f2b9372caea09
+0.0012	3	penicillin-binding protei	00cbe4362fb981a59d8d13e632f71645
+0.0012	3	putative baseplate assembly protein	021d7e99680e9b845735f6f362c898c5
+0.0012	3	integral membrane sensor signal transduction histidine kinase	0085698d7174a4d35896d3a8e24380ed
+0.0012	3	putative ATP-binding component of ABC transporter	02bdd2732e98774333a5879bec2f8295
+0.0012	3	periplasmic nitrate reductase subunit NapA apoprotein	033e9712393605ebfdc271fba24c0b36
+0.0012	3	amidohydrolase domain-containing protein	024939a3d5dbce38d062dc4298ff244c
+0.0012	3	DNA polymerase IV	0311e92eef5c5547b444df0dc136660c
+0.0012	3	PTS family mannose/fructose/sorbose porter component IIC	0313bf893389fe548cafefff1c105913
+0.0012	3	DNA replication and repair protein F	017737476715b3aeaf624d47694473c0
+0.0012	3	alpha-N-arabinofuranosidase	01a9e7a10fee4958a15135409d745261
+0.0012	3	threonine ammonia-lyase	027b53f43a50285c176aeb6982eb3f9c
+0.0012	3	TonB-dependent receptor plug	01d2c764b5b19fac8e5c583fb809de5d
+0.0012	3	putative lipid kinase	021a8b939976c7b5ad8a1247f3a2ad64
+0.0012	3	carbohydrate-binding CenC domain-containing protein	0103c2a8d753df1ec9c05dfcd26adb73
+0.0012	3	protein TraX	00616c56c00830db958175b7e79c6586
+0.0012	3	putative methyltransferase	0113637786cfe8f08cd622b5e9af457b
+0.0012	3	chromosomal replication initiator protein DnaA	000e54bc3d38eacc3e54fe9a863750db
+0.0012	3	formate acetyltransferase	01a3d896839b2b4efbe2aa6f362842e0
+0.0012	3	FAD dependent oxidoreductase	032eadc997457202a6586bed6a5cb754
+0.0012	3	ribonuclease E	0351355e96f69908f8cf993703470c46
+0.0012	3	lipid-A-disaccharide synthetase	02eed76d94e949cd4f4653bde204bff5
+0.0012	3	nitrate reductas	02667994d5029a0ae2fd2d071f030cc6
+0.0012	3	N-acetyl-gamma-glutamyl-phosphate reductase	032ede514e2358c68a18e9da0b5c1f13
+0.0012	3	putative prophage integrase	0294d6b454e6be56b2129486a61c0356
+0.0012	3	Ribose-phosphate pyrophosphokinase	022222ee2d3471bceb51fb10d81ed120
+0.0012	3	multidrug transporter acriflavin resistance protein F	015b3331afa09dc53b009495e05e047c
+0.0012	3	SSU ribosomal protein S3P	018c81308ebfa6f51335d08cd38ee101
+0.0012	3	allantoate amidohydrolase	018d8d9d7c7a57044fd6dea6d77b9495
+0.0012	3	LICD family protein	00c1444012ebf86729fedb575c226cae
+0.0012	3	BioY family protein	01656506acada01dedbfb3444022357d
+0.0012	3	aminoacyl-histidine dipeptidase family protein	022929f3b19c9a84728088589a473b31
+0.0012	3	glycoside hydrolase family 1	021a7c8e6dd60bbe88222a26a1f679e1
+0.0012	3	spermidine/putrescine ABC transporte	0184cec8183eba6628a5f363c1e70cc9
+0.0012	3	cold shock protein	01a1741930e5c1c42ee2180ce9cad07d
+0.0012	3	methylated-DNA--protein-cysteine methyltransferase	031c9df5062fc47b8f900971ba664b06
+0.0012	3	potassium-transporting ATPase subunit C	00767d72397fb2096cbe7f7d368f2891
+0.0012	3	thiamin pyrophosphokinase	00bc45d03224c6702eb2ffba8616758a
+0.0012	3	glutamate-1-semialdehyde	00a2d4881927f6a86e9c1d9dc9e59820
+0.0012	3	sugar (glycoside-Pentoside-hexuronide) transporter	0240d7acab4ab85e66ff1ed159233d34
+0.0012	3	helix-hairpin-helix repeat-containing competence protein ComEA	02efc234b9869ce2b40fb8b3cc3ea688
+0.0012	3	serine protease	0001c2703270cc7aec519107b8215b11
+0.0012	3	ribosomal protein S21	02f49558d28dc4590742a836a0394d92
+0.0012	3	hydrophobe/amphiphile efflux-1 (HAE1) family protein	020974bb57852a29c6f34a12dbdd1e21
+0.0012	3	two component transcriptional regulator	025b6c0078e86dd12793836cf8808dab
+0.0012	3	ADP-ribosylation/Crystallin J1	01c6591dbbe65b197dbda18422e6bac5
+0.0012	3	streptogramin A acetyltransferase	013f7b00935f8829fe3a46d44b51acef
+0.0012	3	chaperonin GroES	01a60f613e3a7c114acc835c199c943a
+0.0012	3	maltose-6''-phosphate glucosidase	013f39465a5a387c88dcbb28d14cdb28
+0.0012	3	hydrogenase expression/formation protein HypD	01cabae9ff4431506fc99cac82ad46d5
+0.0012	3	DNA-binding transcriptional repressor FabR	0205ab74228195ba71b84f163c3395bf
+0.0012	3	UvrD/REP helicase	02adff7f1698612705b272ab9de86758
+0.0012	3	rhodanese domain-containing protein	00c87ff42274051fa65a2ef9dbb20e77
+0.0012	3	arginine biosynthesis bifunctional protein ArgJ	011d757884c82bd55c99e93934e495e2
+0.0012	3	HAD superfamily hydrolase	00e904c4ee060c50ee2d18bec6972f9c
+0.0012	3	L-cystine import ABC transporter permease TcyB	02ef82e8b3e1864d7ee2fa20cc1c1e77
+0.0012	3	DNA topoisomerase IV subunit B	00943a64ff8b06ed5320e9dda38cd307
+0.0012	3	tRNA pseudouridine synthase a	035f9c746c4635be7a99df04551cbc41
+0.0012	3	glucosamine-6-phosphate deaminase-like protein	0008e5e044357ea649b7733ef473bb71
+0.0012	3	6-phospho-beta-glucosidase A	030a85f7215d41203dd99b16edc5c9f2
+0.0012	3	Na+/H+ antiporter NhaC	013fec1724ca1d5ee8e9f05b2f5d2c82
+0.0012	3	histidine kinase-like ATPase	0051a50619933e81cd93e7888e3b4e08
+0.0012	3	(p)ppgpp synthetase	017634648cfd5112e67170ec6ab3eac6
+0.0012	3	probable undecaprenyl-phosphate N-acetylglucosaminyl 1-phosphatetransferase	00ffcfebe83a5c494ecfb9d88776ddc8
+0.0012	3	Aldehyde ferredoxin oxidoreductase	023cbf72ede59a31ae79c4eb9e3188a1
+0.0012	3	aaa atpase	0267181dfff79c4d65bb0b6094203505
+0.0012	3	OmpA/MotB domain protein	017e41e9c9ed24c78e53d6d0ce643519
+0.0012	3	aldo/keto reductase	00d4d5e4cfcfd99c24223d6676a47c29
+0.0012	3	CopG family protein	016c7446749395e9f962f9bbd55fcc31
+0.0008	2	ferrichrome transport ATP-binding protein FhuC	0045b96948b3e1d5230e136ff978f8da
+0.0008	2	family 5 extracellular solute-binding protein	028fde274fbeda18dc13da86f040b0be
+0.0008	2	putative alginate O-acetyltransferase AlgI	008f523391ef3febc64aa35da6361a54
+0.0008	2	delta-aminolevulinic acid dehydratase	012ecf3dd129743728bd5ccab8a4e7c9
+0.0008	2	prophage ps3 protein 01	0323f61dd1f8585b8bc66712f4d078e6
+0.0008	2	L-lactate transport	025010ee52761825d8f9e7e9ddf08fb2
+0.0008	2	protein translocase subunit yajC	035cb7c43d14aeb96e9504f30597422a
+0.0008	2	CD4+ T-cell-stimulating antigen	037f30ea02d6b9d7c2a4b005530e8a96
+0.0008	2	ribose ABC transporter ATP-binding protein	033b97380068d7a51d7774d7d5895915
+0.0008	2	ATPase family protein	00c9aa3d1ce61beb8944344ad12b8df9
+0.0008	2	2-hydroxyhepta-	0269115944190032de71309ffe369174
+0.0008	2	orf_Bo164	00365e5899199cbbbbabca35c77240c2
+0.0008	2	peptide chain release factor 2	024ec5dff7d9a6e1dd1130505627b2ad
+0.0008	2	translation factor SUA5	0040919b197ffa99eb975f70f144a64e
+0.0008	2	putative galactose oxidase precursor	02ac915ad1abf985ae962a6bd861c4ff
+0.0008	2	L-PSP family endoribonuclease	00bb549fa749bc5a074770f16fe43eb8
+0.0008	2	GTP diphosphokinase	004d4b38db02ec34202d2e5e294e3896
+0.0008	2	ATP-dependent chaperone protein ClpB	0145b307d35d9f44e1a58c324f16229a
+0.0008	2	aminotransferase AlaT	01e55a9b7d44982d7e1c0db2f8576deb
+0.0008	2	rubredoxin-type Fe(Cys)4 protein	00683d5223e8fd69c4af847879e2107e
+0.0008	2	N-acetylglucosamine-6-phosphate deacetylas	02cf93a3574f62a509506029466610b9
+0.0008	2	selenocysteine synthase	032a767aa724083bf1f50ac4f3a9fae6
+0.0008	2	putative alpha-L-rhamnosidase protein	02ec7eea9edc481e44dcd2f83b0ed900
+0.0008	2	Mlp	007791d36db1a4b56c674d6a9ac4aa55
+0.0008	2	UDP-N-acetylmuramoylalanyl-D-glutamate--	02e706616fc18b28a473e185c35e3863
+0.0008	2	sulfate ABC transporte	024fb0bb789306c4147247f95a12ee4b
+0.0008	2	3-dehydroquinate dehydratase	0253fb61ac207259dc77f535f32f8825
+0.0008	2	prophage protein	01386dc6eb47000567d70519cd5c4cdd
+0.0008	2	pyruvate kinase I (formerly F	02f0cf32f225ebb0216f24edc3cba9cc
+0.0008	2	pH-dependent sodium/proton antiporter	02f235e0df3c30b00aca7b23b678e099
+0.0008	2	haloacid dehalogenase-like family hydrolase	00b244aa96bb5a1db5c3022919b4dd68
+0.0008	2	dTDP-4-dehydrorhamnose	0152ad49b090ffe65a445ca4aca92892
+0.0008	2	peptidase M23	01369dfea80893f7488f84bd5287084d
+0.0008	2	biotin carboxylase	031aa26d258eafba3f225a3c3a7a1e39
+0.0008	2	L-arabinose transporter permease protein	005c7b26a61a909f77c6da544a6ff6b9
+0.0008	2	transporter permease	0134496d156614c8d4f6d137a7be581c
+0.0008	2	oligopeptide transport ATP-binding protein OppD	0307bde21d38ee587d9e3c57e1111ced
+0.0008	2	surface antigen	00991aad5369a42349ce8a1832664589
+0.0008	2	flagellar motor switch protein FliG	00fc95e383b0baeafd2b8cd042280bd5
+0.0008	2	dihydroorotate dehydrogenase 2	0317c727ed7f048600041414b1bb4b9c
+0.0008	2	delta-1-pyrroline-5-carboxylate dehydrogenase	00f4c8237263b570fb89e6ae9d7955d1
+0.0008	2	TonB-dependent recepto	00cff698f0b767843e303f157f93e727
+0.0008	2	DNA gyrase subunit B	02eff1174dcee32eff15bbdd96d9619e
+0.0008	2	band 7 protein	02165afbaae038f7c56a6fced3be5c72
+0.0008	2	transporter YvqF	0099adff49dd88a36d7e25ecb5a52c9c
+0.0008	2	asparagine synthase (glutamine-hydrolyzing)	014284b1c662dd33b0584d252205ee01
+0.0008	2	cryptic beta-D-galactosidase subunit alpha	01d61a0d10d98048b79f178dbdd2c73b
+0.0008	2	thiolase	01242309ed8841a69cb0df49f137b803
+0.0008	2	bactoprenol glucosyl transferase	023e4878b9af9dfcfec360cd8fc8ada5
+0.0008	2	leucine Rich repeat protein	02815429c27da5166267de6941975d4e
+0.0008	2	dehydrogenase related protein	0343779aaddd387f5090ec60d37c4989
+0.0008	2	multidrug resistance protein mexB	0211f66f7d0f159a725c2f1e48b4a3c0
+0.0008	2	DNA polymerase III PolC	01a0a02a6422241b2265857dce42067d
+0.0008	2	phosphoribosylaminoimidazole-succinocarboxamide synthase	00aab437f4d0827cb3a8eb43ae5412cf
+0.0008	2	deoxyhypusine synthase	00163c06e165ee0a2469bd71766a8321
+0.0008	2	betaine reductase	006cefaea6c1e8630f47ab0674e552b9
+0.0008	2	Aluminium resistance	00675792cb4c90f76c08ccbba3a4068d
+0.0008	2	bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase	0048ff508195aac7fdb31c0f07d07f05
+0.0008	2	homoserine dehydrogenase	03580fcdb547b74132ef99820bc5e65d
+0.0008	2	lipoprotein-releasing system ATP-binding protein LolD	02b505b6e4e75c268d2e8d52cc289397
+0.0008	2	glycosyl hydrolase family 88	028b933b176858556bf4a78100fd1f89
+0.0008	2	glycosyl transferase family 51	02cc0edd29048b02c7a7307dae95e28e
+0.0008	2	acetyl-CoA carboxylase	00c3c469ab6626138834b011454442de
+0.0008	2	sigl	0290898a9f9402ea7dfb16bb84ba4c71
+0.0008	2	DNA repair protein RecN	010a50f3e33a05cd2e667bfbd40315d6
+0.0008	2	50S ribosomal protein L14	00baea9080220ac8b4cfa68d04b19019
+0.0008	2	anaerobic reductase component A	01e60eb6897f6e56d770ac6c8476b0e9
+0.0008	2	sugar ABC transporter periplasmic protein	02550ff7ad5300e5f97c19bac45e1a8d
+0.0008	2	glutamyl aminopeptidase family protein	010b84fc4797ed0c667ab78155956086
+0.0008	2	protein of unknown function DUF988	01b8221df98237d61900c32d6daa8def
+0.0008	2	glycoside hydrolase family 43	02047345c9046b63775650d6c1ecdc17
+0.0008	2	TrkA domain-containing protein	01319578fd0c735682d82aca3aba6585
+0.0008	2	protein of unknown function DUF187	00f4c46d222f39257365bcadc16365bf
+0.0008	2	putative ferredoxin	01be2128b61172f1f6ada1ab5c258a8a
+0.0008	2	protein jag	0274b6783c01eb351db966aaf821d609
+0.0008	2	Methyltransferase	005e8d3111bf65d535c58eb2858ae2a5
+0.0008	2	endopeptidase La	0243f5db014d9632beb452759c96af55
+0.0008	2	carbohydrate ABC transporter membrane protein	00159e9ea8e23a8414e9ab23bd2dda6b
+0.0008	2	flavodoxin	00aabf40658e8ee3a839086cf0675643
+0.0008	2	pyruvate formate-lyase 2 activating enzyme	037d4354525845c921d154b89b023b1a
+0.0008	2	TetR family transcriptional regulator	01ab38c8caebb303980b4b4ac27e25f6
+0.0008	2	Clp protease ATP binding subunit	0272fa1d6314f5261d5cd1f80783824a
+0.0008	2	Na/Pi cotransporter II-related protein	00af74991a99f28ab81f47bab5f2cda8
+0.0008	2	accessory Sec system protein Asp2	0203086d3bed22dc83110658293e8d01
+0.0008	2	site-specific tyrosine recombinase XerC	009b27aa4001033e471be5f201a998fd
+0.0008	2	putative LPS biosynthesis related polysaccharide transporter/flippase	0242f983cf7f38247435832e8fc4ae35
+0.0008	2	carboxyl-terminal protease	02214d5bdfb9baf1e71bc99184c8a57d
+0.0008	2	D-3-phosphoglycerate dehydrogenase	0060fb422763f6772f9ac21892e59edd
+0.0008	2	putative recemase	02ee70b288a80ce2c3d2304d30957cbb
+0.0008	2	HD-superfamily hydrolase	00769643992afbf3e5c15ec5582bf9b1
+0.0008	2	Holliday junction DNA helicase RuvB	00eae3adc2619007661eed42c0f5bbd0
+0.0008	2	alpha-N-acetylglucosaminidase	03630d206c27e648b1795c33afd863ab
+0.0008	2	pyridoxal phosphate biosynthetic protein PdxA	0173885a28744d0ac5ab3dbcb9e89a8e
+0.0008	2	neopullulanase	0159c8799c221a9cc0f59b6598df7cf3
+0.0008	2	multiple sugar-binding transport ATP-binding protein	01a1ae3c99acd15c9021e4c88ac125aa
+0.0008	2	peptidase U32	03723f0eaea9100232d542a0474b90f9
+0.0008	2	Sodium-dependent transporter	035f3af58bbd9d120f9065f80c5cb2d5
+0.0008	2	Gid NAD(FAD)-utilizing enzyme possibly involved in translation	00f888f02635fd05c54f62a563054c5c
+0.0008	2	putative mannose-1-phosphate guanylyltransferase/mannose-6-phosphate isomerase	01a4332b493b64234830e83d3ebfbc8f
+0.0008	2	HutP family protein	00a225061361464bc04573f752889639
+0.0008	2	Indole-3-glycerol-phosphate synthase	02741fa8bf61372a500a56b2e0ad68e3
+0.0008	2	ATP-dependent Clp protease ATP-binding subunit	026ed5a471286edd3f75126d89127428
+0.0008	2	ribosomal large subunit pseudouridine synthase D	020ae91b8c0e6e8ab1262cbdf5a024be
+0.0008	2	isocitrate lyase	02b50639fa53942ae80a9f18c91b045e
+0.0008	2	50S ribosomal protein L1	00ba8ee49f18084aa05ba4b5346c0aab
+0.0008	2	xylose isomerase domain-containing protein TIM barrel	0054cfedcd55ed92aa5f192d7a79f0e9
+0.0008	2	ATP-dependent protease	02641e364086d86d414982d6dbd1043f
+0.0008	2	methionine-R-sulfoxide reductase	0134f84371c5cc63bd3ac7345530e993
+0.0008	2	putative ATP-dependent protease La	0375841d448aea0d96c5e3842e90095a
+0.0008	2	glucose-inhibited division protein	00825d459b3fff62a8b07016b9958a7c
+0.0008	2	asparagine synthase	032f8863fac4e0acf60361865b5a85cc
+0.0008	2	radical SAM domain protein	01026a6e7e100538926467fad006dab5
+0.0008	2	putative MazG protein	033da3bc414a3ad24012b546fba19006
+0.0008	2	aspartate 1-decarboxylase	0173874b80fc6dc9de06b4b624768471
+0.0008	2	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase	00d619c0356f9bf2f44a42a77ab946b5
+0.0008	2	adenine deaminas	00ef46b0d402a896256e294ef044626b
+0.0008	2	hypothetical cytosolic protein	008b8e0f4dd91fb9301be75ac311872d
+0.0008	2	rubrerythrin	01b84e1cc792b8297ce6b948b584a09a
+0.0008	2	oligo/dipeptide ABC transporter ATP-binding protein	007f19185c841037f7748fc07b3c17b7
+0.0008	2	cell division ATP-binding protein FtsE	02d9ab097892bbcc27083a114f2da186
+0.0008	2	4-hydroxybutyrate CoA-transferase	00c3de221638f50d70d18f4ab8dd1680
+0.0008	2	2''-5'' RNA ligase	017585addf8c260dbdda0599990ef953
+0.0008	2	Catalytic subunit of	01e1c50265f134f3f8b8ee4532b782f1
+0.0008	2	5-nitroimidazole antibiotic resistance protein	005f2ed05ea2571a2e8664afdd846da9
+0.0008	2	Spo0A protein	0263bafd9205b834280bfe1e5669566a
+0.0008	2	lipoprotein	01724bcc8c7f3ea6e5e31b645c23e716
+0.0008	2	FolC bifunctional protein	0269ace36247c8d7ec775c6b0bb9cade
+0.0008	2	oxidoreductase domain-containing protein	026e98abc7962f2218071f8f06400d7d
+0.0008	2	Ethanolamine utilization protein EutH	032d0692004ec456a321427e6a9835ca
+0.0008	2	formyltetrahydrofolate deformylase	00e2ac3db4ae0e93a009d0193e632013
+0.0008	2	DNA-binding protein	0002dfffa6db26603311b1d7e8b71161
+0.0008	2	queuosine biosynthesis protein QueD	00c8e518c69bfc1163d03f5ca4f87ef1
+0.0008	2	pyruvate:ferredoxin (flavodoxin) oxidoreductase	009e095ac82a25498904226c26447286
+0.0008	2	putative vitamin B12 receptor	004d180d27174651bcb95548ab8cf1e7
+0.0008	2	recombination protein O	0044b191174f14c969d29379457e7943
+0.0008	2	organic solvent tolerance protein	03490b945fc5cfe916d666fac5d06216
+0.0008	2	YhcH/YjgK/YiaL family protein	02cd991e3c72dfbf450818ef22e1e6bd
+0.0008	2	putative DNA repair ATPase	00a7f522d60a57d8afc82c2eac90cbe2
+0.0008	2	membrane protein	02d82229a50f6a87d42c8cb8c7e44d01
+0.0008	2	YrzB like protein	001e8bc07325ed5f231da15d735d14be
+0.0008	2	UDP-N-acetylglucosamine pyrophosphorylase	0127af6b6bfbf57cefa404c73dbdb147
+0.0008	2	flagellar basal-body rod protein distal rod protein	02bea0490a17aa39791e249dd7b687a6
+0.0008	2	NADH:flavin oxidoreductases	018fd8c65334033cfd209f1ee0081af4
+0.0008	2	phosphate binding protein	00c00e555f6b3fa9b962b3d39a990869
+0.0008	2	MutS family ATPase	004dcbbdfb2a5b39a1e9592a3f5c78c7
+0.0008	2	pseudouridine synthase	016e256ba8ce1b1d226c9e27201c8310
+0.0008	2	protein of unknown function UPF0079	01896e38f2f6c801350cba53d58c688c
+0.0008	2	Polyphosphate kinase	02040b0964106e858215f650873f513a
+0.0008	2	universal bacterial protein YeaZ	0264fffadbce7e199de2db907b3d178e
+0.0008	2	alpha/beta hydrolase	032f71be051f837b4bce95d2a6013389
+0.0008	2	succinate dehydrogenase	03633ad82ab006663d2f0f5d133cd840
+0.0008	2	exodeoxyribonuclease	00de6e058623fef9de9f925e36735577
+0.0008	2	Glutamate synthase (ferredoxin)	01a442110f83c0073e184f303ca827ac
+0.0008	2	aminopeptidase ampS	024e440bb6892e18f28e06e6c4a358ca
+0.0008	2	Ser/Thr phosphatase family protein	00ba78a7e9cbdb8e302835380e634fb8
+0.0008	2	D-xylose isomerase	0015e975c7e56792522eb916f871b93c
+0.0008	2	capsular polysaccharide phosphotransferase WcwK	0339dcf9bb8fbd6c24c7929c6fd92f12
+0.0008	2	trk system potassium uptake protein trkH	003d8995d198c6194018ed3e8fabdff9
+0.0008	2	putative D-proline reductas	02bd8f329eff835771c1bb04577d4fee
+0.0008	2	Alpha-glucuronidase	00d6344b50ec0b5ba8ef11db8c989191
+0.0008	2	ABC transporter ATP-binding protein uup-1	024de696fe1aa15d1e7731200dfd5d3c
+0.0008	2	galactose operon repressor	030153945f14a9622b912cf6ee46ff7d
+0.0008	2	TIM-barrel protei	02b939d710e0b4433d4add42fcbab1a1
+0.0008	2	succinate-CoA ligase (GDP-forming)	03424ce87e45a855abb44c6a6bd1803e
+0.0008	2	Cna B domain protein	002f38c30dc3d7ead2b3b593f63feccf
+0.0008	2	V-type sodium ATP synthase subunit J (Na(+)-translocating ATPase subunit J)	029a9b86ca1d78b5d7af69222bf06258
+0.0008	2	putative methyl-accepting chemotaxis protein signaling domain protein	0274bfd17f58a80188efd41b571afcd1
+0.0008	2	uroporphyrinogen III synthase/methyltransferase	00177446a536d0e8a9eb95fb774db6bb
+0.0008	2	pullulanas	02db7793cdcd41ba286eb01965ba4823
+0.0008	2	dTDP-glucose	00544b3550490ac77da7b1984505f6b7
+0.0008	2	phosphotransferase system mannitol-specific iibc component-like protein	014004de8159db2637ca20cb2bdb56bb
+0.0008	2	ATP-dependent DNA helicase rep	01991431bbc3838b9a056edab78be9cd
+0.0008	2	stage II sporulation protein D	009a9d85dcaed115a19e8783fb677588
+0.0008	2	glutamate-1-semialdehyde-	029803a42492ec73b50e4cec7d0b9756
+0.0008	2	WbqC-like family protein	0174963e8977c46edcf933b0d220d142
+0.0008	2	HIT family protein	0346fe6595a71ea4ac9557c18ccc0b92
+0.0008	2	putative peptidoglycan binding domain protein	022aca16520d5de79c71f63aafb3af60
+0.0008	2	bacitracin transport ATP-binding protein BcrA	01a8ff9ad92d2c7040b1d746ac349447
+0.0008	2	cyclic diguanylate phosphodiesterase (EAL) domain protein	01ef7dd726b79f02c62a80fc6e52af1b
+0.0008	2	helicas	0197a28455e0ceded4b43341ed67891a
+0.0008	2	Beta-lactamase-like	00e5adad7acfa5d8ca0a37aab2a4e127
+0.0008	2	D-ribose transporter ATP binding protein	021ec7494e152e2aede708ff03f94c38
+0.0008	2	RHS repeat protein	002ff27d5e963d4b2f240ddad30644b8
+0.0008	2	outer membrane lipoprotein LolB	02a8c4b18f452b0b60779400a210fc92
+0.0008	2	thioredoxin-disulfide reductase	036fe7e2e59eea9a40816d85af1d0e27
+0.0008	2	D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase	00678f1aceecca7a350bdf38b5cfb2e7
+0.0008	2	ATPase associated with various cellular activities AAA_3	03682805658e72d2f0fd1b3cdb856568
+0.0008	2	molybdenum cofactor biosynthesis protein MoaC	02cdb17c953f2f1d387867cd38ff9b37
+0.0008	2	GatB/Yqey domain-containing protein	00ca34cc46e0dab8a424034baad2195a
+0.0008	2	Guanine-hypoxanthine permease	0217c752c96b1efd561a8a4c863af19c
+0.0008	2	ribokinase	00f4830435524db3dc51fa6d92904bd0
+0.0008	2	Conserved hypothetical protei	010655fd96bf87a6e18fac28d841018f
+0.0008	2	DNA-binding response regulator VanRB	028c9bafd3eb4e907f8e62bb7fdecf1b
+0.0008	2	argininosuccinate synthase	01cb6e807709ec1523412a9d03f48ca5
+0.0008	2	diaminopimelate epimerase	005f11e47de1738ed1dfa3809a8da2ae
+0.0008	2	cysteine synthase A	011ace631316c3cb7b0f623006ba2400
+0.0008	2	maf protein	001e9cee7a3f4fc101433f2da2da52f8
+0.0008	2	Xaa-Pro aminopeptidase	033dd85e544e422b620f51777321581d
+0.0008	2	DnaA regulatory inactivator Hda	01acf20f71df7d7c2615228d7709ae33
+0.0008	2	phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase	0004a92b01ea6d852a5bf016ff0cb3e1
+0.0008	2	Ketol-acid reductoisomerase (Acetohydroxy-acid isomeroreductase) (Alpha-keto-beta-hydroxylacil reductoisomerase)	016c006cc5793bdfe11404ad517e2d69
+0.0008	2	rplX	014a5d5409c3ee581b5e85b52da23d82
+0.0008	2	competence protein A	023b1da17792626a0f00b548dc18f4f8
+0.0008	2	protein of hypothetical function DUF1432	002217d720fa06afac8636dc24d9f5c3
+0.0008	2	GTP-binding protein	01387df96a7e43f3747005d488076b1b
+0.0008	2	stage V sporulation protein AD	00383d7081da4bd82451b198b4f70355
+0.0008	2	C4-dicarboxylate transporter DctA	00a49bd491d81d8722e5860815529306
+0.0008	2	LemA family protein	01be00e93313f7bb5d937c37aee9855b
+0.0008	2	Obg family GTPase CgtA	01354dd95daa63ed2d9085e6b125893b
+0.0008	2	asparagine synthetase AsnA	036021b71f99075bc525a7524ddb6204
+0.0008	2	DNA polymerase A	011f3aeab475a8af172e2ba85fc85d9a
+0.0008	2	G3E family GTPase	0176f545df29a78bd3690297cda1962e
+0.0008	2	AidA-I adhesin-like protein	032c2a090871b144599818f7c3ede972
+0.0008	2	glycosyltransferas	033df1bc0917c4da9a5fcd9315dfdff7
+0.0008	2	L-ribulose-5-phosphate 4-epimerase	009bd177287fe275a1d7891e48fb99b7
+0.0008	2	3-demethylubiquinone-9 3-methyltransferase	01bd4486528ce4984b9191b3db265625
+0.0008	2	carbon starvation protein CstA	016b90520b001bdbb6fb5d7fa61697ba
+0.0008	2	thiazole biosynthesis adenylyltransferase ThiF	0332e56bca5f1e22201a966c28445bb0
+0.0008	2	metallo-beta-lactamase (ComE-like)	023619d5c9cb1925bf47169f2d60cd9b
+0.0008	2	DNA repair protein RadA	00c170e3d13296d0e2cd7cbd5b50ce33
+0.0008	2	glyoxalase/bleomycin resistance protein/dioxygenase	02415b08edfeb9012ad159af33e64e2f
+0.0008	2	probable metal-transporting P-type ATPase	00f458ca39653d9dd219e13b0d4fcfeb
+0.0008	2	nucleotide-binding protein	00d312503e2e5b9a787351fb5312c19d
+0.0008	2	IspD/IspF bifunctional enzyme	023cd7e74b1972bd711ac4e24ea34c54
+0.0008	2	2-ketoisovalerate ferredoxin reductase	00b5eaab56468cc01a6ee6765a1f3dae
+0.0008	2	ATPase component of various ABC-type transport systems with duplicated ATPase domain	00f97e088d97b1bb79d7a0c8ac1c4648
+0.0008	2	DNas	027f95ab89afc75880ed30e18a6a0dc0
+0.0008	2	glycogen debranching enzyme	0041c06bd91584165a993be7114a869a
+0.0008	2	malic enzyme	033004e06720348e9ff8efbf9b55a093
+0.0008	2	pyruvate dehydrogenase subunit beta	032d60e33f23581e7be2931173670b99
+0.0008	2	response regulator FasA	01c2796def4f2a6646d73afdeb062610
+0.0008	2	Sirohydrochlorin cobaltochelatase	00557b1ea10340144a930c630cd9f087
+0.0008	2	ribosomal protein L11 methyltransferase	004511f758ce086bdd29300b3b7b88e6
+0.0008	2	bifunctional uroporphyrinogen-III methyltransferase/uroporphyrinogen-III synthase	017ef064e3697f149ca8993cb43dcba6
+0.0008	2	L-serine ammonia-lyase	017ac536afc53df1f1c071f573201c0f
+0.0008	2	mannose permease IID component	032c8e75dd79c56cef519b603f0fef5e
+0.0008	2	anti-restriction protein	031aea3033053e7118d0535dbaf05d20
+0.0008	2	mannitol dehydrogenase domain-containing protein	01666ec1693bfb9a746f48f099acf548
+0.0008	2	RNA-binding S4 domain protein	01d83adeb4667d3f5cd344ed9fa3eac6
+0.0008	2	thioredoxin 2	000f7d126e9013188aa59b01a25e76b4
+0.0008	2	Lon-A peptidase	02eaa87cf33f7623270e672a9cfa13e0
+0.0008	2	alpha amylas	008d0a0c583c66e9702622eb8b1ab952
+0.0008	2	CBS/transporter associated domain-containing protein	02e1bca41ed82d7c403c4d61f8e3d64e
+0.0008	2	putative cAMP-binding DNA-binding protein	02f8b840223ad87801b7903bcf086fe1
+0.0008	2	phosphomannomutase	0161ddaa447e1f26a3629cc169433e41
+0.0004	1	C-5 cytosine-specific DNA methylase	02a879dcb5924c5bd8aeb5a5b1669cfa
+0.0004	1	MccC family protein	02c24c73f13877d1a44f64cb591396de
+0.0004	1	protein of unknown function DUF633	029b0526821c82717faf24bbf8726ab5
+0.0004	1	RAN1 (RESPONSIVE-TO-ANTAGONIST 1)	01d1a21369ec755cae0b554bd09b5f3e
+0.0004	1	6-phosphogluconate dehydrogenase	00f4ccfde4fffb60a332db0192c3da54
+0.0004	1	deoxyguanosinetriphosphate triphosphohydrolase-like protein	000a5b4e56c40c289ff470d95301672c
+0.0004	1	Na(+)-translocating NADH-quinone reductase subunit F	00b4a7bb77124013e8446202d1236806
+0.0004	1	malonate decarboxylas	02533e87b4e12ff51e68ac2bcff650c1
+0.0004	1	COG0642: Signal transduction histidine kinase	03413334410cb077634bc98b0290932c
+0.0004	1	peptide/nickel transport system permease protein	0078f542171580978b153c65317b3c2a
+0.0004	1	segregation and condensation protein A	0305b988167cfcd01d4dde9d2543cc6d
+0.0004	1	spoU protein (spoU)	032e6b231f3a51b2d96f2ec0d0d54fbb
+0.0004	1	resolvase	00492617014454a0ae875dc5c318292e
+0.0004	1	ribosomal protein L17	000a3534445d676e10b1967785e246df
+0.0004	1	penicillin-binding protein 2C	00720f3511be60f4297b66bff87ad46c
+0.0004	1	Low molecular weight phosphotyrosine protein phosphatase	00922b49aa91d7b6c6fec2e442d25b89
+0.0004	1	NADH dehydrogenase	02f0c5f8cdc1a5d29d3963ffb5368200
+0.0004	1	cyclo-nucleotide phosphodiesteras	005f92fce713b1262304f8adb6cf1db1
+0.0004	1	adenosine deaminase	0127b2dc7fe8a5705d056806943b1bd2
+0.0004	1	arsenical-resistance protein	00332b3f29239b331504a30f0c82ed45
+0.0004	1	peptide chain release factor 1	0358b785a76d864d454cb05610bae6b9
+0.0004	1	PotA3	00e7a98f9563fdd2127832be755aa2e0
+0.0004	1	PAP2 family protein	003f18e5819f1ee6bdbcdc87416302ed
+0.0004	1	putative peptidase with chaperone function	01c2657d58570a3ef4241ab6923c6437
+0.0004	1	electron transfer flavoprotein alpha-subunit	030037facda7f2229f3d9f066f972b62
+0.0004	1	6-phospho-beta-glucosidase AscB	0164f9520995b0a8f33c2432f64465d7
+0.0004	1	putative uridine phosphorylase	004e5ddb0b39579ccead9896e3f1d7e2
+0.0004	1	pneumococcal histidine triad protein B	000657c44801eb7c3495c58b9474bc9a
+0.0004	1	GutQ protein	00dfcfbd1f6ae3dbe595b314f28868cd
+0.0004	1	aminotransferase class V	0097db09ccd01725c657eb458e26a95b
+0.0004	1	benzoate transporter	01d38e7556c0c3a237e09dfeb4d5ee09
+0.0004	1	CRISPR-associated protein	0094f2eb5bb5a8e635056f157a946db0
+0.0004	1	peptidase M50	00980e8bc41aa2cb5c389dc3ae1e61d9
+0.0004	1	protein VanY	027be880f047864fdb1470fe34c584dd
+0.0004	1	protei	01ed7f62e57dfd5798fe1546ce5e14d2
+0.0004	1	putative ribosomal RNA methyltransferase NOP2	011623b720dbd1db9b31e809cc3bf77e
+0.0004	1	phosphoketolase	00ad7bce7c888e839b4f29afc3a68459
+0.0004	1	similar to GA21576-PA	02de913b52e6928b2c9a681381308a98
+0.0004	1	DNA-directed RNA polymerase beta chain	022c0630b601514cbc5e079fb0438787
+0.0004	1	c-terminal processing peptidase-3	02dd602a9da70ba39c51d47573800efe
+0.0004	1	Acetyl-CoA acetyltransferase	012e17e2b209b36f7ccb1d6d818b7577
+0.0004	1	FMN-dependent NADH-azoreductase	022f97a861e9c9a0ca10fa388e1a83c5
+0.0004	1	3-oxoacyl-(acyl-carrier-protein) synthase	009b9956b6dff01ae31d5eb86a278ff5
+0.0004	1	adenylate/guanylate cyclase	00ad9a22432a64684417e4c5042f0820
+0.0004	1	Fur	00d7abdb4f94df5e2d6f1e4feb39b964
+0.0004	1	protein of unknown function DUF245 domain protein	0013fccdfeb77cbb0687dcc913d6a33e
+0.0004	1	replicative DNA helicase	01c8375f60b0a023079a6d5725ae8431
+0.0004	1	predicted cation/proton antiporter	00022ccf4f592481b9b6b360503916ec
+0.0004	1	regulatory protein RecX	01c256b2abc2bb8b980c60721721e248
+0.0004	1	NH(3)-dependent NAD(+) synthetase	0007741c529aa3635b027e12005dcea8
+0.0004	1	demethylmenaquinone methyltransferase / 2-octaprenyl-6-methoxy-	0301a0516282870947c1b9b7e4abbe80
+0.0004	1	Phosphoketolase	01d10b38669d9b0c0c8149e5eacb965d
+0.0004	1	putative DNA repair protei	01eb1618dddeb340eba0675c2e8ed2c5
+0.0004	1	GTPase	00638d59950ec0512f9df2ae2469b2d3
+0.0004	1	aldose 1-epimerase	00735cb49ac427568a39bf34e42878dd
+0.0004	1	phosphoprotein phosphatase	02d35da20dc1b9b29d656884cb51a476
+0.0004	1	DNA polymerase III catalytic subuni	023dabf2c554acdec8c59d57372a6e56
+0.0004	1	porin Gram-negative type	000d0a7c220a54fbe76ade8c24c402ec
+0.0004	1	MutT family hydrolase	01ad047ccb7e2466db20e3cdd9f0ade6
+0.0004	1	junction plakoglobin	0184e7df692bae4ee38a04a66fd927a9
+0.0004	1	Type I site-specific restriction-modification syste	0003dcead03c5571581bdecd9df2d873
+0.0004	1	Fmu (Sun) domain protein	0322c542737d8dee1b1f5e68947783f8
+0.0004	1	pneumococcal histidine triad protein D precursor	0140b3ec6cba5734a909c1d734e48ea0
+0.0004	1	peptidase	024272ea7a767ee0301da93b12ea0609
+0.0004	1	type IV pilus assembly protein PilB	0371604d1fd007c90ba311c1fc6a24d9
+0.0004	1	phosphatidylserine decarboxylase	00ac636b43bd92106b6349db197c2ff2
+0.0004	1	L-beta-lysine	034b2eb5fc449588b806429621f22163
+0.0004	1	colicin uptake protein TolR	029ef8d31b6e4eba21b7bb703a4276ae
+0.0004	1	diguanylate cyclase/phosphodiesterase with GAF sensor	020bafd38a06740b3e987633030981ba
+0.0004	1	PP family ATPase	017acfbebb88a4f5a82f1ffa9ddbe62c
+0.0004	1	autolysin	013ec80812db8be0525c3a8a0b3543f5
+0.0004	1	cell division protein ftsH	02ec4760d5d2752cc446dd0f037bba6a
+0.0004	1	methylthioribose kinase	01e606611eed77b1efbe06995eb1b583
+0.0004	1	transcription regulator	02f384c2e44fc383ff80bfd169614f9e
+0.0004	1	cell division protein ftsY	014840d35fd2c7a8deb7853b483b1757
+0.0004	1	Gal	0295bb66d8d1d7e8c6ee278ca7494198
+0.0004	1	transcriptional regulatory protein ResD	00220fbe7b5b11922e6d9b68db6bc0af
+0.0004	1	glycine/serine hydroxymethyltransferase	00dfc2c38bb7f861ad99d53fb6f760c6
+0.0004	1	LSU ribosomal protein L22P	01ca6506b8b86789583b14aa90dd6222
+0.0004	1	NCS2 family uracil:xanthine symporter-2	02a6779050db114c040f670b7af5f39f
+0.0004	1	replication initiation protein	0150502ddf115f3b002694647f5b37a6
+0.0004	1	small multi-drug export protein	0250578f35b6dfdfe6c0c70f71be5f42
+0.0004	1	hsp90-like protein	00a81d96244d017ed3d06ed4a87515d3
+0.0004	1	CarB2	02bd67ee55e07173e01aefb303a67199
+0.0004	1	two-component system sensor histidine kinase/response regulator hybrid	0188fbc1a9f7a300a29a045bd0910e80
+0.0004	1	2-oxoisovalerate dehydrogenas	0095af7460efcffb6585138a8ad41084
+0.0004	1	cytochrome f	0205676ae549f14a2645331384fb65b8
+0.0004	1	cobalamin biosynthesis protein N	0333595b48032fd3ea3ac696acfe6585
+0.0004	1	protein YyaA	00f228d200e1f80c54754e95a48dd6b9
+0.0004	1	biopolymer transport protein ExbD	01253ca20e74209bc3ba1c7febf7acff
+0.0004	1	UDP-N-acetylmuramoylalanyl-D-glutamyl-	00fe81dc9239d4cf19ed53bc2622e938
+0.0004	1	DNA-binding ATP-dependent protease La	00befd0264932a62d6602688032d9b99
+0.0004	1	peptidase C26	00f1716a8e571e0b5a6e87a09cf16f90
+0.0004	1	Transposase IS116/IS110/IS902 family protein	011fb51b2095dc9fd0b9df3427b6ab63
+0.0004	1	D-alanine--poly(phosphoribitol) ligas	01c9ca7d90be404b8b4af1f3fd6db8c4
+0.0004	1	translation initiation facto	03044a653aa4e5ff48f06b2f383fbbc7
+0.0004	1	IS1272 transposase	021918d34217c76114a76e60c3e38937
+0.0004	1	prephenate dehydratase	02122c6813356a7df9031003055b785e
+0.0004	1	protein kinase	028d91812f8525302ecfbf8fa07333d2
+0.0004	1	CBS domain-containing protein	0033ed1b543782809bbff8aa6df723e3
+0.0004	1	ErfK/YbiS/YcfS/YnhG	032f30e88bc907ea89c2b4825dc0c722
+0.0004	1	sulfate-binding protein	02c1647a07ee952abb98be6177ff3531
+0.0004	1	putative MBOAT family D-alaninealginate export/acetyltransferase membrane protein	0342ee35c12c1cdf42272af487de29d9
+0.0004	1	UvrD/Rep family helicase	019ad6918039dc666659d1ae49cd7863
+0.0004	1	deoxyribonuclease IV (phage-T(4)-induced)	00284762618a170f93237b6f411475fa
+0.0004	1	rod shape-determining protein RodA	0280b952995d08f74d2556972651af2f
+0.0004	1	Probable sensor histidine kinase	00a4d88bfd1610d3525786bbce0ac96a
+0.0004	1	putative protein ves	022800877914d612f2c3b0559e332165
+0.0004	1	ribosomal protein S15	02843bf4167989da7d7ce30df6204cb7
+0.0004	1	DNA-dependent helicase II	0291ac9be3dedf7ef0a389ee339e5a05
+0.0004	1	conserved membrane protein YqhQ	02ce1223c0bbaf1552b3abb6fe9fbeab
+0.0004	1	nitrate reductase	02fd47fd5e636771e7b18a8e19096928
+0.0004	1	bacterioferritin comigratory protein	0173ec49bd526d2f1cf73a224fea4bdd
+0.0004	1	L(+)-tartrate dehydratase subunit beta	03349d526e5d21d9a97bd028a86cd631
+0.0004	1	protein of unknown function DUF896	02718fe5533e531eaeb53659c9b80a46
+0.0004	1	DKFZP468M2312 protein	02df5b6a6cc2b8f7cef1075bbd1ba70f
+0.0004	1	alpha/beta fold family hydrolase	002ed165a9e7444a7545ac42ac398e7d
+0.0004	1	putative malate-2H(+)/Na(+)-lactate antiporter	02d915a76e3d09e4e1a0e33a3f705b67
+0.0004	1	Mur ligase family protein	0363e6875ba0959761c657fa2b6b0f46
+0.0004	1	putative translation elongation factor G	02745304384240135dbb3ef44e6cbb80
+0.0004	1	sigma-54-dependent transcriptional regulator	0239eb092b6fa5afbd962c3d043e8d89
+0.0004	1	anaerobic dimethyl sulfoxide reductase chain a	017638dac32381754074a4be9a03ae7b
+0.0004	1	O-acetylhomoserine sulfhydrylase	03262b099609471f6d1f619137907b0f
+0.0004	1	inner membrane protein YqiK	014890d9d75dbbbaca02dd87a950bbac
+0.0004	1	UTP-glucose-1-phosphate uridylyltransferase	02cf04f8f44321e9372cd989b60952ba
+0.0004	1	amidohydrolase 2	008b79766188af8c9fea0d897f876971
+0.0004	1	DNA-directed RNA polymerase subunit gamma	00c1c8555226728ab7498495e79a6012
+0.0004	1	alcohol dehydrogenas	036d6d7ab6b5e2623c1ae8aab403fb85
+0.0004	1	regulator of the multidrug efflux pump PmrA	00d4ba965fa37805ed6eb39b60fac61f
+0.0004	1	glutamate N-acetyltransferase/amino-acid acetyltransferase	018852f4591dc625051f9edd738468d9
+0.0004	1	acyl-[acyl-carrier-protein]-UDP-N- acetylglucosamine O-acyltransferase	0074886188b1e381698779b8515b4ff1
+0.0004	1	TonB-dependent receptor domain-containing protein	02e8062b4bdcb13e372902432e448c84
+0.0004	1	alpha-glucosidase	027f6d18606fee4d651e92f3d99ad240
+0.0004	1	DNA repair protein RecO	01a9fa3243797ff930038cd2c9a1b1fe
+0.0004	1	aminopeptidase N	00454f760b74407cbd650cafea5c4b53
+0.0004	1	peptide chain release factor 3	01d69d8b57913e07f0d98237f3b44564
+0.0004	1	sporulation initiation inhibitor protein Soj	0182e8ed50255c045055053501c1d74c
+0.0004	1	undecaprenyl diphosphate synthase	024b5d03c3fecef6b6b012f685c819f1
+0.0004	1	bifunctional protein FolD	00633bfaa17a3933fc00ed2e6f56a990
+0.0004	1	biotin synthase family transferase	0358c74ddede4e88fa0cd473e9dbe011
+0.0004	1	DNA Topoisomerase II	00b78679b731856654537314682bf15f
+0.0004	1	endonuclease	011fd2b1cd18ff99b085b6130d4b895b
+0.0004	1	hydrogenase-4 component D	02dd5d0d27330908f99b76e5dc98ecbf
+0.0004	1	(dimethylallyl)adenosine tRNA methylthiotransferase	01a806b5d21f6284b8ba36370f57edd4
+0.0004	1	hydroxylamine reductase	01a878435810071c675425ab9b907552
+0.0004	1	conjugate transposon TraE	022eee276939b845fe45357cf9dff3da
+0.0004	1	homoserine kinase	015485e97c1b69f00f1113dd09eecb5f
+0.0004	1	UDP-glucuronate 5''-epimerase	031eb4b893a01ef078e6e875eea5713f
+0.0004	1	branched-chain amino acid ABC transporter ATP-binding protein	01c04baa91c50d0432cf10e950b514d3
+0.0004	1	serum response factor (c-fos serum response element-binding transcription factor)-like	034aac5124594644f979c4e812e38eaa
+0.0004	1	Thymidine kinase	00b28957e656bdcd549be93f880a3411
+0.0004	1	outer membrane protein P2	017e0a3177026fb7c77e695672d1ca2d
+0.0004	1	carbonic anhydrase/acetyltransferase	034fef564367d141a99e384482952d02
+0.0004	1	sucrose-6-phosphate hydrolase (Sucrase) (Invertase)	02d3aca84f5e1828ea97f7024ac4dc26
+0.0004	1	acetoin/	02e97ae0feb0a78fcc03457e3187080c
+0.0004	1	two component hybrid sensor histidine kinase	007b62fe7d89072a12a67532f58403c7
+0.0004	1	DEAD-box ATP-dependent RNA helicase CshA	00df9ec5c1f441e2883de839e4a38418
+0.0004	1	histone-like DNA-binding protein	011d7aad4f61480df916a48e31e10d44
+0.0004	1	addiction modul	0223a5409bc463f00a4583e8bdfef349
+0.0004	1	malonate decarboxylase subunit beta	0076bbd5db92584e46f088a433736927
+0.0004	1	ATP-dependent protease la	02615d6cdd9c3c97219f0459a3a3e1ea
+0.0004	1	S1 RNA binding domain protein	027cd9f16e3a7e2ba682edfcad960a9d
+0.0004	1	lipopolysaccharide biosynthesis protein	031b4857d307b46339c6c799631d6607
+0.0004	1	possible ATPase	01ccd0ecccc96a20e369908e4b5e4c66
+0.0004	1	GCN5-related N-acetyltransferase	023d044f1beb11651e149755946a18ee
+0.0004	1	lipopolysaccharide kinase	01657bc93ef18abd6f2e78d470aaff68
+0.0004	1	two-component response regulator variant	004c440165ba8b01b56b693c376490b8
+0.0004	1	chromosome partitioning protein	02fa034b7df9de1203c32b1b24d3b3bd
+0.0004	1	Coproporphyrinogen III oxidase	0275b7a0a2f069d617abf9a5b76ade76
+0.0004	1	pyridoxal phosphate biosynthetic protein PdxJ	030629ff359ee51f45f6f3c22030e176
+0.0004	1	bifunctional flagellar biosynthesis protein FliR/FlhB	0141c16a0a206d508287a70c8b99445c
+0.0004	1	outer membrane protein TonB	00d092a35932ee854129895933d58643
+0.0004	1	thiamine pyrophosphate protein domain protein TPP-binding	02441e55dc422956f5a90deac10358b6
+0.0004	1	catalase	017aa4dea2678ca6bbb8556c0345b633
+0.0004	1	predicted outer membrane porin protein	022b1be73d6845cd620a08416a36917c
+0.0004	1	MraZ protein	00055bec22bccc38801787826de4df6d
+0.0004	1	MmcQ family protein	024d6a7b03fadac4abf2985dbef34a53
+0.0004	1	outer membrane porin HofQ	017f000777a7dd995b34803290a407ec
+0.0004	1	elemen	01b4f93ecdecc0d1fadd32b835dd830c
+0.0004	1	30S ribosomal protein S18P alanine acetyltransferase	01ac464bd39c715c05f8c98c0848517b
+0.0004	1	putative Ech hydrogenas	000593240181d8d765f312372aa53e20
+0.0004	1	phosphoglycerate mutas	032d5225b70797c2d3b3bdacc8645777
+0.0004	1	Minor CTP synthase isozyme (see also URA7	01f600487033b609c76755ed8c44cfb1
+0.0004	1	erythrose 4-phosphate dehydrogenase	00db4d0027a388e942d2677cb83cdfaa
+0.0004	1	SSU ribosomal protein s12p methylthiotransferase	02e133d0a79715d3ba293731a73aa652
+0.0004	1	hydroxymethylglutaryl-CoA reductase	020c726cb2f3e4744689d2360df018a7
+0.0004	1	glucosamine-6-phosphate isomerase	0357ef7b202c304b40a3b4642540efc5
+0.0004	1	phosphotransferase system PTS protein	00d1ceea3e5cd02a24ef39db1b27b62e
+0.0004	1	site-specific DNA-methyltransferase (adenine-specific)	00f7075dbdeea7eba9c1f368c1f0fb6b
+0.0004	1	phage portal protei	00bfd268d9914edbae5b4885d8a9b666
+0.0004	1	nucleoside recognition domain-containing protein	01742b45ce9b9922ba4f5570f5dec29c
+0.0004	1	aromatic amino acid aminotransferase	01a55763ae08e4f2a738871ab6a7d55b
+0.0004	1	nucleoside transport protein	00b62c114ca866235b0948151d43df22
+0.0004	1	anthranilate phosphoribosyltransferase	00f3cb0d90cf19a921a6c7afc012aba7
+0.0004	1	beta-ketothiolase	006039ead809de3fb2e6ad4cc33616b0
+0.0004	1	endo-beta-N-acetylglucosaminidase F1	0134b9dadef0155330caa8175c235d29
+0.0004	1	cAMP phosphodiesterase	02fd14dcc7ea16f0aa75205c21fe3ce0
+0.0004	1	ATP-dependent DNA helicas	00b042598ed0e29b6bf27977b7701f64
+0.0004	1	glucose/galactose transporter	01821c1aeb3acdd9e2bf67c8eca70849
+0.0004	1	imidazoleglycerol-phosphate dehydratase (IGPD)	037b288c50a9117379128aed28ed9041
+0.0004	1	Transcriptional regulato	01ef8d70d4894b99a950cedf5d3431fd
+0.0004	1	Fe3+ ABC transporter	0099b9a77ed9146ba87a7a1e14da5476
+0.0004	1	pili biogenesis protein PilT-like ATPase	00fcfda842c4912504192355e96b7e17
+0.0004	1	beta-glucoside-specific PTS system IIABC component	004b766c0fffc2087bd864112b889a84
+0.0004	1	semaphorin-3C precursor	0001c4ad0f86ec74101011fe302e765c
+0.0004	1	malonate transporte	033253113d728578481c70bac106eae3
+0.0004	1	glycine dehydrogenase subunit 2	00d511e32ba8d1ac7965638f8a2b01d3
+0.0004	1	ADP-ribosylation factor 2	0132f660200a436660ce6fa23464da64
+0.0004	1	3-deoxy-manno-octulosonate cytidylyltransferase	005498bf1dfc1214850441e498ce798e
+0.0004	1	30S ribosomal protein S14	01965769c5981b9436f5d69dbba39b76
+0.0004	1	histidine kinase	037ac5019ce51d78fe125dccb958fde5
+0.0004	1	putative acetyltransferase protein	01c8bb09b61deec67358eb64e307fc82
+0.0004	1	putative sugar transport protein	01d217d62eff13a4d6daa7d6dae036d6
+0.0004	1	tRNA(5-methylaminomethyl-2-thiouridylate)-methyl transferase	00ab1d944d0b40e415b3cdf5ea6d078d
+0.0004	1	ferrous iron transport protein B (feoB-2)	0113ff4081e2096ee33ff8a305781d19
+0.0004	1	putative signaling protein	022cc6280ea10162ca981dabe380fc98
+0.0004	1	MFS family major facilitator transporte	00cc2643d330e91db2c2027778b323cf
+0.0004	1	urease alpha subunit	01b611f56de91fc7b6ea907b1d6fc109
+0.0004	1	(glutamate--ammonia-ligase) adenylyltransferase	028811e84a80ac95489e296536f04ed1
+0.0004	1	UDP-3-O-(3-hydroxymyristoyl) glucosamine N- acyltransferase	002aee79396ba9ac428e88b6eee58683
+0.0004	1	ribonucleas	027a2b72c3074425757065571124336e
+0.0004	1	ABC-type polar amino acid transport system	002850d3369e31af13a4369e8aa5d478
+0.0004	1	Protein of unknown functio	02a1259cac119e9282f1adfeae907e25
+0.0004	1	thioesterase family protein	02b55a63df452d94d423e7d57808f26a
+0.0004	1	queuine tRNA-ribosyltransferase	0133d7032f9f68f255e1a68ed4255ed1
+0.0004	1	isopropylmalate isomerase large subunit	021c1b4a7fd2924a59543d39930d962a
+0.0004	1	glucose-1-phosphate thymidylyltransferase	0308213749a39e67d6c4c09eef7354bc
+0.0004	1	Tripartite ATP-independent periplasmic transporter DctQ component	02880b969dc44161acbfc315da2d640a
+0.0004	1	vacuolar protein sorting-associated protein 41 homolog isoform 1	035a19bed398acc1cbf53c8df0e52eb1
+0.0004	1	indole-3-glycerol-phosphate synthase	001a94f73e6b804777aaaa1eabcb7fce
+0.0004	1	tyrosine binding protein	026d0305895ff56956179252c29b8c65
+0.0004	1	aspartate 4-decarboxylase	00af92c209aa996797a3c7baf504f7a9
+0.0004	1	putative thioredoxin reductase	01ba97b1e8a11e67b44065cec97fad80
+0.0004	1	prolipoprotein diacylglyceryl transferase	0071acb1bc3a119a1e90ebf897455325
+0.0004	1	PTS family porter	0161369963720c0ba194ced67462ec1a
+0.0004	1	Bacitracin resistance protein BacA	000b716b1629290a94a302c06cc91bef
+0.0004	1	K+ potassium transporter	01f0b717e18025af4a685fd6d2a38d51
+0.0004	1	UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase	01b9dfb622539279c7fafd8b93fbb91c
+0.0004	1	putative stage 0 sporulation protein J	008545f721943f3d7c04a2111a02c5a5
+0.0004	1	ABC-2 type transporter	024785a0df64beda4cf4be4556facfee
+0.0004	1	pyruvate carboxylase	036cd90f2bac99b45525653c6c8a19cd
+0.0004	1	UDP-N-acetylglucosamine--N-acetylmuramyl- (pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	0112355e95580850e850772dc994f7d4
+0.0004	1	ribose-5-phosphate isomerase A	00557bd3cca645e248635fb17bd08ed7
+0.0004	1	KLTH0E16544p	032826fc30a2cfd92bcc9f6aa4cf5a9e
+0.0004	1	Fe-S cluster domain-containing protein	01fe58ae56a6ddf5e5d3afa24294a9ad
+0.0004	1	NADH:flavin oxidoreductase	0014ffb4b0dbe581451adcea7dc8b10b
+0.0004	1	DNA-binding transcriptional activato	00a82d6c6e0d7f1ab456ff684a37cabf
+0.0004	1	Ferredoxin--NADP(+) reductase	025b95102810156632ef0b80b2ebdd13
+0.0004	1	16S rRNA-processing protein RimM	0160cd3a47d47d5d68b782f7c777349c
+0.0004	1	putative deoxyguanosinetriphosphate triphosphohydrolase	02cfba583f2eeb2cbcd160f076422d23
+0.0004	1	sodium-driven chloride bicarbonate exchanger isoform 2	018f24a71d42b2ccb1090a1065d5f9e5
+0.0004	1	putative regulatory endoribonuclease	02998657f0ee423a571760d3abe0afc2
+0.0004	1	RsmD family RNA methyltransferase	0219ae7a056a20174aff94796898da0a
+0.0004	1	Non-specific serine/threonine protein kinase	02c4dfe83b5673c7e4ae63239e9ad29d
+0.0004	1	carbohydrate kinas	015a4306183863fc686dfa04a15bb3b5
+0.0004	1	multidrug efflux periplasmic linker protein BpeA	01051bed14d6f4398c6990af584e887e
+0.0004	1	abc transporte	0305d979baf47f23af066ba60ed7dff7
+0.0004	1	putative transposas	020210778ccbd13928d456b6f8c4d286
+0.0004	1	Hydroxypyruvate reductas	033e82c0e916e2c4184025c972583ded
+0.0004	1	ribonuclease HIII	0191f0a7f24cb21fca05b9dccc012cc0
+0.0004	1	type IIS restriction enzyme R protein	0196d579a5285aa641682934b389d2b0
+0.0004	1	pneumococcal surface protein A	0331f9f51e62d7c2493af997f7e76927
+0.0004	1	putative transcriptional accessory protein	030349a954c43d4d8b058fd7d50ed7ab
+0.0004	1	sugar kinas	01554110524194c008132636f4c8c713
+0.0004	1	phosphoribosylamine--glycine ligase	006624c5adf5314a96ebed90cf85b53b
+0.0004	1	UDP-3-O-(3-hydroxymyristoyl) glucosamine N-acyltransferase	036ee7f5d7a8ae55e1a20bf5a91ec91d
+0.0004	1	anaerobic sulfite reductase subunit C	0358d6981e7b22d04ed6abf37fe10a55
+0.0004	1	acetyl-CoA C-acyltransferase	03360324826d90b66c6b530da2d1692b
+0.0004	1	Cytochrome d ubiquinol oxidas	02f42b0202285efec364e0bf72a419bb
+0.0004	1	cobalamin biosynthesis protein cbid	009d4e5597c57e8f96cc8a00adc5aae3
+0.0004	1	E1-E2 family cation-transporting ATPase	026056c14921ad1fde96ac9c62cd7c82
+0.0004	1	general secretion pathway protein E	001b45c2f62c323cbdf70055a8445b85
+0.0004	1	putative glutamate synthase (NADPH) small subunit	022e5cca8463315bd08d38b3cabc7fea
+0.0004	1	toxin secretion/phage lysis holin	01455acedf3e5da21d8b3ffc16849562
+0.0004	1	Porphobilinogen synthase	0196cdb93c8298a8d400d6e8a9bfcad0
+0.0004	1	proline iminopeptidase	022075f096e5916eef3fa4d3bf18805c
+0.0004	1	RNA-metabolising metallo-beta-lactamase	009fcfd59fb93463cc5699e5d3c3dd38
+0.0004	1	NAD-dependent deacetylase	02d8c03e39a07609d5efe65f66751651
+0.0004	1	nickel-iron hydrogenas	001417367a28b1e699bbd10700f9cedf
+0.0004	1	ribosomal protein L1	0064304c93a0c958275805004122e6c7
+0.0004	1	ribosomal protein L3	01dcffd91ce5792cf019ece995c37661
+0.0004	1	urocanate hydratase	00a43101c4dbe57f61f41f71cf73226e
+0.0004	1	predicted voltage-gated chloride channel	00c4d57bc5e9bcf30330a03ed4374c0b
+0.0004	1	dihydroorotate dehydrogenase electron transfer subunit	0029f13879cb4a3617478ac1389f3b09
+0.0004	1	CDP-diglyceride synthase	00500d5db22718ff606add5a5fe94287
+0.0004	1	phosphoenolpyruvate synthase	035a9ea61280ee82810a076b75b422fa
+0.0004	1	xanthine permease	0117a059638e08e0fbc938699c48dbf8
+0.0004	1	recombination protein F	01bc5c7eeab6205a0306311fd7b4f9df
+0.0004	1	manganese transport protein MntH	008c1a9183784c07d8f5c7625303187c
+0.0004	1	hydrogenase 4 subunit	021914bac448f800d3d5beaedeb94332
+0.0004	1	beta-lactamase domain protein	009f0471f12823e460e8b57a8aacc526
+0.0004	1	similar to Actin-87E isoform 1	022b37f9bc4756868dac32786a0e2a86
+0.0004	1	Acetyl-CoA carboxylase carboxyl transferas	0250a56f417ab273caa0479b5e39923a
+0.0004	1	butyrate--acetoacetate CoA-transferase subunit B	029982b833db86618ba198e41c1585a2
+0.0004	1	aminotransferase class I and II domain-containing protein	019ceee1e74fe68ca60cc0280a17eca1
+0.0004	1	copper-exporting ATPase	033996bb3601f3597174a94aaa1aa20f
+0.0004	1	twitching motility protein	0033b691ca5c1ab32481831249925ad9
+0.0004	1	tRNA modification enzym	013df87d5a6dc05b92d8b102489196f4
+0.0004	1	Apparent pseudogen	012ed0ecddcafc71181464d709f34219
+0.0004	1	protease Do	02ad6a088413f5baf7a1b318597d08b6
+0.0004	1	alpha-amylase	00cdd802a9086253a0cbc4b929d08de7
+0.0004	1	precorrin-3B C(17)-methyltransferase	02f33f56d6b342eba51b9daf5d46ab32
+0.0004	1	desulfoferrodoxin	008ca64a9715acd350a279c14f0b40d6
+0.0004	1	secretion protein HlyD family protein	00a3d53b3e35a93100399d4dfc19ab12
+0.0004	1	cystathionine beta-lyase	033824a189c9920a54833d5ad74e0c45
+0.0004	1	pyridine nucleotide-disulphide oxidoreductase dimerisation region	01b088a356a286a8721212a52b5804ea
+0.0004	1	putative transcription antiterminator	00568c9ec6fe63b1958b7c3cd7657842
+0.0004	1	phosphoenolpyruvate:sugar phosphotransferase system enzyme I	01eb0c29d04c65ae74e4510b3679821e
+0.0004	1	acriflavine resistance protein B	02dfb48cda7508b6b671343cf416a9c4
+0.0004	1	recombination protein RecR	023972ec63bc75b9c8526a8dda628f26
+0.0004	1	IPT/TIG domain-containing protein	008552aafebfd2129a6109e2dd428055
+0.0004	1	dimethyl sulfoxide reductase chain ynfF	019796e6ccc0ce32e7fb69c1c7868d89
+0.0004	1	folylpolyglutamate synthas	013dbc549941ce3022a02071bdd3e135
+0.0004	1	Gid7p	023cdbbd06f7905c18e118b43a5d8457
+0.0004	1	aldo/keto reductas	019ecc5510b260676afb81e41da2a4d3
+0.0004	1	ADP-ribosylglycohydrolase	035f16f182f8f3c0059d66ca66065111
+0.0004	1	putative polysaccharide deacetylase lipoprotein	01f625f0a04b7cf3f08257ae88086250
+0.0004	1	holdfast attachment protein C	002d22e73975186499b94bfa1ed57939
+0.0004	1	prepilin peptidase type IV	00faced991a7ee8065821382b5678f74
+0.0004	1	response regulator receiver domain protein	0131c1b7c747b0d28c52eca810249a40
+0.0004	1	glutamate/aspartate ABC transporte	0191ccb26df712319f2e583dc43e25c8
+0.0004	1	ATP-dependent deoxyribonuclease subunit A	02bfbd87658625838d72f1af2fa1bf64
+0.0004	1	pyridoxal 5''-phosphate synthas	0177d07186fc488bed60512930dcbacb
+0.0004	1	Electron transfer flavoprotein alpha/beta-subunit	02540a58456751f4c29665d5b5679253
+0.0004	1	ornithine aminotransferase (glutamate-1-semialdehyde	0286bd264533755539db11e421ec35c3
+0.0004	1	conjugal transfer protein traG	0300c91510d1afc692af00b78c96f204
+0.0004	1	acetyl-CoA acetyltransferases	0366dcc96ea88c7766820f65ca45b219
+0.0004	1	Putative protein of unknown function	032a958be7af60ace72f4499e5cac752
+0.0004	1	Frs2p	02f9a2b2a9b7b551832d10a3b548f348
+0.0004	1	protein kinase C1 inhibitor (pkcI)	00a534a272ca791a1ac0dc39162fa296
+0.0004	1	oligopeptidase A	0284256af223cf7b060c4d8c11dbdb5f
+0.0004	1	FeS assembly ATPase SufC	01b4a2f5e38e1148dbc10619ba0df1b4
+0.0004	1	undecaprenyl-phosphate galactose phosphotransferase	018a6ae94fad4da395d164dac9d1ebc6
+0.0004	1	NADPH-dependent FMN reductase domain protein	00d20126ef805ccc73e5f27c2d9e67ca
+0.0004	1	glutamine amidotransferase class-II	017ce1e9c8f901a36b4f063207b274a9
+0.0004	1	COG0118: Glutamine amidotransferase	0214b123361d74ec6cccbdce8528bee4
+0.0004	1	restriction endonuclease	000ac2cf6f1b2593ea7b5a8100f96eb1
+0.0004	1	two-component hybrid sensor and regulator	009da5b143f545abce81dba0dd42bfaf
+0.0004	1	enolase	0005d7a9e8f94360e30ad934719bcaa4
+0.0004	1	chaperonin Cpn10	002d66151ddeccac2ebd6b014857b865
+0.0004	1	oligopeptide ABC superfamily ATP binding cassette transporte	020ed12f1975f717de7f381c1da445c7
+0.0004	1	electron transfer flavoprotein subunit beta	00a05d8e2b578af2f5ca69f0a40b53fa
+0.0004	1	trans-translation protein	0038f6102ba68d29e77a8e372b325990
+0.0004	1	DNA-binding protei	01484aa57ccf0e5075adc7245e7be21c
+0.0004	1	2-methylisocitrate lyase of the mitochondrial matri	0219d507fe6bda4599a8dc8a56da7631
+0.0004	1	amino acid adenylation domain protein	024fcd08a861ed0d8e89e2fb02d81791
+0.0004	1	ribonuclease PH	01bca3f871f0192df27cfe19634694f0
+0.0004	1	translocation-enhancing protein TepA	01f3eb0f246705234c5f098273cb1605
+0.0004	1	putative sodium/glutamate symporter	02cae6ec931a5c90dbd82512625fa2c8
+0.0004	1	esterase/lipase-like protein	017d184f795948b8c17b5c3c46a3a9b6
+0.0004	1	UDP-N-acetylmuramoylalanine/D-glutamate ligase	02e4a1225308434bf8a3d50680ca58da
+0.0004	1	biotin operon repressor	030dc0cacb526b1c80033e715f085390
+0.0004	1	ATP synthase subunit A	030e6c57ca0d742479a9979fe2d345b1
+0.0004	1	putative dTDP-glucose	0166e4d887f3d05b2672aaa9d297a5af
+0.0004	1	putative efflux transmembrane protein	010cfcb7f3a442b1ab8f43b9261386e1
+0.0004	1	putative NADH oxidase	02e029352906244cb05c4f9c9607df77
+0.0004	1	putative phosphoribosylformylglycinamidine synthase protein	02e976fc0d6e15132a5bced0a2c02d5e
+0.0004	1	beta-ketoacyl synthase	033b822429121091de9c647140079237
+0.0004	1	Myo5p	02f4dd4a8e52e286ac891dbe0e24fdec
+0.0004	1	pBF4 protein	017e766a6c07f701c1f9db88f5f9064c
+0.0004	1	KpsF/GutQ family protein	0265ee8221be55c6362cb097c9d221cd
+0.0004	1	putative surface anchored protein	00c36f840388070b9a86b4c17e082342
+0.0004	1	aminoacylase/N-acyl-L-amino acid amidohydrolase/hippurate hydrolase	00015ddab362ccb981628d47802ee52f
+0.0004	1	immunoreactive 47 kDa antigen PG97	01baa22d7567bd093644b63268a0ddf5
+0.0004	1	ATP-dependent DNA helicase	036c726505f4c24e5975bc71377d03bf
+0.0004	1	D-alanine--poly(phosphoribitol) ligase	01cbb1cc0d6f90ed472f4304882108c3
+0.0004	1	thiazole synthase	0283860555a734da973d0a5e78f90458
+0.0004	1	two-component system protein sensor histidine kinase	02175791b87096e5dbea351c259b68d0
+0.0004	1	endoribonuclease L-PS	00f4c88c900fb5f138ba23718e2ae21a
+0.0004	1	oligopeptide ABC transporter permease	007398da6c80e0db82aa2c752e33d8f8
+0.0004	1	adenosylmethionine-8-amino-7-oxononanoate transaminase	0293149fa9ee941e9da5fef765525069
+0.0004	1	HTH-type transcriptional repressor PurR	0300f5343ee4fe9c81967ce20ff56a58
+0.0004	1	bacterial capsule synthesis protein	01d21aea5822ecde4622b6b6e22fddcf
+0.0004	1	putative amino acid antiporter	027c416937242f6b271d2d02aaf9fa32
+0.0004	1	N5-glutamine S-adenosyl-L-methionine-dependent methyltransferase	014828ce5a6514e70b697d65b33a845a
+0.0004	1	DNA translocase ftsk	0223b2de11621565bc17464a1efd55c5
+0.0004	1	Translation initiation factor IF-2	023248cd8814f2e515045debcdc901aa
+0.0004	1	ABC transporter permease/ATPase	02ec094a90f1d3bf01bcd5215a01d12c
+0.0004	1	ribose ABC transporter (permease)	015d76891fe8b83bbe09a6066e0c25ad
+0.0004	1	oxygen-independent coproporphyrinogen III oxidas	00fa08e8f5573e293c9f7ae7ee89dd20
+0.0004	1	permease of the major facilitator superfamily	034fc65bb1adf5dcf66bf9e317d820be
+0.0004	1	putative S4 domain protein	007c279e0badb92bae3c8ac9f1a998d5
+0.0004	1	outer membrane usher protein fimD	0328d733d06f48b5752e8925855f0ef5
+0.0004	1	putative DNA-binding protein	009b5e29b1986270f748f5d206b0f608
+0.0004	1	potassium-transporting ATPase subunit A	025b55f9ea1bd9bf648b06124bc1bb04
+0.0004	1	alkylphosphonate utilization operon protein PhnA	03057af328aab452889a6d7feaba6b87
+0.0004	1	putative drug resistance ABC-2 type transporte	0328b07b11ef192e85f65cfb5f327ea1
+0.0004	1	cobyric acid synthase	01cb2e7bcad1effdd47a5cbbf4b7a686
+0.0004	1	tartrate dehydrogenase	0104be773eb920f5d436ea550b0ab482
+0.0004	1	ComE operon protein 2	010badac577581f65eefd292b6ac0eb9
+0.0004	1	carboxysome shell peptid	034adfb06341939fa6f3570efcdb91d1
+0.0004	1	YtfM protein	028ed5139676e4e564a307c4071a4cb2
+0.0004	1	helix-turn-helix- domain containing protei	025baededabf34a34f2f05ddffce43cc
+0.0004	1	iron(III) ABC transporte	00f3666cf4c631290f011ff8ce249271
+0.0004	1	type I restriction-modification system specificity subunit	03563b71188db24b11c333743e04e853
+0.0004	1	hydroxymethylbutenyl pyrophosphate reductase	02e59159109aeca6b4cf4098dbc151dd
+0.0004	1	Hypothetical sensory transduction protein	01509a2d2f04c826846addfa52475cb2
+0.0004	1	cell envelope-related transcriptional attenuator	0059870bd0d6e1aa8bc6a2c6bfb16370
+0.0004	1	phosphoribulokinase	0105121e4e98268fc2edca8c7446d8e7
+0.0004	1	acetyltransferase	02cc8c2ecce907ee793fdd5ad71a3e09
+0.0004	1	recombination and repair protein	00083e8b67e26e4cb84790b47433ae60
+0.0004	1	L-arabinose isomerase	029ac2fac335b6001a507dbf927398c2
+0.0004	1	phosphoenolpyruvate carboxylase	0199dca351bf22a3d0bfcadcdbdc0b08
+0.0004	1	group 2 family glycosyltransferase	002f3e0f21b1aa10e00714e3b96a9878
+0.0004	1	UbiD family decarboxylase	014598226b9be7e232c107ca7a4b5296
+0.0004	1	oxidoreductase FAD-binding subunit	01cebaedefe73a5489042bc2385fea6c
+0.0004	1	spermidine/putrescine-binding periplasmic protein PotD	024944da59fe1a2050798780dbd56feb
+0.0004	1	D-isomer specific 2-hydroxyacid dehydrogenas	02880372f46a6dcdac807c246d0b30da
+0.0004	1	L-asparaginase 1	0069fe2006549ef00f02e9c1db61053e
+0.0004	1	cell division protein FtsX	01c4e468760f017999a9d5e31eff6fd1
+0.0004	1	RmlB dTDP-glucose	01da5d7c52070ca0f34024e510bf5cff
+0.0004	1	exopolysaccharide biosynthesis protein	0350c83deaee302273e97a1b74e6babb
+0.0004	1	putative RNA polymerase ECF-type sigma factor	00de4f3b2a99401e41400a96848f5e3b
+0.0004	1	arylsulfatase	01083f3669a64bfef57e08f94ea24dd9
+0.0004	1	galactokinase	01bf5e203fa56195a2996999e811b685
+0.0004	1	Outer membrane usher protein fimD [Precursor] and minor component of type 1 fimbriae [Precursor]	035e30abffe32cd73b9689d30621cdeb
+0.0004	1	atpase involved in DNA replication initiation-like protein	026fff330c9eded32ffedc7fd57576ee
+0.0004	1	glucosyltransferase	008a671d99ac24aeaab4f9119f34eb46
+0.0004	1	polysaccharide lyase family protein 1	0040162bd1987beeee4503cec585415b
+0.0004	1	iron chelate uptake ABC transporte	01b6f5e1af06c3c01e4d4c2424184acf
+0.0004	1	Na(+)/H(+) antiporter	030d434a1edd2f2472d61630762fbc62
+0.0004	1	non-canonical purine NTP pyrophosphatas	020e32d5767060f313e9c64deff241da
+0.0004	1	two componen	000e8935e66e67d66699c1374a508133
+0.0004	1	sucrose phosphorylase (Sucrose glucosyltransferase)(Glucosyltransferase-A) (GTF-A)	00596010ac28c6067b9dc968e371afc9
+0.0004	1	putative citrate-sodium symporter	00c6fb6d815f139ad467c85d3d1f03ca
+0.0004	1	putative ferrochelatase	02111c2036b02ea4686ab03609c0fa31
+0.0004	1	4Fe-4S ferredoxi	030f576a2eb8991ba096f2f7b5d7553f
+0.0004	1	glucosamine-6-phosphate deaminase	008088cf9b1a45fde9cc436d3324c52e
+0.0004	1	oxalate:formate antiporter	02aa6e94a4d01d8218a18ba2a244a2b9
+0.0004	1	filamentation induced by cAMP protein Fic	0375c5335bed2a021ca7a505fe41eeb0
+0.0004	1	putative spermidine/putrescine ABC transporte	02db97e669423028e9d871d1abfa7dd4
+0.0004	1	oligopeptide-binding protein SarA	0267c69f622f46f4dba4b6c9df2d1f23
+0.0004	1	tRNA (guanine-N(7)-)-methyltransferase	022865e6cbe6b503069a59c9b0821a51
+0.0004	1	homocitrate synthase	00d6850575938e61fd1bb5888ad242a7
+0.0004	1	LysM domain-containing protein	005005ddc0fce09f1c3cd52213303f34
+0.0004	1	Formate dehydrogenase	005eedf5ccef8d6baea98e6a12b6bcfd
+0.0004	1	transcription regulato	023558e7087b0c83f34d5eeedd653f0c
+0.0004	1	putative cell division-related metallo peptidase	02107e1bdc22ead85e7b7cb9c6f2e1fb
+0.0004	1	putative transcription elongation factor	01b6bd01b8b3906c6b9eb40b5a665933
+0.0004	1	tRNA (guanine-N(1)-)-methyltransferase	03324e805a8679413f9ce39664bc50ae
+0.0004	1	TraO-like protein	0184dfdb2fa94387cec54cb37ee30dce
+0.0004	1	putative HAD hydrolas	010f1336039d486d678d004ef3491ba1
+0.0004	1	K+ transporter Trk	02d1282d4c2e809eea450ec93b47b4bd
+0.0004	1	probable amino acid carrier protein	00b3e59f594e7595ea8f5ce758075948
+0.0004	1	Nucleolar protei	01f7fd2ac838a4daad51e30fe43124d5
+0.0004	1	YugJ	01f78c8e18e901d70152ef3431262541
+0.0004	1	hydroxypyruvate reductase	001c16a871e5a4194413d04d88ad0322
+0.0004	1	cold shock-like protein CspE	011fd21366974a528541093e1ce868da
+0.0004	1	thiamine biosynthesis lipoprotein ApbE	02c3bc5b085129134c09e248cce0283c
+0.0004	1	thioredoxi	016f15fb2ed727dadfb194bd2abfe0a1
+0.0004	1	DNA polymerase i	00de6c4af7cc38275ed49905cff5cbcf
+0.0004	1	general secretory pathway protein E	009f14f336b1b13bacfc247e9ad90b2a
+0.0004	1	C32 tRNA thiolase	02d28a0e6772154d01af719cd9c41959
+0.0004	1	proline--tRNA ligase	0331267624b99518cd08d501075924d7
+0.0004	1	3-dehydroquinate dehydratas	0293f97d004169fa7f0ed237475d0f43
+0.0004	1	glutathione-disulfide reductase	00484648a039bfaac4f9d9b73dc3864d
+0.0004	1	type IV secretion-like conjugative transfer system protein TraY	009d8efcde772b7607a2a624afa426af
+0.0004	1	DNA/RNA helicas	02aa6e7a14db5fa7a4d529ebcfc4287f
+0.0004	1	putative oxidoreductase FixC	004ddc4776f7815ee6d4739ffa0957f1
+0.0004	1	putative UDP-	03205f4ebd7c65083fff38797c44a1d6
+0.0004	1	Dehydrogenase with different specificities (related to short-chain alcohol dehydrogenase)	02a86a2b54667905d53731c2559d2fee
+0.0004	1	O-acetyl transferase	005bf33d3cd119b0a6d6eb1f92e69f37
+0.0004	1	Transcriptional regulator (Lrp/AsnC family) protein	02c86c5025b658b4d1a267179d525dbc
+0.0004	1	putative capsular polysaccharide biosynthesis protein	01fc5a7e16ead326662365da3a05c911
+0.0004	1	ABC transporter ATPase	020ad0f14d4db486ab1ba7463329ece9
+0.0004	1	NisK	02bc0fe8316bc40e18f81abe90941945
+0.0004	1	ABC peptide transporte	00ac2b4206bdd1e46de75a55cf87f0c5
+0.0004	1	ThiW protein	033941d55a967e047c8cf8b05efbc1f1
+0.0004	1	nuclear receptor-interacting protein 1	0102132689fc3f3faf541cab2e6969b6
+0.0004	1	similar to axonal transport of synaptic vesicles isoform 1	01c625e23a5e2ba6901db0ceb15f575f
+0.0004	1	succinyl-coa synthetase alpha subunit related protein	01e5b0258e2aa546406957e29d1aabe1
+0.0004	1	manganese ABC transporter substrate-binding lipoprotein	02b96e748ff028633b0a394d5e219b9e
+0.0004	1	glycoside hydrolase family 3 domain protein	025602176258c5095627e1ba5ffc1080
+0.0004	1	LytR family regulatory protein	025cd00a77bc8cdb89e667447075731c
+0.0004	1	putative toxic anion resistance protein	0298aae96095258dbeae8211321699f2
+0.0004	1	phosphoglycerate mutase-like protein	007c24e1784e432e1bf1edfb3accd4cc
+0.0004	1	cell division protein FtsI/penicillin-binding protein 2	0052f49deda918d14136bd92fe07b249
+0.0004	1	two-component system histidine kinase	0238e184cc3b66c014dae0ebd420c694
+0.0004	1	ATP binding protein of ABC transporter	02c63bc14c84648af298a2f514e7b471
+0.0004	1	folylpolyglutamate synthase/dihydrofolate synthase	007c5d8d2be3078d4f2e98993ea1508f
+0.0004	1	aspartate ammonia-lyase	015c05aa4b2ffb4f50f4eff2d5836bc7
+0.0004	1	flavodoxin/nitric oxide synthase	01022099057fb8c212a9827c13861038
+0.0004	1	thiol:disulfide interchange protein DsbD	020e569b7a7f63183ac5ee0599ee5399
+0.0004	1	chemotaxis sensory transducer	00903282d2a707c6943bcfabe499fdf7
+0.0004	1	pyruvate:ferredoxin oxidoreductase/NADPH-cytochrome P450 reductase PNO	0037ed48f78815ea5dd71dabeb8d0c1e
+0.0004	1	glucose-inhibited division protein A	02557fc20838e742b3d205421fddfad5
+0.0004	1	40S ribosomal protein S24-like isoform 2	01831dda59afdb046c6eddb42157435c
+0.0004	1	ATP synthase CF1 beta subunit	00891c1088051c92c6cf67a34b7c1a84
+0.0004	1	potassium uptake protein KtrA	0018fc67744d8006d3508cda6b023a08
+0.0004	1	Protein similar to mammalian oxysterol-binding protein	01407aae3bf8a93119db99e14fa5a06b
+0.0004	1	protein of unknown function DUF1037	03377ea9e2d19e80bca0bf3a69528633
+0.0004	1	uracil-xanthine permease	02fc978d38e22865a0ce73722ba8618a
+0.0004	1	b3/4 domain protein	02bf068942c7b6c44bda410240f5923a
+0.0004	1	glycosyl hydrolase	0064e660c944b5e97753b7ca52042f44
+0.0004	1	hydrogenase nickel insertion protein HypA	01564170e20220d4e9072510a442ab48
+0.0004	1	cell division protein	030edaaecaa468ec8e64bed1e8e425ed
+0.0004	1	LPXTG-motif cell wall anchor domain protein	0207cb4320f58fe609601e295f5f528b

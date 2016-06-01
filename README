@@ -37,6 +37,8 @@ Included files:
 	Bacteria_Genus_flattened.tsv - reference database for taxonomy_shifter.py
 	md5-R-results_query.py - submits MG-RAST internal IDs for a functional transcript
 		file to MG-RAST's API to determine the RefSeq ID
+	functional_search_by_organism.py - retrieves all functional annotation hits for a
+		specific organism
 	package_install.Rmd - short R script that installs all necessary R packages.
 
 --------------------------

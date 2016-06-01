@@ -45,6 +45,8 @@ def string_find(usage_term):
 		if elem == usage_term:
 			 return next_elem
 
+print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
+
 # usage statement
 if "-usage" in sys.argv:
 	print "USAGE STATEMENT"

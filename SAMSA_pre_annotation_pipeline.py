@@ -83,6 +83,7 @@ def string_find(argv_string, usage_term):
 if quiet == False:
 	print ("This is part 1 of the SAMSA pipeline, handling preprocessing and uploading of all chosen files to MG-RAST for annotation.")
 	print ("After annotation is complete on MG-RAST, run SAMSA_post_annotation_pipeline.py to download and analyze all annotations.\n")
+	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 	print ("NOTE: The generated command will likely run for several minutes.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.\n")
 	if "-usage" not in sys.argv:
 		print ("To view usage options (and then quit), run with flag '-usage'.\n")

@@ -28,7 +28,8 @@ python SAMSA/SAMSA_pre_annotation_pipeline.py -Ends 2 -A @@AuthorizationKey@@ -D
 
 # 		For all of the raw sequence files, the pre-annotation pipeline should clean
 #		the files, removing adaptors, and should merge the paired-end files.  The output
-#		will be labeled as control_file_.extendedFrags.fastq .
+#		will be labeled as trimmed_control_reads_.extendedFrags.fastq and as 
+# 		trimmed_experiment_reads_.extendedFrags.fastq .
 
 ####################################################################
 #
@@ -105,12 +106,26 @@ python SAMSA/func_data_trimmer.py -I sample_output_files/experiment_function_sum
 #
 # Step 8: Converting organism results to Family level for higher taxonomy comparisons
 #		By default, the annotations from MG-RAST are returned at the Genus level.  However, if comparisons
-#		at a higher taxonomic order are needed, this can be performed using the taxonomy_shifter.py program:
+#		at a higher taxonomic order are needed, this can be performed using the taxonomy_shifter.py 
+#		program:
 
 python SAMSA/taxonomy_shifter.py -F sample_output_files/control_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O sample_output_files/control_organism_Family_summary.tab 
 python SAMSA/taxonomy_shifter.py -F sample_output_files/experiment_organism_summary_simplified.tab -R SAMSA/Bacterial_Genus_flattened.tsv -T Family -O sample_output_files/experiment_organism_Family_summary.tab 
 
-#		At this point, the Family level files may be loaded into R and the rest of the analysis may proceed 
-#		as normal.
+#		At this point, the Family level files may be loaded into R and the rest of the analysis may 
+#		proceed as normal.
+#
+####################################################################
+#
+# Optional: Examine functional transcripts of a specific organism
+#		Using the program functional_annotations_by_organism.py, it is possible to isolate all
+#		functional transcripts for a specific organism, creating a summary that can be imported
+#		into R for analysis.
+
+python SAMSA/functional_annotations_by_organism.py -N Bifidobacterium -O sample_output_files/control_organism_annotations.tab -F sample_output_files/control_function_annotations.tab -R sample_output_files/control_Bifidobacterium_functional_summary.tab
+python SAMSA/functional_annotations_by_organism.py -N Bifidobacterium -O sample_output_files/experiment_organism_annotations.tab -F sample_output_files/experiment_function_annotations.tab -R sample_output_files/experiment_Bifidobacterium_functional_summary.tab
+
+#		These results files are in tab-delimited form and are ready to be compared, either using 
+#		R_functional_script_w-md5s.Rmd, or with another method of the user's choice.
 #
 ####################################################################

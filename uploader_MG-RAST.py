@@ -1,24 +1,53 @@
 #!/usr/bin/env python
-import operator
-import sys
-import subprocess
-import os
 
-# Remember this: it lets raw_input do tab completion!
-import readline
-readline.parse_and_bind("tab: complete")
-
+##########################################################################
+#
+# Copyright (C) 2015-2016 Sam Westreich
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##########################################################################
+#
 # uploader_MG-RAST.py
-# Created 9/18/2015 by Sam Westreich
-# Purpose: With proper inputs, this should automatically generate the API calls to upload FASTQ/FASTA files for MG-RAST to process.
-# HELP: For more documentation on the MG-RAST API pipeline, read at http://api.metagenomics.anl.gov/api.html 
+# Created 9/18/15, last modified 5/31/16
+# Created by Sam Westreich, stwestreich@ucdavis.edu, github.com/transcript/
+#
+##########################################################################
+#
+# Purpose: With proper inputs, this should automatically generate the API calls 
+# to upload FASTQ/FASTA files for MG-RAST to process.
+# HELP: For more documentation on the MG-RAST API pipeline, read at 
+# http://api.metagenomics.anl.gov/api.html 
 
-# Usage: Can be run as a stand-alone (will prompt for inputs) or with various inputs specified (for pipeline use)
+# USAGE OPTIONS
+#
+#  Note: this tool may be an be run as a stand-alone (will prompt for inputs) 
+# or with various inputs specified (for pipeline use)
+#
 #	-Q		Quiet mode (no printing to STDOUT)
-#	-A		Authorization string (found under MG-RAST preferences, must be generated every 10 days)
+#	-A		Authorization string (found under MG-RAST preferences, must be 
+#				generated every 10 days)
 #	-F		File to be uploaded
 #	-usage	Prints usage documentation and exits.
+#
+##########################################################################
 
+# imports
+import operator, sys, subprocess, os, readline
+readline.parse_and_bind("tab: complete")
+
+# quiet mode
 if "-Q" in sys.argv:
 	quiet = True
 else:
@@ -30,6 +59,7 @@ if quiet == False:
 	print ("NOTE: The generated command will likely run for several minutes.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.")
 	if "-usage" not in sys.argv:
 		print ("For usage, run with flag '-usage'.")
+		print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 
 # Pipeline usage (single command)
 if "-usage" in sys.argv:

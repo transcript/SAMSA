@@ -58,6 +58,7 @@ if "-Q" in sys.argv:
 # Disclaimer
 if quiet == False:
 	print ("This is Sam Westreich's EZ-downloader for MG-RAST annotations.")
+	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 	print ("NOTE: The generated command will likely run for several hours.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.\n")
 	if "-usage" not in sys.argv:
 		print ("For usage, run with flag '-usage'; will terminate after displaying usage.")

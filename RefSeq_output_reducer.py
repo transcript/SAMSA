@@ -54,6 +54,7 @@ else:
 	quiet = False
 	
 if quiet == False:
+	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 	print "For usage options, run with flag '-usage'."
 
 # Usage statement

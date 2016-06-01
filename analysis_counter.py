@@ -39,8 +39,10 @@
 # imports
 import operator, sys, os, time, gzip
 	
-if "-q" not in sys.argv: sys.stderr.write ("analysis_counter.py\n")
-if "-q" not in sys.argv: sys.stderr.write ("For usage options, run \"analysis_counter.py -usage\".\n" )
+if "-q" not in sys.argv: 
+	sys.stderr.write ("analysis_counter.py\n")
+	sys.stderr.write ("\nCOMMAND USED:\t" + sys.argv + "\n")
+	sys.stderr.write ("For usage options, run \"analysis_counter.py -usage\".\n" )
 
 # usage statement
 if "-usage" in sys.argv:

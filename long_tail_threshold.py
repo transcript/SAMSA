@@ -52,6 +52,7 @@ if "-Q" in sys.argv:
 	quiet = True
 else:
 	quiet = False
+	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 
 # usage statement
 if "-usage" in sys.argv:

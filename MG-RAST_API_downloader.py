@@ -84,7 +84,7 @@ if quiet == False:
 	print ("\nTesting internet connection...")
 proc = subprocess.Popen("ping -c 1 metagenomics.anl.gov", shell = True, stdout = subprocess.PIPE, )
 output = proc.communicate()[0]
-if "0.0% packet loss" in output:
+if "0.0% packet loss" or "0% packet loss" in output:
 	if quiet == False:
 		print ("Web connection is active and working.")
 else:

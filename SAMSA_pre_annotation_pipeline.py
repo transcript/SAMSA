@@ -52,7 +52,7 @@
 # OPTIONAL:
 # -Q				Activates quiet mode; comments and updates are not printed to 
 #					STDOUT.
-# -T (path)			Location (path) of 'trimmomatic-0.33.jar', if it isn't located 
+# -T (path)			Absolute location (path) of 'trimmomatic-0.33.jar', if it isn't located 
 #					in /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar .
 # -F (path) 		Location (path) of 'flash', if it isn't located in 
 #					/Applications/FLASH-1.2.11/flash* .
@@ -175,14 +175,14 @@ files_list1 = files_list.pop()
 for file in files_list:
 	if end_type == "1":
 		if "-T" in argv_string:
-			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
+			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adaptors/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 		else:
-			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SE:2:30:10 MAXINFO:100:0.2"
+			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adaptors/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 	elif end_type == "2":
 		if "-T" in argv_string:
-			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-PE:2:30:10 MAXINFO:100:0.2"
+			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adaptors/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 		else:
-			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:TruSeq3-SPE:2:30:10 MAXINFO:100:0.2"
+			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adaptors/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 
 	# execute
 	if quiet == False:

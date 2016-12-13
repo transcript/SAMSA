@@ -65,11 +65,13 @@ for (x in control_files) {
   y <- y + 1
   if (y == 1) {
     control_table <- read.table(file = x, header=F, quote = "", sep = "\t", fill = TRUE)
-    colnames(control_table) = c("DELETE", x, "V3", "md5")
-    control_table <- control_table[,c(4,2,3)]  }
+    colnames(control_table) = c(x, "V3", "md5")
+    control_table <- control_table[,c(3,1,2)] 
+    control_table <- control_table[c(1:1000),] }
   if (y > 1) {
     temp_table <- read.table(file = x, header = F, quote = "", sep = "\t", fill = TRUE)
-    colnames(temp_table) = c("DELETE", x, "V3", "md5")  }
+    colnames(temp_table) = c(x, "V3", "md5")  
+    temp_table <- temp_table[c(1:1000),]  }
   if (y > 1) {
     print (x)
     control_table <- merge(control_table, temp_table[,c(2,3)], by = "V3", all.x = T)  }

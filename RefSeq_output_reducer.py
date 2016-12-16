@@ -63,7 +63,13 @@ if "-usage" in sys.argv:
 	print "-I\tInput file, required"
 	print "-O\tOutput file, if not specified will default to 'input_simplified'."
 	print "-Q\tQuiet mode, hides all messages"
+	print "-S\tSpecies mode, preserves species information, optional"
 	sys.exit()
+
+# species preservation option
+species_flipper = False
+if "-S" in sys.argv:
+	species_flipper = True
 
 # opening input file
 try:
@@ -77,7 +83,10 @@ input_file = open (input_file_name, "r")
 if "-O" in sys.argv:
 	output_file_name = string_find("-O")
 else:
-	output_file_name = input_file_name + "_simplified"
+	if species_flipper == False:
+		output_file_name = input_file_name + "_simplified"
+	else:
+		output_file_name = input_file_name + "_species_simplified"
 output_file = open (output_file_name, "w")
 
 # counters
@@ -94,10 +103,21 @@ for line in input_file:
 		Species_name = splitline[2].strip()
 		splitname = Species_name.split()
 		familyName = splitname[0]
-		if familyName in db.keys():
-			db[familyName] += int(splitline[1])
+		if species_flipper == False:
+			if familyName in db.keys():
+				db[familyName] += int(splitline[1])
+			else:
+				db[familyName] = int(splitline[1])
 		else:
-			db[familyName] = int(splitline[1])
+			try:
+				orgName = splitname[0] + " " + splitname[1]
+			except IndexError:
+				orgName = splitname[0]
+				continue
+			if orgName in db.keys():
+				db[orgName] += int(splitline[1])
+			else:
+				db[orgName] = int(splitline[1])
 		
 		total_entries += int(splitline[1])
 

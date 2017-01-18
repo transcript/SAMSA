@@ -126,7 +126,7 @@ if (colnames(control_table_trimmed[1]) == "md5") {
 ```
 
 ******** GRAPH FORMATION ******** 
-NOTE: If skipping directly to DESeq analysis of the results, proceed instead to line 19X.
+NOTE: If skipping directly to DESeq analysis of the results, proceed instead to line 233.
 
 The next step is to remove the hypothetical or predicted proteins.  Note that this significantly reduces the total amount of data, but provides much more clarity when examining end results.
 
@@ -248,7 +248,6 @@ complete_table <- complete_table[,c(-2, -ncol(complete_table))]
 
 complete_table2 <- complete_table[,-1]
 completeCondition <- data.frame(condition=factor(c(rep("control", length(control_files)), rep("experimental", length(exp_files)))))
-colnames(complete_table2) <- completeCondition$condition
 dds <- DESeqDataSetFromMatrix(complete_table2, completeCondition, ~ condition)
 dds <- DESeq(dds)
 
@@ -258,8 +257,8 @@ res <- results(dds, contrast = c("condition", "experimental", "control"))
 func_results <- data.frame(res)
 func_results$Function <- complete_table$Simplified_Function
 func_results <- merge(func_results, baseMeanPerLvl, by="row.names")
-func_results <- func_results[,c(1,2,8,9,3,4,5,6,7)]
-colnames(func_results)[c(3,4)] <- c("controlMean", "experimentalMean")
+func_results <- func_results[,c(1,8,2,9,10,3,4,5,6,7)]
+colnames(func_results)[c(4,5)] <- c("controlMean", "experimentalMean")
 
 plotMA(dds, ylim=c(-10,10), main="DESeq2 comparison of functional annotations")
 

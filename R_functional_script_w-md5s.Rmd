@@ -10,7 +10,6 @@ This is a script for processing output files from MG-RAST, converting functional
 Necessary packages to include:
 
 ```{r packages, results='hide'}
-library(DESeq)
 library(DESeq2)
 library(ggplot2)
 library(gridExtra)
@@ -35,7 +34,7 @@ control_files <- list.files(
     pattern = "control_*", full.names = T, recursive = FALSE)
 control_names = ""
 for (name in control_files) {
-  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #change the "2" to a different part of the name if not following standard naming conventions as above
+  control_names <- c(control_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #change the "2" to a different part of the name if not following standard naming conventions as above
 control_names <- control_names[-1]
 control_names_trimmed = ""
 for (name in control_names) {
@@ -47,7 +46,7 @@ exp_files <- list.files(
     pattern = "experiment_*", full.names = T, recursive = FALSE)
 exp_names = ""
 for (name in exp_files) {
-  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[2])} #again, change 2 if non-standard file names are used
+  exp_names <- c(exp_names, unlist(strsplit(name, split='_', fixed=TRUE))[4])} #again, change 2 if non-standard file names are used
 exp_names <- exp_names[-1]
 exp_names_trimmed = ""
 for (name in exp_names) {
@@ -65,20 +64,26 @@ for (x in control_files) {
   y <- y + 1
   if (y == 1) {
     control_table <- read.table(file = x, header=F, quote = "", sep = "\t", fill = TRUE)
-    colnames(control_table) = c(x, "V3", "md5")
-    control_table <- control_table[,c(3,1,2)] 
-    control_table <- control_table[c(1:1000),] }
+    if (ncol(control_table) == 4) {
+        colnames(control_table) = c("DELETE", x, "V3", "md5")
+        control_table <- control_table[,c(4,2,3)] 
+    } else {
+        colnames(control_table) = c("DELETE", x, "V3")
+        control_table <- control_table[,c(3,2)] }
+    control_table <- control_table[c(1:1000),] }     # can be deleted, restricts to top 1k hits
   if (y > 1) {
     temp_table <- read.table(file = x, header = F, quote = "", sep = "\t", fill = TRUE)
-    colnames(temp_table) = c(x, "V3", "md5")  
-    temp_table <- temp_table[c(1:1000),]  }
-  if (y > 1) {
+    temp_table <- temp_table[c(1:1000),]       # can be deleted, restricts to top 1k hits
     print (x)
+    if (ncol(temp_table) == 4) {
+        colnames(temp_table) = c("DELETE", x, "V3", "md5") 
+    } else {
+        colnames(temp_table) = c("DELETE", x, "V3") }
     control_table <- merge(control_table, temp_table[,c(2,3)], by = "V3", all.x = T)  }
 }
 control_table[is.na(control_table)] <- 0
 rownames(control_table) = control_table$V3
-control_table_trimmed <- control_table[,-3, drop = FALSE]
+control_table_trimmed <- control_table[,-1, drop = FALSE]
 
 # loading the exp table
 y <- 0
@@ -86,26 +91,38 @@ for (x in exp_files) {
   y <- y + 1
   if (y == 1) {
     exp_table <- read.table(file = x, header=F, quote = "", sep = "\t", fill = TRUE)
-    colnames(exp_table) = c("DELETE", x, "V3", "md5")
-    exp_table <- exp_table[,c(4,2,3)]  }
+    if (ncol(exp_table) == 4) {
+        colnames(exp_table) = c("DELETE", x, "V3", "md5")
+        exp_table <- exp_table[,c(4,2,3)] 
+    } else {
+        colnames(exp_table) = c("DELETE", x, "V3")
+        exp_table <- exp_table[,c(3,2)] }
+    exp_table <- exp_table[c(1:1000),] }     # can be deleted, restricts to top 1k hits
   if (y > 1) {
     temp_table <- read.table(file = x, header = F, quote = "", sep = "\t", fill = TRUE)
-    colnames(temp_table) = c("DELETE", x, "V3", "md5")  }
-  if (y > 1) {
+    temp_table <- temp_table[c(1:1000),]       # can be deleted, restricts to top 1k hits
     print (x)
+    if (ncol(temp_table) == 4) {
+        colnames(temp_table) = c("DELETE", x, "V3", "md5") 
+    } else {
+        colnames(temp_table) = c("DELETE", x, "V3") }
     exp_table <- merge(exp_table, temp_table[,c(2,3)], by = "V3", all.x = T)  }
 }
 exp_table[is.na(exp_table)] <- 0
 rownames(exp_table) = exp_table$V3
-exp_table_trimmed <- exp_table[,-3, drop = FALSE]
+exp_table_trimmed <- exp_table[,-1, drop = FALSE]
 rm(control_table, exp_table, x, y)
 ```
 
 Now, we simplify the names of the columns of these two tables, using the ID names scrubbed from the filenames above in chunk 3, file_listing.  If this step is failing, please note the proper naming of the files as mentioned above chunk 3.
 
 ```{r column_names}
-colnames(control_table_trimmed) = c("md5", control_names_trimmed)
-colnames(exp_table_trimmed) = c("md5", exp_names_trimmed)
+if (colnames(control_table_trimmed[1]) == "md5") {
+    colnames(control_table_trimmed) = c("md5", control_names_trimmed)
+    colnames(exp_table_trimmed) = c("md5", exp_names_trimmed) 
+  } else {
+    colnames(control_table_trimmed) = c(control_names_trimmed)
+    colnames(exp_table_trimmed) = c(exp_names_trimmed) } 
 ```
 
 ******** GRAPH FORMATION ******** 
@@ -131,10 +148,15 @@ We now want to combine the two tables (experimental and control) into a single t
 ```{r all_table_creation}
 all_table <- control_table_filtered
 all_table[, " "] <- 0
-all_table <- merge(all_table, exp_table_filtered, by = c(0,1), all = TRUE) # this step may take a while, depending on total number of annotations
+if (colnames(control_table_filtered[1]) == "md5") {
+    all_table <- merge(all_table, exp_table_filtered, by = c(0,1), all = TRUE) # this step may take a while, depending on total number of annotations
+    rownames(all_table) <- all_table[,2]
+    all_table <- all_table[,-2]
+} else {
+    all_table <- merge(all_table, exp_table_filtered, by = 0, all = TRUE)
+    rownames(all_table) <- all_table[,1]
+}
 all_table[is.na(all_table)] <- 0
-rownames(all_table) <- all_table[,2]
-all_table <- all_table[,-2]
 all_table[, "Total"] <- rowSums(all_table[,c(2:length(all_table))])
 all_table <- all_table[ with(all_table, order(-Total)), ]
 names(all_table)[names(all_table) == 'Row.names'] <- 'Function'

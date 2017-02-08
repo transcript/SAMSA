@@ -33,6 +33,7 @@
 # -I 	Input file, required
 # -O	Output file, optional (default is infile_simplified)
 # -Q	Quiet mode, optional
+# -S	Species mode, preserves species information, optional
 #
 ##########################################################################
 

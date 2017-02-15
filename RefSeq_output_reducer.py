@@ -102,7 +102,7 @@ for line in input_file:
 		splitline = line.split("\t")
 		Species_name = splitline[2].strip()
 		splitname = Species_name.split()
-		familyName = splitname[0]
+		familyName = splitname[0][1:]
 		if species_flipper == False:
 			if familyName in db.keys():
 				db[familyName] += int(splitline[1])

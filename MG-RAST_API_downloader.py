@@ -112,7 +112,7 @@ else:
 	
 # Getting the data type
 if "-D" in argv_string:
-	seqtype = string_find(argv_string, "-D")
+	seqtype = string_find(argv_string, "-D").lower()
 	if quiet == False:
 		print ("Data type: " + seqtype)
 	seqtype_options = ["organism", "function", "ontology", "feature"]

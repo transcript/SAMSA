@@ -45,11 +45,14 @@ def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
 		this_elem = elem
 		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
-		if elem == usage_term:
+		if elem.upper() == usage_term:
 			 return next_elem
 
+# pull ARGV
+argv = str(sys.argv).upper()
+
 # quiet mode
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
@@ -59,7 +62,7 @@ if quiet == False:
 	print "For usage options, run with flag '-usage'."
 
 # Usage statement
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print "USAGE STATEMENT"
 	print "-I\tInput file, required"
 	print "-O\tOutput file, if not specified will default to 'input_simplified'."
@@ -69,7 +72,7 @@ if "-usage" in sys.argv:
 
 # species preservation option
 species_flipper = False
-if "-S" in sys.argv:
+if "-S" in argv:
 	species_flipper = True
 
 # opening input file

@@ -48,11 +48,14 @@ def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
 		this_elem = elem
 		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
-		if elem == usage_term:
+		if elem.upper() == usage_term:
 			 return next_elem
 
+# pull ARGV
+argv = str(sys.argv).upper()
+
 # quiet mode
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
@@ -70,7 +73,7 @@ else:
 		print "For usage options, run with flag '-usage'."
 
 # warning if input file or threshold % isn't specified
-if "-I" not in sys.argv:
+if "-I" not in argv:
 	print "WARNING: No infile specified in ARGV (use '-I' flag).  Terminating..."
 	sys.exit()
 
@@ -82,7 +85,7 @@ except IndexError:
 	sys.exit ("\nERROR:\nNo infile specified as ARGV using '-I' flag.\n")
 	
 # output file
-if "-O" in sys.argv:
+if "-O" in argv:
 	outfile_name = string_find("-O")
 else:
 	split_input = input_file_name.split(".")
@@ -91,7 +94,7 @@ else:
 outfile_db = []
 
 # opening the output file
-if "--resume" in sys.argv:
+if "--RESUME" in argv:
 	if quiet == False:
 		print "Outfile exists"
 	outfile = open (outfile_name, "r")

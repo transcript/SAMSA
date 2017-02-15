@@ -44,18 +44,21 @@ def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
 		this_elem = elem
 		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
-		if elem == usage_term:
+		if elem.upper() == usage_term:
 			 return next_elem
 
+# pull ARGV
+argv = str(sys.argv).upper()
+
 # quiet mode
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
 	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 
 # usage statement
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print "USAGE STATEMENT"
 	print "-Q\tEnables quiet mode"
 	print "-I\tSpecifies input file name, required"
@@ -67,10 +70,10 @@ else:
 		print "For usage options, run with flag '-usage'."
 
 # warning if input file or threshold % isn't specified
-if "-I" not in sys.argv:
+if "-I" not in argv:
 	print "WARNING: No infile specified in ARGV (use '-I' flag).  Terminating..."
 	sys.exit()
-if "-T" not in sys.argv:
+if "-T" not in argv:
 	print "WARNING: No threshold cutoff specified in ARGV; threshold should be between 0 and 100.  Terminating..."
 	sys.exit()
 
@@ -90,7 +93,7 @@ if float(threshold) < 0 or float(threshold) > 100:
 		
 
 # outfile
-if "-O" in sys.argv:
+if "-O" in argv:
 	outfile_name = string_find("-O")
 	if quiet == False:
 		print ("Output file name: " + outfile_name)

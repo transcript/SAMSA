@@ -47,8 +47,19 @@
 import operator, sys, subprocess, os, readline
 readline.parse_and_bind("tab: complete")
 
+# String searching function:
+def string_find(usage_term):
+	for idx, elem in enumerate(sys.argv):
+		this_elem = elem
+		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
+		if elem.upper() == usage_term:
+			 return next_elem
+
+# ARGV string
+argv = str(sys.argv).upper()
+
 # quiet mode
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
@@ -57,12 +68,12 @@ else:
 if quiet == False:
 	print ("This is Sam Westreich's EZ-uploader for files to be analyzed by MG-RAST.")
 	print ("NOTE: The generated command will likely run for several minutes.  For optimum flexibility, run this in a separate screen session to allow for logging out without disruption.")
-	if "-usage" not in sys.argv:
+	if "-USAGE" not in argv:
 		print ("For usage, run with flag '-usage'.")
 		print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 
 # Pipeline usage (single command)
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print ("\t-Q\t\tQuiet mode (no printing to STDOUT); optional")
 	print ("\t-A\t\tSpecifies authorization string (found under MG-RAST preferences, must be generated every 10 days); required")
 	print ("\t-F\t\tFile to be uploaded; required")
@@ -84,24 +95,16 @@ else:
 argv_string = sys.argv
 	
 # Checking for required flags
-if "-A" not in argv_string:
+if "-A" not in argv:
 	print ("WARNING: Authorization key not specified (with -A flag).")
 	auth = raw_input("Please copy/paste your authorization key from MG-RAST: ")
 else:
-	for idx, elem in enumerate(argv_string):
-		this_elem = elem
-		next_elem = argv_string[(idx + 1) % len(argv_string)]
-		if elem == "-A":
-			auth = next_elem
-if "-F" not in sys.argv:
+	auth = string_find("-A")
+if "-F" not in argv:
 	print ("WARNING: File to be uploaded not specified (with -F flag).")
 	file = raw_input("Please specify the file to be uploaded: ")
 else:
-	for idx, elem in enumerate(argv_string):
-		this_elem = elem
-		next_elem = argv_string[(idx + 1) % len(argv_string)]
-		if elem == "-F":
-			file = next_elem
+	file = string_find("-F")
 
 # Assembling the API command
 API_command = "curl -X POST -H \'auth:" + auth + "\' -F \'upload=@" + file + "\' \'http://api.metagenomics.anl.gov/1/inbox\'" 
@@ -114,5 +117,5 @@ if quiet == False:
 # Time to execute!
 if quiet == False:
 	print ("UPLOADING:")
-# sys.exit()
+
 os.system(API_command)

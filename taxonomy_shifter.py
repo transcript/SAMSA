@@ -48,11 +48,14 @@ def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
 		this_elem = elem
 		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
-		if elem == usage_term:
+		if elem.upper() == usage_term:
 			 return next_elem
 
+# pull ARGV
+argv = str(sys.argv).upper()
+
 # Quiet mode & Usage statement		 
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
@@ -61,7 +64,7 @@ if quiet == False:
 	print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 	print "For usage instructions/options, run with '-usage' flag."
 
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print "USAGE STATEMENT"
 	print "-Q\tEnables quiet mode"
 	print "-F\tInput file, necessary"
@@ -72,11 +75,11 @@ if "-usage" in sys.argv:
 	print "-E\tExclusion, will exclude all exceptions if present"
 	sys.exit()
 
-if "-R" not in sys.argv:
+if "-R" not in argv:
 	sys.exit("Missing -R flag for reference index file")
-if "-F" not in sys.argv:
+if "-F" not in argv:
 	sys.exit("Missing -F flag for input file")
-if "-T" not in sys.argv:
+if "-T" not in argv:
 	sys.exit("Missing -T flag for requested final taxonomy level")
 
 argv_string = sys.argv
@@ -168,7 +171,7 @@ if quiet == False:
 
 # Excluding all exceptions?  Determined here.
 exclude_all = False
-if "-E" in sys.argv:
+if "-E" in argv:
 	exclude_all = True
 	if quiet == False:
 		print "Excluding all mismatches."
@@ -251,7 +254,7 @@ for line in input_file:
 					percent_dic[splitline[2]] += float(splitline[0])
 					count_dic[splitline[2]] += int(splitline[1])
 					
-			if "-V" in sys.argv:
+			if "-V" in argv:
 				print ("EXCEPTION: line " + str(line_counter) + ", " + splitline[2] + " not found in reference dictionary")
 			exception_counter += 1
 			# for computing the total percentage of exceptions in number of reads:

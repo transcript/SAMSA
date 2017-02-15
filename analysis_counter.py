@@ -28,29 +28,32 @@
 # m5nr ID, allowing for greater specificity.
 
 # Usage: 
-# 	usage: analysis_counter.py infile [-o outfile_name] [-q]
+# 	usage: analysis_counter.py infile [-O outfile_name] [-Q] [-M]
 # 		infile: list of annotation matches from blast_parser
-#		outfile_name: optional specification of outfile name (default is infile.output)
-#		-q: quiet mode (no stderr messages)
-#		-m: includes M5nr MG-RAST internal IDs in output file
+#		-O: outfile_name: optional specification of outfile name (default is infile.output)
+#		-Q: quiet mode (no stderr messages)
+#		-M: includes M5nr MG-RAST internal IDs in output file
 #
 ##########################################################################
 
 # imports
 import operator, sys, os, time, gzip
+
+# pull ARGV
+argv = str(sys.argv).upper()
 	
-if "-q" not in sys.argv: 
+if "-Q" not in argv: 
 	sys.stderr.write ("analysis_counter.py\n")
 	sys.stderr.write ("\nCOMMAND USED:\t" + str(sys.argv) + "\n")
 	sys.stderr.write ("For usage options, run \"analysis_counter.py -usage\".\n" )
 
 # usage statement
-if "-usage" in sys.argv:
-	sys.stderr.write( "usage: analysis_counter.py infile [-o outfile_name] [-q] [-m]\n")
+if "-USAGE" in argv:
+	sys.stderr.write( "usage: analysis_counter.py infile [-O outfile_name] [-Q] [-M]\n")
 	sys.stderr.write( "\tARGV1\tinfile:\tlist of annotation matches from blast_parser\n")
-	sys.stderr.write( "\t-o\toutfile_name:\toptional specification of outfile name (default is STDOUT)\n")
-	sys.stderr.write( "\t-q:\tquiet mode (no messages printed to stderr)\n")
-	sys.stderr.write( "\t-m:\tincludes M5nr MG-RAST internal IDs in output file\n")
+	sys.stderr.write( "\t-O\toutfile_name:\toptional specification of outfile name (default is STDOUT)\n")
+	sys.stderr.write( "\t-Q:\tquiet mode (no messages printed to stderr)\n")
+	sys.stderr.write( "\t-M:\tincludes M5nr MG-RAST internal IDs in output file\n")
 	sys.exit()
  
 # Function:
@@ -81,7 +84,7 @@ def analyze(input_file, read_dic, annotation_dic, func_dic, error_counter):
 				error_counter += 1
 				continue
 			if read_counter % 2000000 == 0:
-				if "-q" not in sys.argv: sys.stderr.write (str(read_counter) + " lines processed.\n")
+				if "-Q" not in argv: sys.stderr.write (str(read_counter) + " lines processed.\n")
 	return read_counter
 
 
@@ -91,10 +94,10 @@ def analyze(input_file, read_dic, annotation_dic, func_dic, error_counter):
 try:
 	RefSeq_org_file_name = sys.argv[1]
 except IndexError:
-	sys.stderr.write( "usage: analysis_counter.py infile [-o outfile_name] [-q]\n")
+	sys.stderr.write( "usage: analysis_counter.py infile [-O outfile_name] [-Q]\n")
 	sys.stderr.write( "\tARGV1\tinfile: list of annotation matches from blast_parser\n")
-	sys.stderr.write( "\t-o\toutfile_name: optional specification of outfile name (default is infile.output)\n")
-	sys.stderr.write( "\t-q: quiet mode (no messages printed to stderr)\n")
+	sys.stderr.write( "\t-O\toutfile_name: optional specification of outfile name (default is infile.output)\n")
+	sys.stderr.write( "\t-Q: quiet mode (no messages printed to stderr)\n")
 	sys.exit( "WARNING: No infile specified. Terminating script.\n")
 
 # checking for gzipped file
@@ -110,9 +113,9 @@ else:
 		sys.exit("ERROR: Cannot open input file.  Exiting script.\n")
 
 # Output file
-if "-o" in sys.argv:
-	if sys.argv[2] != "-o":
-		sys.stderr.write( "usage: analysis_counter.py infile [-o outfile_name]\n")
+if "-O" in argv:
+	if str(sys.argv[2]).upper() != "-O":
+		sys.stderr.write( "usage: analysis_counter.py infile [-O outfile_name]\n")
 		sys.stderr.write( "\tinfile: list of annotation matches from blast_parser\n")
 		sys.stderr.write( "\toutfile_name: optional specification of outfile name (default is infile.output)\n")
 		sys.exit( "WARNING: Outfile not properly specified (order of arguments).  Exiting script.\n")
@@ -132,16 +135,16 @@ else:
 	else:
 		org_output_name = RefSeq_org_file_name + ".output"
 	
-if "-q" not in sys.argv: sys.stderr.write ("File \"" + RefSeq_org_file_name + "\" successfully opened.\n")
-if "-q" not in sys.argv: sys.stderr.write ("Beginning analysis...\n")
+if "-Q" not in argv: sys.stderr.write ("File \"" + RefSeq_org_file_name + "\" successfully opened.\n")
+if "-Q" not in argv: sys.stderr.write ("Beginning analysis...\n")
 
 # checking if M5nr IDs should be retained and passed on
-if "-m" in sys.argv:
+if "-M" in argv:
 	include_m5nr = True
-	if "-q" not in sys.argv: sys.stderr.write ("Including M5NR IDs.\n")
+	if "-Q" not in argv: sys.stderr.write ("Including M5NR IDs.\n")
 else:
 	include_m5nr = False
-	if "-q" not in sys.argv: sys.stderr.write ("Excluding M5NR IDs.\n")
+	if "-Q" not in argv: sys.stderr.write ("Excluding M5NR IDs.\n")
 
 # Starting values
 read_dic = {}
@@ -154,8 +157,8 @@ t0 = time.clock()
 # Execute!
 org_reads = analyze(RefSeq_org_file, read_dic, org_dic, func_dic, error_counter)
 
-if "-q" not in sys.argv: sys.stderr.write ("RefSeq annotation dictionary assembled.\n")
-if "-q" not in sys.argv: sys.stderr.write ("Number of errors: " + str(error_counter) + "\n")
+if "-Q" not in argv: sys.stderr.write ("RefSeq annotation dictionary assembled.\n")
+if "-Q" not in argv: sys.stderr.write ("Number of errors: " + str(error_counter) + "\n")
 
 M5NR_set1 = set()
 for key in read_dic.keys():
@@ -170,14 +173,14 @@ t1 = time.clock()
 RefSeq_org_file.close()
 
 # results summary
-if "-q" not in sys.argv: sys.stderr.write ("Time: " + str(t1-t0) + " seconds.\n")
-if "-q" not in sys.argv: sys.stderr.write ("Number of total reads: \t\t" + str(org_reads) + "\n")
-if "-q" not in sys.argv: sys.stderr.write ("Number of unique reads: \t" + str(len(read_dic)) + "\n")
-if "-q" not in sys.argv: sys.stderr.write ("Number of unique transcripts: \t" + str(len(M5NR_set1)) + "\n")
-if "-q" not in sys.argv: sys.stderr.write ("Number of unique organisms: \t" + str(len(org_set)) + "\n")
+if "-Q" not in argv: sys.stderr.write ("Time: " + str(t1-t0) + " seconds.\n")
+if "-Q" not in argv: sys.stderr.write ("Number of total reads: \t\t" + str(org_reads) + "\n")
+if "-Q" not in argv: sys.stderr.write ("Number of unique reads: \t" + str(len(read_dic)) + "\n")
+if "-Q" not in argv: sys.stderr.write ("Number of unique transcripts: \t" + str(len(M5NR_set1)) + "\n")
+if "-Q" not in argv: sys.stderr.write ("Number of unique organisms: \t" + str(len(org_set)) + "\n")
 
-if "-q" not in sys.argv: sys.stderr.write ("\nTop ten matches:\n")
-if "-q" not in sys.argv: 
+if "-Q" not in argv: sys.stderr.write ("\nTop ten matches:\n")
+if "-Q" not in argv: 
 	for k, v in sorted(func_dic.items(), key=lambda (k,v): -v)[:10]:
 		q = v * 100 / float(org_reads)
 		if include_m5nr == True:
@@ -187,7 +190,7 @@ if "-q" not in sys.argv:
 			
 # sending output to either outfile or STDOUT:
 if output_name == True:
-	if "-q" not in sys.argv: sys.stderr.write ("\nNow saving full list of matches...\n")
+	if "-Q" not in argv: sys.stderr.write ("\nNow saving full list of matches...\n")
 
 	org_output.write("Number of total reads: \t\t" + str(org_reads))
 	org_output.write("\nNumber of unique reads: \t" + str(len(read_dic)))
@@ -201,7 +204,7 @@ if output_name == True:
 			org_output.write(str(q) + "\t" + str(v) + "\t" + k + "\t" + read_dic[k] + "\n")
 		else:
 			org_output.write(str(q) + "\t" + str(v) + "\t" + k + "\n")
-	if "-q" not in sys.argv: 
+	if "-Q" not in argv: 
 		sys.stderr.write ("\nFull list of matches exported as \"" + org_output_name + "\".\n")
 	org_output.close()
 

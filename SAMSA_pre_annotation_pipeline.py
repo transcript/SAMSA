@@ -62,23 +62,23 @@
 # Includes
 import sys, os, subprocess, time
 
+# String searching function:
+def string_find(usage_term):
+	for idx, elem in enumerate(sys.argv):
+		this_elem = elem
+		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
+		if elem.upper() == usage_term:
+			 return next_elem
+
+# pull ARGV
+argv = str(sys.argv).upper()
+
 # Quiet mode
-if "-Q" in sys.argv:
+if "-Q" in argv:
 	quiet = True
 else:
 	quiet = False
-
-# splitting up ARGV:
-argv_string = sys.argv
-
-# String searching function:
-def string_find(argv_string, usage_term):
-	for idx, elem in enumerate(argv_string):
-		this_elem = elem
-		next_elem = argv_string[(idx + 1) % len(argv_string)]
-		if elem == usage_term:
-			 return next_elem
-
+	
 # Opening statement/disclaimer
 if quiet == False:
 	print ("This is part 1 of the SAMSA pipeline, handling preprocessing and uploading of all chosen files to MG-RAST for annotation.")
@@ -89,7 +89,7 @@ if quiet == False:
 		print ("To view usage options (and then quit), run with flag '-usage'.\n")
 
 # Printing usage statement
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print ("\nUSAGE OPTIONS\nREQUIRED:")
 	print ("-Ends (#)\tDistinguishes between paired or single end data; 1=SE, 2=PE.")
 	print ("-A (string)\tAuthorization key for MG-RAST.  Found under 'Account preferences' at www.metagenomics.anl.gov/.")
@@ -102,13 +102,13 @@ if "-usage" in sys.argv:
 	sys.exit()
 	
 # Checking to see if required options are included
-if "-Ends" not in argv_string:
+if "-ENDS" not in argv:
 	print ("FATAL ERROR:\nType of sequencing (paired or single end) not specified with '-Ends' flag.  Please see '-usage' for required arguments when running this wrapper script.\nTERMINATED")
 	sys.exit()
-elif "-A" not in argv_string:
+elif "-A" not in argv:
 	print("FATAL ERROR:\nMG-RAST authorization key not specified with '-A' flag.  Please see '-usage' for required arguments when running this wrapper script.\nTERMINATED")
 	sys.exit()
-elif "-D" not in argv_string:
+elif "-D" not in argv:
 	print ("FATAL ERROR:\nLocation of metatranscriptome sequence files not specified with '-D' flag.  Please see '-usage' for required arguments when running this script.\nTERMINATED")
 	sys.exit
 
@@ -117,15 +117,15 @@ if quiet == False:
 	print ("\nChecking to see if Trimmomatic is installed...")
 
 # for custom location check
-if "-T" in argv_string:
-	custom_T_location = string_find(argv_string, "-T")
+if "-T" in argv:
+	custom_T_location = string_find("-T")
 	T_check = subprocess.check_output("if [ ! -f " + custom_T_location + " ]; then echo \"Trimmomatic does not exist.\"; fi", shell = True)
 
 else:		# standard location check
 	T_check = subprocess.check_output("if [ ! -f /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar ]; then echo \"Trimmomatic does not exist.\"; fi", shell = True)
 if "does not exist" in T_check:
 	if quiet == False:
-		if "-T" in argv_string:
+		if "-T" in argv:
 			print ("\nFATAL ERROR:\nTrimmomatic not found at location " + custom_T_location + ".  Please download Trimmomatic from http://www.usadellab.org/cms/?page=trimmomatic and install in /Applications/.\nTERMINATED")
 			sys.exit()	
 		else:
@@ -134,14 +134,14 @@ if "does not exist" in T_check:
 
 # if we've made it this far in the script, Trimmomatic exists!
 # Next, we need to check for FLASH, but only IF the files are paired-end.
-end_type = string_find(argv_string, "-Ends")
+end_type = string_find("-ENDS")
 if end_type == "2":
 	if quiet == False:
 		print ("\nPaired end reads are specified; checking to see if FLASH is installed...")
 	
 	# check for FLASH aligner program
-	if "-F" in argv_string:
-		custom_F_location = string_find(argv_string, "-F")
+	if "-F" in argv:
+		custom_F_location = string_find("-F")
 		F_check = subprocess.check_output("if [ ! -f " + custom_F_location + " ]; then echo \"FLASH does not exist.\"; fi", shell = True)
 	else:
 		F_check = subprocess.check_output("if [ ! -f /Applications/FLASH-1.2.11/flash ]; then echo \"FLASH does not exist.\"; fi", shell = True)
@@ -149,7 +149,7 @@ if end_type == "2":
 	# terminating if FLASH isn't found
 	if "does not exist" in F_check:
 		if quiet == False:
-			if "-F" in argv_string:
+			if "-F" in argv:
 				print ("\nFATAL ERROR:\nFLASH aligner not found at location " + custom_F_location + ".  Please download FLASH from http://ccb.jhu.edu/software/FLASH/ and install in /Applications/.\nTERMINATED")
 				sys.exit()
 			else:
@@ -162,7 +162,7 @@ elif end_type == "1":
 # If we've made it this far, we've got both Trimmomatic and FLASH (if FLASH is necessary)!  Now, time to run some actual stuff!
 # Need to echo all files in folder location, and then match them up if they're paired-end files.
 # WARNING: Doesn't work with folders with spaces in their names.
-files_location = string_find(argv_string, "-D")
+files_location = string_find("-D")
 if files_location[-1] != "/":
 	files_location + "/"
 files_list = subprocess.check_output("ls " + files_location, shell = True).split("\n")
@@ -174,12 +174,12 @@ files_list1 = files_list.pop()
 # Running Trimmomatic on files
 for file in files_list:
 	if end_type == "1":
-		if "-T" in argv_string:
+		if "-T" in argv:
 			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adaptors/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 		else:
 			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adaptors/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 	elif end_type == "2":
-		if "-T" in argv_string:
+		if "-T" in argv:
 			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adaptors/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 		else:
 			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adaptors/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
@@ -219,12 +219,12 @@ if end_type == "2":
 				# if we've reached this point, there's a forward and reverse file
 				# time for FLASH!
 				
-				if "-F" in argv_string:
-					FLASH_command = custom_F_location + " -o " + file_pair + " -d " + string_find(argv_string, "-D") + " " + string_find(argv_string, "-D") + forward_dic[file_pair] + " " + string_find(argv_string, "-D") + reverse_dic[file_pair]
+				if "-F" in argv:
+					FLASH_command = custom_F_location + " -o " + file_pair + " -d " + string_find("-D") + " " + string_find("-D") + forward_dic[file_pair] + " " + string_find("-D") + reverse_dic[file_pair]
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				else:
-					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_pair + " -d " + string_find(argv_string, "-D") + string_find(argv_string, "-D") + forward_dic[file_pair] + " " + string_find(argv_string, "-D") + reverse_dic[file_pair]
+					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_pair + " -d " + string_find("-D") + string_find("-D") + forward_dic[file_pair] + " " + string_find("-D") + reverse_dic[file_pair]
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				# execute
@@ -244,11 +244,11 @@ if end_type == "1":			# single end files
 	# Upload command
 	if quiet == False:
 		for file in files_list:
-			upload_command = "python uploader_MG-RAST.py -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python uploader_MG-RAST.py -A " + string_find("-A") + " -F " + file
 #			os.system(upload_command)
 	else:
 		for file in files_list:
-			upload_command = "python uploader_MG-RAST.py -Q -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python uploader_MG-RAST.py -Q -A " + string_find("-A") + " -F " + file
 #			os.system(upload_command)
 
 elif end_type == "2":		# paired end files
@@ -262,8 +262,8 @@ elif end_type == "2":		# paired end files
 		print ("\n")
 	
 	# Find out where uploader_MG-RAST.py is located
-	if "/" in argv_string[0]:
-		path = argv_string[0].split("SAMSA_pre_annotation_pipeline.py")
+	if "/" in sys.argv[0]:
+		path = str(sys.argv[0]).split("SAMSA_pre_annotation_pipeline.py")
 	else:
 		path = "./"
 	
@@ -271,14 +271,14 @@ elif end_type == "2":		# paired end files
 	if quiet == False:
 		for file in files_list:
 			t0 = time.clock()
-			upload_command = "python " + path + "uploader_MG-RAST.py -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python " + path + "uploader_MG-RAST.py -A " + string_find("-A") + " -F " + file
 			print (upload_command)
 			os.system(upload_command + "\n")
 			t1 = time.clock()
 			print ("Time needed: " + str(t1-t0) + " seconds.\n")
 	else:
 		for file in files_list:
-			upload_command = "python " + path + "uploader_MG-RAST.py -Q -A " + string_find(argv_string, "-A") + " -F " + file
+			upload_command = "python " + path + "uploader_MG-RAST.py -Q -A " + string_find("-A") + " -F " + file
 			os.system(upload_command)
 
 raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key to continue: ")
@@ -290,7 +290,7 @@ raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key
 	# 3. Use each ID to call seq_stats on that file
 if quiet == False:
 	print ("\nRetrieving sequence information from MG-RAST...")
-inbox_info_command = 'curl -X GET -H "auth: ' + string_find(argv_string, "-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
+inbox_info_command = 'curl -X GET -H "auth: ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
 print inbox_info_command
 inbox_info = subprocess.check_output(inbox_info_command, shell = True)
 inbox_info_split = inbox_info.split('id":"')
@@ -301,7 +301,7 @@ for item in inbox_info_split:
 	inbox_IDs.append(item[:36])
 
 # on to calling seq_stats with each ID:
-seq_stats_partial_command = 'curl -X GET -H "auth: ' + string_find(argv_string, "-A") + '" "http://api.metagenomics.anl.gov/1/inbox/stats/'
+seq_stats_partial_command = 'curl -X GET -H "auth: ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox/stats/'
 for UUID in inbox_IDs:
 	if quiet == False:
 		print ("\nComputing sequence stats for ID " + UUID)

@@ -42,21 +42,24 @@ def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
 		this_elem = elem
 		next_elem = sys.argv[(idx + 1) % len(sys.argv)]
-		if elem == usage_term:
+		if elem.upper() == usage_term:
 			 return next_elem
+
+# pull ARGV
+argv = str(sys.argv).upper()
 
 print ("\nCOMMAND USED:\t" + " ".join(sys.argv) + "\n")
 
 # usage statement
-if "-usage" in sys.argv:
+if "-USAGE" in argv:
 	print "USAGE STATEMENT"
 	print "-I\tInput file, necessary"
 	print "-O\tOutput file (default is infile_trimmed)"
 	sys.exit()
 
-if "-I" not in sys.argv:
+if "-I" not in argv:
 	sys.exit("No input file specified")
-if "-O" not in sys.argv:
+if "-O" not in argv:
 	print ("No output file name specified; defaulting to 'infile_trimmed'")
 
 # finding infile name
@@ -70,7 +73,7 @@ except IOError:
 	
 print infile_name
 
-if "-O" in sys.argv:
+if "-O" in argv:
 	output_file_name = string_find("-O")
 	output_file = open (output_file_name, "w")
 else:

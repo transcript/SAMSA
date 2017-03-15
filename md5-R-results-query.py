@@ -39,10 +39,6 @@
 
 import sys, os, time, subprocess, commands
 
-# base command values for building the CURL request
-base_command_start = "curl -X GET http://api.metagenomics.anl.gov/1/m5nr/md5/"
-base_command_end = "?source=RefSeq"
-
 # String searching function:
 def string_find(usage_term):
 	for idx, elem in enumerate(sys.argv):
@@ -118,12 +114,19 @@ md5_db = {}
 m5nr_ID_db = {}
 i = 0
 error_count = 0
+line_counter = 0
+
+# base command values for building the CURL request
+base_command_start = "curl -X GET http://api.metagenomics.anl.gov/1/m5nr/md5/"
+base_command_end = "?source=RefSeq"
+
 
 # timing
 t0 = time.clock()
 
 # executing
 for line in infile:
+	line_counter += 1
 	if i == 0:
 		i += 1
 		outfile.write("\t" + line)
@@ -153,14 +156,14 @@ for line in infile:
 			splitresult_1 = splitresult_0[1].split('"')
 		except IndexError:
 			error_count += 1
-			splitresult_1[0] = "unknown"
+			splitresult_1 = "unknown"
 		
 		# Let's also get the function out of this:
 		splitfunction_0 = str(result).split('function":"')
 		try:
 			splitfunction_1 = splitfunction_0[1].split('"')
 		except IndexError:
-			splitfunction_1[0] = "unknown"
+			splitfunction_1 = "unknown"
 
 		# Need to change the "W" that starts these IDs to a Y, because RefSeq
 		# NOTE: Currently turned off; not apparently necessary
@@ -183,12 +186,16 @@ for line in infile:
 #		else:
 #			sys.exit()
 
-		RefSeq_ID = str(splitresult_1[0])
+		RefSeq_ID = str(splitresult_1)
 
 		m5nr_ID_db[splitline[1]] = RefSeq_ID 
 
 		# writing to outfile
 		outfile.write(splitline[0] + "\t" + splitline[1] + "\t" + RefSeq_ID + "\n")
+		
+		# ticker
+		if line_counter % 1000 == 0:
+			print str(line_counter) + " lines processed so far."
 
 # timing
 t1 = time.clock()

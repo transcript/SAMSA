@@ -140,6 +140,10 @@ else:
 # Getting the annotation ID
 if "-I" in argv:
 	annotation_ID = string_find("-I")
+	if "." in annotation_ID:
+		old_mgm_id_flag = True
+	else:
+		old_mgm_id_flag = False
 	if quiet == False:
 		print ("Annotation ID number: " + annotation_ID)
 else:
@@ -154,7 +158,11 @@ else:
 	output_name = raw_input("Type in the name of where output should be saved (NOTE: do not type a path): ")
 
 # Assembling the html link
-API_link = "http://api.metagenomics.anl.gov//annotation/sequence/mgm" + str(annotation_ID) + seqtype + "&source=" + source
+if old_mgm_id_flag == True:
+	API_link = "http://api.metagenomics.anl.gov//annotation/sequence/mgm" + str(annotation_ID) + seqtype + "&source=" + source
+else:
+	API_link = "http://api.metagenomics.anl.gov//annotation/sequence/" + str(annotation_ID) + seqtype + "&source=" + source
+
 if quiet == False:
 	print ("\nLink being used: " + API_link)
 

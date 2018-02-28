@@ -168,7 +168,9 @@ elif end_type == "1":
 # WARNING: Doesn't work with folders with spaces in their names.
 files_location = string_find("-D")
 if files_location[-1] != "/":
-	files_location + "/"
+	files_location += "/"
+	print "Appended!"
+print files_location
 files_list = subprocess.check_output("ls " + files_location, shell = True).split("\n")
 
 # removes last 'empty item' from list
@@ -253,11 +255,11 @@ if end_type == "2":
 				forward_file = forward_dic[file_prefix]
 				reverse_file = reverse_dic[file_prefix]
 				if "-F" in argv:
-					FLASH_command = custom_F_location + " -o " + file_prefix[:-1] + " -d " + string_find("-D") + " " + string_find("-D") + forward_file + " " + string_find("-D") + reverse_file
+					FLASH_command = custom_F_location + " -o " + file_prefix[:-1] + " -d " + files_location + " " + files_location + forward_file + " " + files_location + reverse_file
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				else:
-					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_prefix[:-1] + " -d " + string_find("-D") + string_find("-D") + forward_file + " " + string_find("-D") + reverse_file
+					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_prefix[:-1] + " -d " + files_location + files_location + forward_file + " " + files_location + reverse_file
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				# execute

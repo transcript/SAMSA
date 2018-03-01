@@ -169,8 +169,6 @@ elif end_type == "1":
 files_location = string_find("-D")
 if files_location[-1] != "/":
 	files_location += "/"
-	print "Appended!"
-print files_location
 files_list = subprocess.check_output("ls " + files_location, shell = True).split("\n")
 
 # removes last 'empty item' from list
@@ -211,7 +209,7 @@ elif end_type == "2":
 				forward_file = forward_dic[file_prefix]
 				reverse_file = reverse_dic[file_prefix]
 				print forward_file, reverse_file
-				output_names = [file_prefix + "R1_paired_trimmed.fastq", file_prefix + "R1_unpaired_trimmed.fastq", file_prefix + "R2_paired_trimmed.fastq", file_prefix + "R2_unpaired_trimmed.fastq"]
+				output_names = [files_location + file_prefix + "R1_paired_trimmed.fastq", files_location + file_prefix + "R1_unpaired_trimmed.fastq", files_location + file_prefix + "R2_paired_trimmed.fastq", files_location + file_prefix + "R2_unpaired_trimmed.fastq"]
 				if "-T" in argv:
 					Trim_command = "java -jar " + custom_T_location + " PE " + files_location + forward_file + " " + files_location + reverse_file + " " + " ".join(output_names) + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adapters/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 				else:
@@ -264,6 +262,7 @@ if end_type == "2":
 						print ("\nFLASH command used: " + FLASH_command)
 				# execute
 				os.system(FLASH_command)
+				print "FLASH step complete."
 
 print "Made it up to MG-RAST upload step."
 

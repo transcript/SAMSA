@@ -25,18 +25,18 @@
 #
 ##########################################################################
 #
-# Purpose: With proper inputs, this should automatically generate the API calls 
+# Purpose: With proper inputs, this should automatically generate the API calls
 # to upload FASTQ/FASTA files for MG-RAST to process.
-# HELP: For more documentation on the MG-RAST API pipeline, read at 
-# http://api.metagenomics.anl.gov/api.html 
+# HELP: For more documentation on the MG-RAST API pipeline, read at
+# http://api.metagenomics.anl.gov/api.html
 
 # USAGE OPTIONS
 #
-#  Note: this tool may be an be run as a stand-alone (will prompt for inputs) 
+#  Note: this tool may be an be run as a stand-alone (will prompt for inputs)
 # or with various inputs specified (for pipeline use)
 #
 #	-Q		Quiet mode (no printing to STDOUT)
-#	-A		Authorization string (found under MG-RAST preferences, must be 
+#	-A		Authorization string (found under MG-RAST preferences, must be
 #				generated every 10 days)
 #	-F		File to be uploaded
 #	-usage	Prints usage documentation and exits.
@@ -93,7 +93,7 @@ else:
 
 # splitting up ARGV:
 argv_string = sys.argv
-	
+
 # Checking for required flags
 if "-A" not in argv:
 	print ("WARNING: Authorization key not specified (with -A flag).")
@@ -106,8 +106,12 @@ if "-F" not in argv:
 else:
 	file = string_find("-F")
 
+# checking for "mgrast" in auth command
+if "mgrast" not in auth:
+	auth = "mgrast " + auth
+
 # Assembling the API command
-API_command = "curl -X POST -H \'auth:" + auth + "\' -F \'upload=@" + file + "\' \'http://api.metagenomics.anl.gov/1/inbox\'" 
+API_command = "curl -X POST -H \'auth:" + auth + "\' -F \'upload=@" + file + "\' \'http://api.metagenomics.anl.gov/1/inbox\'"
 
 if quiet == False:
 	print ("Authorization key:\t" + auth)

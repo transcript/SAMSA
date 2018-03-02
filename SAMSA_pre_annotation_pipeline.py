@@ -178,7 +178,7 @@ files_list1 = files_list.pop()
 if end_type == "1":
 	for file in files_list:
 		if "-T" in argv:
-			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adapters/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
+			Trim_command = "java -jar " + custom_T_location + " SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:" + custom_T_location[:-20] + "adapters/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 		else:
 			 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar SE " + files_location + file + " " + files_location + "trimmed_" + file + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adapters/TruSeq3-SE.fa:2:30:10 MAXINFO:100:0.2"
 		# execute
@@ -205,13 +205,13 @@ elif end_type == "2":
 	for file_prefix in front_halves:
 		if file_prefix in forward_dic:
 			if file_prefix in reverse_dic:
-				# if we've reached this point, there's a forward and reverse file; time for FLASH
+				# if we've reached this point, there's a forward and reverse file; time for Trimmomatic
 				forward_file = forward_dic[file_prefix]
 				reverse_file = reverse_dic[file_prefix]
 				print forward_file, reverse_file
 				output_names = [files_location + file_prefix + "R1_paired_trimmed.fastq", files_location + file_prefix + "R1_unpaired_trimmed.fastq", files_location + file_prefix + "R2_paired_trimmed.fastq", files_location + file_prefix + "R2_unpaired_trimmed.fastq"]
 				if "-T" in argv:
-					Trim_command = "java -jar " + custom_T_location + " PE " + files_location + forward_file + " " + files_location + reverse_file + " " + " ".join(output_names) + " ILLUMINACLIP:" + custom_T_location[:-20] + "/adapters/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
+					Trim_command = "java -jar " + custom_T_location + " PE " + files_location + forward_file + " " + files_location + reverse_file + " " + " ".join(output_names) + " ILLUMINACLIP:" + custom_T_location[:-20] + "adapters/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 				else:
 					 Trim_command = "java -jar /Applications/Trimmomatic-0.33/trimmomatic-0.33.jar PE " + files_location + forward_file + " " + files_location + reverse_file + " " + " ".join(output_names) + " " + file_prefix + " ILLUMINACLIP:/Applications/Trimmomatic-0.33/adapters/TruSeq3-PE.fa:2:30:10 MAXINFO:100:0.2"
 				# execute
@@ -253,11 +253,11 @@ if end_type == "2":
 				forward_file = forward_dic[file_prefix]
 				reverse_file = reverse_dic[file_prefix]
 				if "-F" in argv:
-					FLASH_command = custom_F_location + " -o " + file_prefix[:-1] + " -d " + files_location + " " + files_location + forward_file + " " + files_location + reverse_file
+					FLASH_command = custom_F_location + " -o " + file_prefix[:-1] + " -d " + files_location[:-1] + " " + files_location + forward_file + " " + files_location + reverse_file
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				else:
-					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_prefix[:-1] + " -d " + files_location + files_location + forward_file + " " + files_location + reverse_file
+					FLASH_command = "/Applications/FLASH-1.2.11/flash " + " -o " + file_prefix[:-1] + " -d " + files_location[:-1] + " " + files_location + forward_file + " " + files_location + reverse_file
 					if quiet == False:
 						print ("\nFLASH command used: " + FLASH_command)
 				# execute
@@ -306,6 +306,10 @@ elif end_type == "2":		# paired end files
 	# Upload command
 	if quiet == False:
 		for file in files_list:
+			if "-" in file:
+				old_file = file
+				file = file.replace("-", "_")
+				os.system("mv " + old_file + " " file + "\n")
 			t0 = time.clock()
 			upload_command = "python " + path + "uploader_MG-RAST.py -A " + string_find("-A") + " -F " + file
 			print (upload_command)
@@ -314,6 +318,10 @@ elif end_type == "2":		# paired end files
 			print ("Time needed: " + str(t1-t0) + " seconds.\n")
 	else:
 		for file in files_list:
+			if "-" in file:
+				old_file = file
+				file = file.replace("-", "_")
+				os.system("mv " + old_file + " " file + "\n")
 			upload_command = "python " + path + "uploader_MG-RAST.py -Q -A " + string_find("-A") + " -F " + file
 			os.system(upload_command)
 
@@ -326,7 +334,7 @@ raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key
 	# 3. Use each ID to call seq_stats on that file
 if quiet == False:
 	print ("\nRetrieving sequence information from MG-RAST...")
-inbox_info_command = 'curl -X GET -H "auth: ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
+inbox_info_command = 'curl -X GET -H "auth: mgrast ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
 print inbox_info_command
 inbox_info = subprocess.check_output(inbox_info_command, shell = True)
 inbox_info_split = inbox_info.split('id":"')
@@ -337,7 +345,7 @@ for item in inbox_info_split:
 	inbox_IDs.append(item[:36])
 
 # on to calling seq_stats with each ID:
-seq_stats_partial_command = 'curl -X GET -H "auth: ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox/stats/'
+seq_stats_partial_command = 'curl -X GET -H "auth: mgrast ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox/stats/'
 for UUID in inbox_IDs:
 	if quiet == False:
 		print ("\nComputing sequence stats for ID " + UUID)

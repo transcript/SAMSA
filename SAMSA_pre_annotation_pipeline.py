@@ -280,11 +280,11 @@ if end_type == "1":			# single end files
 	# Upload command
 	if quiet == False:
 		for file in files_list:
-			upload_command = "python uploader_MG-RAST.py -A " + string_find("-A") + " -F " + file
+			upload_command = "python uploader_MG_RAST.py -A " + string_find("-A") + " -F " + file
 #			os.system(upload_command)
 	else:
 		for file in files_list:
-			upload_command = "python uploader_MG-RAST.py -Q -A " + string_find("-A") + " -F " + file
+			upload_command = "python uploader_MG_RAST.py -Q -A " + string_find("-A") + " -F " + file
 #			os.system(upload_command)
 
 elif end_type == "2":		# paired end files
@@ -297,7 +297,7 @@ elif end_type == "2":		# paired end files
 			print file
 		print ("\n")
 
-	# Find out where uploader_MG-RAST.py is located
+	# Find out where uploader_MG_RAST.py is located
 	if "/" in sys.argv[0]:
 		path = str(sys.argv[0]).split("SAMSA_pre_annotation_pipeline.py")
 	else:
@@ -309,9 +309,11 @@ elif end_type == "2":		# paired end files
 			if "-" in file:
 				old_file = file
 				file = file.replace("-", "_")
-				os.system("mv " + old_file + " " file + "\n")
+				os.system("mv " + old_file + " " + file + "\n")
+				files_list.remove(old_file)
+				files_list.append(file)
 			t0 = time.clock()
-			upload_command = "python " + path + "uploader_MG-RAST.py -A " + string_find("-A") + " -F " + file
+			upload_command = "python " + path + "uploader_MG_RAST.py -A " + string_find("-A") + " -F " + file
 			print (upload_command)
 			os.system(upload_command + "\n")
 			t1 = time.clock()
@@ -321,8 +323,10 @@ elif end_type == "2":		# paired end files
 			if "-" in file:
 				old_file = file
 				file = file.replace("-", "_")
-				os.system("mv " + old_file + " " file + "\n")
-			upload_command = "python " + path + "uploader_MG-RAST.py -Q -A " + string_find("-A") + " -F " + file
+				os.system("mv " + old_file + " " + file + "\n")
+				files_list.remove(old_file)
+				files_list.append(file)
+			upload_command = "python " + path + "uploader_MG_RAST.py -Q -A " + string_find("-A") + " -F " + file
 			os.system(upload_command)
 
 raw_input("\nOnce MG-RAST shows the cursor BELOW the progress bar, press any key to continue: ")
@@ -337,22 +341,27 @@ if quiet == False:
 inbox_info_command = 'curl -X GET -H "auth: mgrast ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox"'
 print inbox_info_command
 inbox_info = subprocess.check_output(inbox_info_command, shell = True)
-inbox_info_split = inbox_info.split('id":"')
-first_one = inbox_info_split.pop(0)
-first_two = inbox_info_split.pop(0)
-inbox_IDs = []
-for item in inbox_info_split:
-	inbox_IDs.append(item[:36])
+
+
+# getting names and IDs from this json
+inbox_name_strings = inbox_info.split('filename')
+inbox_filenames = {}
+for i in range(1, len(inbox_name_strings) - 1):
+	if 'id":"' in inbox_name_strings[i]:
+		name = inbox_name_strings[i].split('","',1)[0][3:]
+		UUID = inbox_name_strings[i].split('id":"', 1)[1].split('"')[0]#[3:]
+		inbox_filenames[name] = UUID
 
 # on to calling seq_stats with each ID:
 seq_stats_partial_command = 'curl -X GET -H "auth: mgrast ' + string_find("-A") + '" "http://api.metagenomics.anl.gov/1/inbox/stats/'
-for UUID in inbox_IDs:
-	if quiet == False:
-		print ("\nComputing sequence stats for ID " + UUID)
-	seq_stats_command = seq_stats_partial_command + UUID + '"'
-	if quiet == False:
-		print ("Command used: " + seq_stats_command)
-	os.system(seq_stats_command)
+for name in inbox_filenames.keys():
+	if (files_location + name) in files_list or name in files_list:
+		if quiet == False:
+			print ("\nComputing sequence stats for file " + name + ", UUID is ", inbox_filenames[name])
+		seq_stats_command = seq_stats_partial_command + inbox_filenames[name] + '"'
+		if quiet == False:
+			print ("Command used: " + seq_stats_command)
+		os.system(seq_stats_command)
 
 # Unfortunately, it takes some time for the sequence stats to be computed.  So submission's going to have to be a separate step, performed via the online portal.  See the documentation for more information.
 print ("For next steps, log in to the MG-RAST online portal.  See Step 3 in the documentation for more information.")

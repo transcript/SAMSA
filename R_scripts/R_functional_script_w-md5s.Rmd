@@ -83,13 +83,17 @@ for (x in control_files) {
 }
 control_table[is.na(control_table)] <- 0
 rownames(control_table) = control_table$V3
-control_table_trimmed <- control_table[,-1, drop = FALSE]
+if (y == 1) {
+    control_table_trimmed = data.frame(control_table[,-1])
+} else {
+    control_table_trimmed <- control_table[,-1, drop = FALSE]
+}
 
 # loading the exp table
-y <- 0
+z <- 0
 for (x in exp_files) {
-  y <- y + 1
-  if (y == 1) {
+  z <- z + 1
+  if (z == 1) {
     exp_table <- read.table(file = x, header=F, quote = "", sep = "\t", fill = TRUE)
     if (ncol(exp_table) == 4) {
         colnames(exp_table) = c("DELETE", x, "V3", "md5")
@@ -98,7 +102,7 @@ for (x in exp_files) {
         colnames(exp_table) = c("DELETE", x, "V3")
         exp_table <- exp_table[,c(3,2)] }
     exp_table <- exp_table[c(1:1000),] }     # can be deleted, restricts to top 1k hits
-  if (y > 1) {
+  if (z > 1) {
     temp_table <- read.table(file = x, header = F, quote = "", sep = "\t", fill = TRUE)
     temp_table <- temp_table[c(1:1000),]       # can be deleted, restricts to top 1k hits
     print (x)
@@ -111,7 +115,7 @@ for (x in exp_files) {
 exp_table[is.na(exp_table)] <- 0
 rownames(exp_table) = exp_table$V3
 exp_table_trimmed <- exp_table[,-1, drop = FALSE]
-rm(control_table, exp_table, x, y)
+rm(control_table, exp_table, x)
 ```
 
 Now, we simplify the names of the columns of these two tables, using the ID names scrubbed from the filenames above in chunk 3, file_listing.  If this step is failing, please note the proper naming of the files as mentioned above chunk 3.
@@ -251,14 +255,15 @@ completeCondition <- data.frame(condition=factor(c(rep("control", length(control
 dds <- DESeqDataSetFromMatrix(complete_table2, completeCondition, ~ condition)
 dds <- DESeq(dds)
 
-baseMeanPerLvl <- sapply( levels(dds$condition), function(lvl) rowMeans( counts(dds,normalized=TRUE)[,dds$condition == lvl] ) )
-
 res <- results(dds, contrast = c("condition", "experimental", "control"))
 func_results <- data.frame(res)
 func_results$Function <- complete_table$Simplified_Function
-func_results <- merge(func_results, baseMeanPerLvl, by="row.names")
-func_results <- func_results[,c(1,8,2,9,10,3,4,5,6,7)]
-colnames(func_results)[c(4,5)] <- c("controlMean", "experimentalMean")
+if (y > 1) {
+    baseMeanPerLvl <- sapply( levels(dds$condition), function(lvl) rowMeans( counts(dds,normalized=TRUE)[,dds$condition == lvl] ) )
+    func_results <- merge(func_results, baseMeanPerLvl, by="row.names")
+    func_results <- func_results[,c(1,8,2,9,10,3,4,5,6,7)]
+    colnames(func_results)[c(4,5)] <- c("controlMean", "experimentalMean")
+}
 
 plotMA(dds, ylim=c(-10,10), main="DESeq2 comparison of functional annotations")
 
